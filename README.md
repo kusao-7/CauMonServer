@@ -19,10 +19,6 @@ This repository is for the artifact evaluation of the paper ""
 
 - Run `make`
   
-- Start MATLAB GUI,
-  - set up a C/C++ compiler using the command `mex -setup`.
-    > (Refer to [here](https://www.mathworks.com/help/matlab/matlab_external/changing-default-compiler.html) for more details.)
-  - navigate to `breach/`, run `InitBreach`;
-  - run `compile_stl_mex`;
+- Start MATLAB GUI, run `configure.m`
 
 - Run examples, such as `Figure2a.m`
