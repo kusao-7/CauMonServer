@@ -1,9 +1,9 @@
 # Makefile
 
 # source files
-CPPS = signal.cpp cau_stl_atom.cpp cau_interval_transducer.cpp stl_causation_opt.cpp stl_eval_mex_pw.cpp
-HEADERS = signal.h transducer.h
-MFILES = compile_stl_mex.m
+CPPS = src/cpp/signal.cpp src/cpp/cau_stl_atom.cpp src/cpp/cau_interval_transducer.cpp src/cpp/stl_causation_opt.cpp src/cpp/stl_eval_mex_pw.cpp
+HEADERS = src/include/signal.h src/include/transducer.h
+MFILES = src/compile/compile_stl_mex.m
 
 # target directories
 DST_CPP = breach/Online/src/
