@@ -1,6 +1,6 @@
 # CauMon: An Informative Online Monitor for Signal Temporal Logic
 
-This repository is for the artifact evaluation of the paper "CauMon: An Informative Online Monitor for Signal Temporal Logic", accepted by FM 2024.
+This repository is for the artifact evaluation of the paper ""
 
 ## Run in your local machine
 
@@ -12,7 +12,7 @@ This repository is for the artifact evaluation of the paper "CauMon: An Informat
 
 ### Installation of our tool:
 
-- - Clone the repository.
+- Clone the repository.
   1. `git clone https://github.com/choshina/CauMon.git`
   2. `git submodule init`
   3. `git submodule update`
