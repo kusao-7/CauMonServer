@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="breach_2Online_2include_2signal_8h" kind="file" language="C++">
+    <compoundname>signal.h</compoundname>
+    <includes local="no">deque</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">limits</includes>
+    <includes local="yes">mex.h</includes>
+    <includedby refid="robustness_8h" local="yes">/home/zhenya/CauMon/breach/Online/include/robustness.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>limits</label>
+      </node>
+      <node id="4">
+        <label>fstream</label>
+      </node>
+      <node id="1">
+        <label>/home/zhenya/CauMon/breach/Online/include/signal.h</label>
+        <link refid="breach_2Online_2include_2signal_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>deque</label>
+      </node>
+      <node id="6">
+        <label>mex.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="19">
+        <label>/home/zhenya/CauMon/breach/Online/src/robustness.cpp</label>
+        <link refid="robustness_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/home/zhenya/CauMon/breach/Online/include/robustness.h</label>
+        <link refid="robustness_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/home/zhenya/CauMon/breach/Online/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="5">
+        <label>/home/zhenya/CauMon/breach/Online/include/signal_expr.h</label>
+        <link refid="signal__expr_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp</label>
+        <link refid="stl__scanner_8cpp"/>
+      </node>
+      <node id="6">
+        <label>/home/zhenya/CauMon/src/cpp/cau_stl_atom.cpp</label>
+        <link refid="cau__stl__atom_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/zhenya/CauMon/breach/Online/include/signal.h</label>
+        <link refid="breach_2Online_2include_2signal_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/home/zhenya/CauMon/breach/Online/src/onlineMonitorWrapper.cpp</label>
+        <link refid="onlineMonitorWrapper_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/zhenya/CauMon/src/include/transducer.h</label>
+        <link refid="src_2include_2transducer_8h"/>
+      </node>
+      <node id="13">
+        <label>/home/zhenya/CauMon/src/cpp/stl_eval_mex_pw.cpp</label>
+        <link refid="stl__eval__mex__pw_8cpp"/>
+      </node>
+      <node id="7">
+        <label>/home/zhenya/CauMon/breach/Online/src/signal_expr.cpp</label>
+        <link refid="signal__expr_8cpp"/>
+      </node>
+      <node id="4">
+        <label>/home/zhenya/CauMon/breach/Online/include/transducer.h</label>
+        <link refid="breach_2Online_2include_2transducer_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_eval_mex.cpp</label>
+        <link refid="stl__eval__mex_8cpp"/>
+      </node>
+      <node id="16">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp</label>
+        <link refid="stl__driver_8cpp"/>
+      </node>
+      <node id="9">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp</label>
+        <link refid="stl__parser_8cpp"/>
+      </node>
+      <node id="18">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_monitor.cpp</label>
+        <link refid="stl__monitor_8cpp"/>
+      </node>
+      <node id="11">
+        <label>/home/zhenya/CauMon/breach/Online/include/stl_driver.h</label>
+        <link refid="stl__driver_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/home/zhenya/CauMon/src/cpp/stl_causation_opt.cpp</label>
+        <link refid="stl__causation__opt_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_atom.cpp</label>
+        <link refid="stl__atom_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classCPSGrader_1_1Point" prot="public">CPSGrader::Point</innerclass>
+    <innerclass refid="classCPSGrader_1_1Sample" prot="public">CPSGrader::Sample</innerclass>
+    <innerclass refid="classCPSGrader_1_1Sequence" prot="public">CPSGrader::Sequence</innerclass>
+    <innerclass refid="classCPSGrader_1_1Signal" prot="public">CPSGrader::Signal</innerclass>
+    <innernamespace refid="namespaceCPSGrader">CPSGrader</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="breach_2Online_2include_2signal_8h_1ae420caa0af9cbdf102ed255034e27c5b" prot="public" static="no">
+        <name>BOTTOM</name>
+        <initializer>(-Signal::BigM)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/signal.h" line="12" column="9" bodyfile="/home/zhenya/CauMon/breach/Online/include/signal.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="breach_2Online_2include_2signal_8h_1afc0eef637f1016e8786e45e106a4881e" prot="public" static="no">
+        <name>TOP</name>
+        <initializer>(Signal::BigM)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/signal.h" line="13" column="9" bodyfile="/home/zhenya/CauMon/breach/Online/include/signal.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SIGNAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;deque&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mex.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TODO<sp/>maybe<sp/>make<sp/>TOP<sp/>and<sp/>BOTTOM<sp/>static<sp/>signal<sp/>attribute<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="breach_2Online_2include_2signal_8h_1ae420caa0af9cbdf102ed255034e27c5b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOTTOM<sp/>(-Signal::BigM)<sp/></highlight><highlight class="comment">//-std::numeric_limits&lt;double&gt;::infinity()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="breach_2Online_2include_2signal_8h_1afc0eef637f1016e8786e45e106a4881e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOP<sp/>(Signal::BigM)<sp/></highlight><highlight class="comment">//std::numeric_limits&lt;double&gt;::infinity()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">double<sp/>fmin(double<sp/>a,double<sp/>b)</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>return<sp/>(a&lt;b)?a:b;</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">double<sp/>fmax(double<sp/>a,double<sp/>b)</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/>return<sp/>(b&lt;a)?a:b;</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceCPSGrader" kindref="compound">CPSGrader</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Point<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>time;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classCPSGrader_1_1Point_1a3e144ec2ae899a83c52d6c9c66fc0d36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCPSGrader_1_1Point_1a3e144ec2ae899a83c52d6c9c66fc0d36" kindref="member">Point</ref>():<sp/>time(0.),<sp/>value(0.)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="36" refid="classCPSGrader_1_1Point_1a6aff06c5a6cc57a15cf45770d4a980a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCPSGrader_1_1Point_1a6aff06c5a6cc57a15cf45770d4a980a4" kindref="member">Point</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v)<sp/>:<sp/>time(t),<sp/>value(v)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream<sp/>&amp;<sp/><ref refid="namespaceCPSGrader_1a3787f04c520f3479162cf3498de2ba1f" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Point" kindref="compound">Point</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Sample<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Point<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>derivative;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classCPSGrader_1_1Sample_1af1bb0e3ab77abee25d139be4054794dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCPSGrader_1_1Sample_1af1bb0e3ab77abee25d139be4054794dd" kindref="member">Sample</ref>()<sp/>{derivative<sp/>=0;}</highlight></codeline>
+<codeline lineno="46" refid="classCPSGrader_1_1Sample_1a85c152c8adc073afffe7a16cb31588df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCPSGrader_1_1Sample_1a85c152c8adc073afffe7a16cb31588df" kindref="member">Sample</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d)<sp/>:<sp/><ref refid="classCPSGrader_1_1Point" kindref="compound">Point</ref>(t,v),<sp/>derivative(d)<sp/>{<sp/>}<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classCPSGrader_1_1Sample_1affdaff6e0207b076f19f1f06a73bbed1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Sample_1affdaff6e0207b076f19f1f06a73bbed1" kindref="member">valueAt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49" refid="classCPSGrader_1_1Sample_1a247daad363e0ff87fa90134c9c5ae929" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Sample_1a247daad363e0ff87fa90134c9c5ae929" kindref="member">timeIntersect</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Sample" kindref="compound">Sample</ref><sp/>&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream<sp/>&amp;<sp/><ref refid="namespaceCPSGrader_1a3787f04c520f3479162cf3498de2ba1f" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Sample" kindref="compound">Sample</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Sample::valueAt(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;<sp/>t)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value<sp/>+<sp/>derivative<sp/>*<sp/>(t<sp/>-<sp/>time);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Sample::timeIntersect(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Sample<sp/>&amp;<sp/>point)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(value<sp/>-<sp/>point.value<sp/>+<sp/>(point.derivative<sp/>*<sp/>point.time)<sp/>-<sp/>(derivative<sp/>*<sp/>time))<sp/>/<sp/>(point.derivative<sp/>-<sp/>derivative);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//piecewise-constant,<sp/>right-continuous<sp/>signals</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Sequence<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::deque&lt;Point&gt;<sp/>{<sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="67" refid="classCPSGrader_1_1Sequence_1a42947bb3dc9ae04478658c1b47f493f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCPSGrader_1_1Sequence_1a42947bb3dc9ae04478658c1b47f493f8" kindref="member">Sequence</ref>()<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream<sp/>&amp;<sp/><ref refid="namespaceCPSGrader_1a3787f04c520f3479162cf3498de2ba1f" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Sequence" kindref="compound">Sequence</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//piecewise-linear,<sp/>right-continuous<sp/>signals</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Signal<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>std::deque&lt;Sample&gt;<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>BigM;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>beginTime;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>endTime;</highlight></codeline>
+<codeline lineno="80" refid="classCPSGrader_1_1Signal_1a7cb2885522eafe9edf184d3988f4887a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCPSGrader_1_1Signal_1a7cb2885522eafe9edf184d3988f4887a" kindref="member">Signal</ref>():<sp/>beginTime(0.),<sp/>endTime(0.)<sp/>{<sp/>};</highlight></codeline>
+<codeline lineno="81" refid="classCPSGrader_1_1Signal_1a4f700afb11d1df94a10af2354d47ef04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCPSGrader_1_1Signal_1a4f700afb11d1df94a10af2354d47ef04" kindref="member">Signal</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="82" refid="classCPSGrader_1_1Signal_1aa5ccf80502037ee0bf06d11d48a78cc3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCPSGrader_1_1Signal_1aa5ccf80502037ee0bf06d11d48a78cc3" kindref="member">Signal</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//create<sp/>continuous<sp/>signal<sp/>from<sp/>array<sp/>of<sp/>sampling<sp/>points<sp/>(time,<sp/>value)<sp/>with<sp/>linear<sp/>interpolation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="classCPSGrader_1_1Signal_1a9fe5b10a6b4e1b78c3834ce382fe7c66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1a9fe5b10a6b4e1b78c3834ce382fe7c66" kindref="member">appendSample</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84" refid="classCPSGrader_1_1Signal_1a3b8bf85a1eea10b6660a0574b768b2fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1a3b8bf85a1eea10b6660a0574b768b2fe" kindref="member">appendSample</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85" refid="classCPSGrader_1_1Signal_1a22a9e0120b1d387419655168d4a9e11c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1a22a9e0120b1d387419655168d4a9e11c" kindref="member">appendSignal</ref>(<ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref>);</highlight></codeline>
+<codeline lineno="86" refid="classCPSGrader_1_1Signal_1a3b5811ff07bcf6314d03a3cb928ce0e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1a3b5811ff07bcf6314d03a3cb928ce0e5" kindref="member">simplify</ref>();<sp/></highlight><highlight class="comment">//remove<sp/>sampling<sp/>points<sp/>where<sp/>(y,dy)<sp/>is<sp/>continuous.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classCPSGrader_1_1Signal_1a85f1f65f2bbe0f80959149d18c76691b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1a85f1f65f2bbe0f80959149d18c76691b" kindref="member">resize</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//restricts/extends<sp/>the<sp/>signal<sp/>to<sp/>[s,t)<sp/>with<sp/>default<sp/>value<sp/>v<sp/>where<sp/>not<sp/>defined</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classCPSGrader_1_1Signal_1aacbad901e647126bf5b8e4af00091af2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1aacbad901e647126bf5b8e4af00091af2" kindref="member">shift</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//shifts<sp/>the<sp/>signal<sp/>of<sp/>delta_t<sp/>time<sp/>units</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="classCPSGrader_1_1Signal_1a6be4cf88bc03220751707fa172ce2ff9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1a6be4cf88bc03220751707fa172ce2ff9" kindref="member">addLastSample</ref>();<sp/></highlight><highlight class="comment">//<sp/>add<sp/>a<sp/>sample<sp/>at<sp/>endTime.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="classCPSGrader_1_1Signal_1a065d57119f6156a1583e18639ef81939" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1a065d57119f6156a1583e18639ef81939" kindref="member">removeInf</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>write<sp/>signal<sp/>to<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="classCPSGrader_1_1Signal_1a2465e50598a1bda451a51a889f7e9af9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1a2465e50598a1bda451a51a889f7e9af9" kindref="member">dumpFile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fstream<sp/>ofs;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ofs.open(filename.c_str(),<sp/>std::ofstream::out);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ofs.is_open())<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>begin();<sp/>i<sp/>!=<sp/>end();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ofs<sp/>&lt;&lt;<sp/>*i<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ofs.close();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Couldn&apos;t<sp/>open<sp/>file<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>filename.c_str()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>for<sp/>writing<sp/>signal&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;<sp/></highlight><highlight class="comment">//<sp/>TODO<sp/>implement<sp/>exception</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="classCPSGrader_1_1Signal_1a805228c1d0f48247ff6f37745272d4ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1a805228c1d0f48247ff6f37745272d4ab" kindref="member">compute_not</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref>&amp;);<sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="classCPSGrader_1_1Signal_1ad9c41b0c809777ee373043395abd0229" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1ad9c41b0c809777ee373043395abd0229" kindref="member">compute_and</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref>&amp;);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="classCPSGrader_1_1Signal_1a8036a76497fc32e81ef3b2d6edd52767" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1a8036a76497fc32e81ef3b2d6edd52767" kindref="member">compute_or</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref>&amp;);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="classCPSGrader_1_1Signal_1a7786eef75eaad4502ee5503b248f61fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1a7786eef75eaad4502ee5503b248f61fd" kindref="member">compute_implies</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref>&amp;);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="classCPSGrader_1_1Signal_1abb4edb93bc2b82f712a819b9734b96c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1abb4edb93bc2b82f712a819b9734b96c8" kindref="member">compute_eventually</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref>&amp;);<sp/></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="classCPSGrader_1_1Signal_1a5ae9736f4c709a74cd9f2ec1b8ac0045" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1a5ae9736f4c709a74cd9f2ec1b8ac0045" kindref="member">compute_bounded_eventually</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref>&amp;,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129" refid="classCPSGrader_1_1Signal_1a9ec8aa842161dbbf18251be39a65f103" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1a9ec8aa842161dbbf18251be39a65f103" kindref="member">compute_timed_eventually</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref>&amp;,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="classCPSGrader_1_1Signal_1a9affa8cbc706ec45ff4a529919ac540c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1a9affa8cbc706ec45ff4a529919ac540c" kindref="member">compute_globally</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref>&amp;);<sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="classCPSGrader_1_1Signal_1a7587e2c98a88d6495f8c5228a60cbb94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1a7587e2c98a88d6495f8c5228a60cbb94" kindref="member">compute_bounded_globally</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref>&amp;,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="138" refid="classCPSGrader_1_1Signal_1ac64c6a467b94ace8489f9d9b8bb52237" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1ac64c6a467b94ace8489f9d9b8bb52237" kindref="member">compute_timed_globally</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref>&amp;,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141" refid="classCPSGrader_1_1Signal_1a6471f9022fc9d3bef664582877427c2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1a6471f9022fc9d3bef664582877427c2f" kindref="member">compute_until</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144" refid="classCPSGrader_1_1Signal_1ab1a2f149c0b6d654b2f5246ffee88ab2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1ab1a2f149c0b6d654b2f5246ffee88ab2" kindref="member">compute_timed_until</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref>&amp;,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="classCPSGrader_1_1Signal_1a315a6f0fb1ca403e3276cdfffc17d83e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1a315a6f0fb1ca403e3276cdfffc17d83e" kindref="member">compute_plateau_max</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>&amp;,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="150" refid="classCPSGrader_1_1Signal_1a0632e80f5f42a048d1628ad9eaa15842" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal_1a0632e80f5f42a048d1628ad9eaa15842" kindref="member">compute_plateau_min</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>&amp;,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>std::ostream<sp/>&amp;<sp/><ref refid="namespaceCPSGrader_1a3787f04c520f3479162cf3498de2ba1f" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/zhenya/CauMon/breach/Online/include/signal.h"/>
+  </compounddef>
+</doxygen>

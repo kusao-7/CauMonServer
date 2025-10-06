@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="tools_8h" kind="file" language="C++">
+    <compoundname>tools.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="cau__stl__atom_8cpp" local="yes">/home/zhenya/CauMon/src/cpp/cau_stl_atom.cpp</includedby>
+    <includedby refid="interval_8h" local="yes">/home/zhenya/CauMon/breach/Online/include/interval.h</includedby>
+    <includedby refid="stl__driver_8h" local="yes">/home/zhenya/CauMon/breach/Online/include/stl_driver.h</includedby>
+    <includedby refid="interval_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/interval.cpp</includedby>
+    <includedby refid="signal__expr_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/signal_expr.cpp</includedby>
+    <includedby refid="stl__atom_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/stl_atom.cpp</includedby>
+    <includedby refid="stl__monitor_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/stl_monitor.cpp</includedby>
+    <includedby refid="stl__parser_8cpp" local="no">/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp</includedby>
+    <includedby refid="tools_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/tools.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1">
+        <label>/home/zhenya/CauMon/breach/Online/include/tools.h</label>
+        <link refid="tools_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+      <node id="4">
+        <label>sstream</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="20">
+        <label>/home/zhenya/CauMon/breach/Online/src/tools.cpp</label>
+        <link refid="tools_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/zhenya/CauMon/breach/Online/include/tools.h</label>
+        <link refid="tools_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/home/zhenya/CauMon/breach/Online/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="6">
+        <label>/home/zhenya/CauMon/breach/Online/include/signal_expr.h</label>
+        <link refid="signal__expr_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp</label>
+        <link refid="stl__scanner_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/home/zhenya/CauMon/src/cpp/cau_stl_atom.cpp</label>
+        <link refid="cau__stl__atom_8cpp"/>
+      </node>
+      <node id="15">
+        <label>/home/zhenya/CauMon/breach/Online/src/onlineMonitorWrapper.cpp</label>
+        <link refid="onlineMonitorWrapper_8cpp"/>
+      </node>
+      <node id="4">
+        <label>/home/zhenya/CauMon/src/include/transducer.h</label>
+        <link refid="src_2include_2transducer_8h"/>
+      </node>
+      <node id="13">
+        <label>/home/zhenya/CauMon/src/cpp/stl_eval_mex_pw.cpp</label>
+        <link refid="stl__eval__mex__pw_8cpp"/>
+      </node>
+      <node id="7">
+        <label>/home/zhenya/CauMon/breach/Online/src/signal_expr.cpp</label>
+        <link refid="signal__expr_8cpp"/>
+      </node>
+      <node id="19">
+        <label>/home/zhenya/CauMon/breach/Online/src/interval.cpp</label>
+        <link refid="interval_8cpp"/>
+      </node>
+      <node id="5">
+        <label>/home/zhenya/CauMon/breach/Online/include/transducer.h</label>
+        <link refid="breach_2Online_2include_2transducer_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_eval_mex.cpp</label>
+        <link refid="stl__eval__mex_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/zhenya/CauMon/breach/Online/include/interval.h</label>
+        <link refid="interval_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp</label>
+        <link refid="stl__driver_8cpp"/>
+      </node>
+      <node id="9">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp</label>
+        <link refid="stl__parser_8cpp"/>
+      </node>
+      <node id="18">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_monitor.cpp</label>
+        <link refid="stl__monitor_8cpp"/>
+      </node>
+      <node id="11">
+        <label>/home/zhenya/CauMon/breach/Online/include/stl_driver.h</label>
+        <link refid="stl__driver_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>/home/zhenya/CauMon/src/cpp/stl_causation_opt.cpp</label>
+        <link refid="stl__causation__opt_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_atom.cpp</label>
+        <link refid="stl__atom_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="tools_8h_1a7ecae04b84c7e90f5e3c1d31a50f0965" prot="public" static="no">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>typedef vector&lt;vector&lt;double&gt; &gt; trace_data</definition>
+        <argsstring></argsstring>
+        <name>trace_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/tools.h" line="16" column="16" bodyfile="/home/zhenya/CauMon/breach/Online/include/tools.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tools_8h_1ae0150a7d761a7e362a7718530f6a40c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool s_to_d</definition>
+        <argsstring>(std::string const &amp;s, double &amp;x)</argsstring>
+        <name>s_to_d</name>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>string to double conversion </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/tools.h" line="19" column="13" bodyfile="/home/zhenya/CauMon/breach/Online/include/tools.h" bodystart="19" bodyend="29"/>
+        <referencedby refid="classCPSGrader_1_1constant__transducer_1a18ef6288b2c6e5de6d2c23c0fef147af" compoundref="stl__atom_8cpp" startline="17" endline="22">CPSGrader::constant_transducer::constant_transducer</referencedby>
+        <referencedby refid="classCPSGrader_1_1interval_1a3821aedf8c1c639bca5b3ad635a5d6de" compoundref="interval_8cpp" startline="15" endline="20">CPSGrader::interval::interval</referencedby>
+        <referencedby refid="classCPSGrader_1_1Parser_1a0b58cd729a4d669bdb46869509598dd0" compoundref="stl__parser_8cpp" startline="627" endline="1417">CPSGrader::Parser::parse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="tools_8h_1a37bd2c7d247892c6f95ece9b6a1ccfca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string d_to_s</definition>
+        <argsstring>(double const &amp;x)</argsstring>
+        <name>d_to_s</name>
+        <param>
+          <type>double const &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>double to string conversion </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/tools.h" line="32" column="15" bodyfile="/home/zhenya/CauMon/breach/Online/include/tools.h" bodystart="32" bodyend="38"/>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1acebf2ba2c9d235dba1715076c3cdca3a" compoundref="stl__driver_8cpp" startline="184" endline="235">CPSGrader::STLDriver::run_tests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="tools_8h_1a93c550e64810db4cbafd0b6cc21241bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="tools_8h_1a7ecae04b84c7e90f5e3c1d31a50f0965" kindref="member">trace_data</ref></type>
+        <definition>trace_data rand_trace_data</definition>
+        <argsstring>(int m, int n)</argsstring>
+        <name>rand_trace_data</name>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a m x n random trace </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/tools.h" line="41" column="12" bodyfile="/home/zhenya/CauMon/breach/Online/src/tools.cpp" bodystart="27" bodyend="41" declfile="/home/zhenya/CauMon/breach/Online/include/tools.h" declline="41" declcolumn="12"/>
+        <references refid="tools_8cpp_1a98b7c682bb6ace85fb747cd2f14db72b" compoundref="tools_8cpp" startline="21" endline="25">random_double</references>
+        <referencedby refid="stl__monitor_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="stl__monitor_8cpp" startline="43" endline="125">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="tools_8h_1afbc32c96ec05e616cdcccfcd9dfd401a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string current_date_time</definition>
+        <argsstring>()</argsstring>
+        <name>current_date_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/tools.h" line="43" column="19" bodyfile="/home/zhenya/CauMon/breach/Online/src/tools.cpp" bodystart="43" bodyend="51" declfile="/home/zhenya/CauMon/breach/Online/include/tools.h" declline="43" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="tools_8h_1a218ef977b903cfd7fe7ae356affdf70a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print</definition>
+        <argsstring>(const trace_data &amp;)</argsstring>
+        <name>print</name>
+        <param>
+          <type>const <ref refid="tools_8h_1a7ecae04b84c7e90f5e3c1d31a50f0965" kindref="member">trace_data</ref> &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/tools.h" line="45" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/tools.cpp" bodystart="53" bodyend="64" declfile="/home/zhenya/CauMon/breach/Online/include/tools.h" declline="45" declcolumn="6"/>
+        <referencedby refid="classCPSGrader_1_1not__transducer_1ad8b680a188d24c3778b3fae50c83053b" compoundref="src_2include_2transducer_8h" startline="293" endline="295">CPSGrader::not_transducer::print</referencedby>
+        <referencedby refid="classCPSGrader_1_1and__transducer_1ab99789887f4869208ee352b33068aa6a" compoundref="src_2include_2transducer_8h" startline="339" endline="341">CPSGrader::and_transducer::print</referencedby>
+        <referencedby refid="classCPSGrader_1_1or__transducer_1ab4d833007a508cea6d4f4bc88c318b49" compoundref="src_2include_2transducer_8h" startline="386" endline="388">CPSGrader::or_transducer::print</referencedby>
+        <referencedby refid="classCPSGrader_1_1implies__transducer_1af0b94311eae780939644605b0e117bcc" compoundref="src_2include_2transducer_8h" startline="423" endline="425">CPSGrader::implies_transducer::print</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1a278a535d133525fcba33d165fc3ec4dc" compoundref="src_2include_2transducer_8h" startline="472" endline="474">CPSGrader::ev_transducer::print</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1ac656e8ac765507af9e2a8bb288e770f1" compoundref="src_2include_2transducer_8h" startline="521" endline="523">CPSGrader::alw_transducer::print</referencedby>
+        <referencedby refid="classCPSGrader_1_1until__transducer_1ac362be81ec90b69053b95c7af4453d09" compoundref="src_2include_2transducer_8h" startline="556" endline="558">CPSGrader::until_transducer::print</referencedby>
+        <referencedby refid="classCPSGrader_1_1stl__atom_1ad128d183c78c4f751be831cb20380492" compoundref="src_2include_2transducer_8h" startline="638" endline="640">CPSGrader::stl_atom::print</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="tools_8h_1af247b2859e458c1879fae0e4dd9bae47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool read_trace</definition>
+        <argsstring>(const string &amp;trace_file_name, trace_data &amp;data)</argsstring>
+        <name>read_trace</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>trace_file_name</declname>
+        </param>
+        <param>
+          <type><ref refid="tools_8h_1a7ecae04b84c7e90f5e3c1d31a50f0965" kindref="member">trace_data</ref> &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/tools.h" line="46" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_monitor.cpp" bodystart="20" bodyend="41" declfile="/home/zhenya/CauMon/breach/Online/include/tools.h" declline="46" declcolumn="6"/>
+        <referencedby refid="stl__monitor_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="stl__monitor_8cpp" startline="43" endline="125">main</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1ab7da78706330f50e23ee521acf85a662" compoundref="stl__driver_8h" startline="236" endline="239">CPSGrader::STLDriver::read_trace_file</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>tools.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Mar<sp/>31,<sp/>2014</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>alex</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TOOLS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOOLS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="16" refid="tools_8h_1a7ecae04b84c7e90f5e3c1d31a50f0965" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;<sp/>&gt;<sp/><ref refid="tools_8h_1a7ecae04b84c7e90f5e3c1d31a50f0965" kindref="member">trace_data</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="tools_8h_1ae0150a7d761a7e362a7718530f6a40c8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="tools_8h_1ae0150a7d761a7e362a7718530f6a40c8" kindref="member">s_to_d</ref>(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>s,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;x<sp/>)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>std::istringstream<sp/>i(s);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>x<sp/>=0;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(i<sp/>&gt;&gt;<sp/>x)<sp/>||<sp/>(<sp/>i.get(c)))</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="tools_8h_1a37bd2c7d247892c6f95ece9b6a1ccfca" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="tools_8h_1a37bd2c7d247892c6f95ece9b6a1ccfca" kindref="member">d_to_s</ref>(</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;x)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostringstream<sp/>o;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>o<sp/>&lt;&lt;<sp/>x;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>o.str();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><ref refid="tools_8h_1a7ecae04b84c7e90f5e3c1d31a50f0965" kindref="member">trace_data</ref><sp/><ref refid="tools_8h_1a93c550e64810db4cbafd0b6cc21241bd" kindref="member">rand_trace_data</ref>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="tools_8h_1afbc32c96ec05e616cdcccfcd9dfd401a" kindref="member">current_date_time</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tools_8h_1a218ef977b903cfd7fe7ae356affdf70a" kindref="member">print</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="tools_8h_1a7ecae04b84c7e90f5e3c1d31a50f0965" kindref="member">trace_data</ref>&amp;);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="tools_8h_1af247b2859e458c1879fae0e4dd9bae47" kindref="member">read_trace</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;trace_file_name,<sp/><ref refid="tools_8h_1a7ecae04b84c7e90f5e3c1d31a50f0965" kindref="member">trace_data</ref><sp/>&amp;data);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TOOLS_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/zhenya/CauMon/breach/Online/include/tools.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="classCPSGrader_1_1alw__transducer" kind="class"><name>CPSGrader::alw_transducer</name>
+    <member refid="classCPSGrader_1_1alw__transducer_1a94cb06449fd6fc44fa441e73de1416ef" kind="variable"><name>cauM</name></member>
+    <member refid="classCPSGrader_1_1alw__transducer_1a96c6350761d440ed04f679010c4e6f81" kind="variable"><name>zM</name></member>
+    <member refid="classCPSGrader_1_1alw__transducer_1acaeaa7bf17d56795648bb14d3858cada" kind="function"><name>alw_transducer</name></member>
+    <member refid="classCPSGrader_1_1alw__transducer_1a2e2c3865763dac669696751e5f435577" kind="function"><name>clone</name></member>
+    <member refid="classCPSGrader_1_1alw__transducer_1ac443add28acf3097e25e5a9365229d16" kind="function"><name>~alw_transducer</name></member>
+    <member refid="classCPSGrader_1_1alw__transducer_1aa2732242bf4f821405bba48c4cf2a580" kind="function"><name>compute_robustness</name></member>
+    <member refid="classCPSGrader_1_1alw__transducer_1ac586be825ba578f41df050d6f1828144" kind="function"><name>compute_lower_rob</name></member>
+    <member refid="classCPSGrader_1_1alw__transducer_1a967b10c82b3afd198b45673b012a26c6" kind="function"><name>compute_upper_rob</name></member>
+    <member refid="classCPSGrader_1_1alw__transducer_1a7f1dcafe11d15835cdf4a3a89fbd5506" kind="function"><name>causation_opt_upper</name></member>
+    <member refid="classCPSGrader_1_1alw__transducer_1ae46766485e9012f45716a109b41ce1e3" kind="function"><name>causation_opt_lower</name></member>
+    <member refid="classCPSGrader_1_1alw__transducer_1aadbfea520223db0636b66c54dd5fb8a2" kind="function"><name>set_duration</name></member>
+    <member refid="classCPSGrader_1_1alw__transducer_1ac656e8ac765507af9e2a8bb288e770f1" kind="function"><name>print</name></member>
+    <member refid="classCPSGrader_1_1alw__transducer_1a13dd6e81a9dfe7ef81e0604df334d3ac" kind="function"><name>print</name></member>
+  </compound>
+  <compound refid="classCPSGrader_1_1and__transducer" kind="class"><name>CPSGrader::and_transducer</name>
+    <member refid="classCPSGrader_1_1and__transducer_1adc1a6711c66ba27f30a98501a45c0940" kind="variable"><name>cau_lowL</name></member>
+    <member refid="classCPSGrader_1_1and__transducer_1ad4bd4c0329cb3a9c6fefefa11365526a" kind="variable"><name>cau_lowR</name></member>
+    <member refid="classCPSGrader_1_1and__transducer_1a0a444bfb2f55dfcdd5e81202aaeff0fc" kind="function"><name>and_transducer</name></member>
+    <member refid="classCPSGrader_1_1and__transducer_1a8018f1804532550928f4af741805a864" kind="function"><name>clone</name></member>
+    <member refid="classCPSGrader_1_1and__transducer_1a13ab95b860eac871e2aafd09186b1540" kind="function"><name>~and_transducer</name></member>
+    <member refid="classCPSGrader_1_1and__transducer_1ac040664936bde8364658ef84e6e0623f" kind="function"><name>compute_robustness</name></member>
+    <member refid="classCPSGrader_1_1and__transducer_1ad96214ba16a576ef6c9e97ce9cabf12a" kind="function"><name>compute_lower_rob</name></member>
+    <member refid="classCPSGrader_1_1and__transducer_1a55f03a35673a0ece5c32892b713e7248" kind="function"><name>compute_upper_rob</name></member>
+    <member refid="classCPSGrader_1_1and__transducer_1a353ab9eb8c960432e090d3311add48d6" kind="function"><name>causation_opt_upper</name></member>
+    <member refid="classCPSGrader_1_1and__transducer_1abc533032d862ed939073547b00d1ec6b" kind="function"><name>causation_opt_lower</name></member>
+    <member refid="classCPSGrader_1_1and__transducer_1aab9e33c46ca5d0e7af460be14574fe18" kind="function"><name>set_duration</name></member>
+    <member refid="classCPSGrader_1_1and__transducer_1ab99789887f4869208ee352b33068aa6a" kind="function"><name>print</name></member>
+    <member refid="classCPSGrader_1_1and__transducer_1a21f7b5f3487ef6f686dc530f4d9ac24f" kind="function"><name>print</name></member>
+  </compound>
+  <compound refid="classCPSGrader_1_1binary__transducer" kind="class"><name>CPSGrader::binary_transducer</name>
+    <member refid="classCPSGrader_1_1binary__transducer_1a91a8dc3f455cd255603ebc5dff915420" kind="variable"><name>childL</name></member>
+    <member refid="classCPSGrader_1_1binary__transducer_1a24ec331175dfc3ac9ebcc52de4a0e9f0" kind="variable"><name>childR</name></member>
+    <member refid="classCPSGrader_1_1binary__transducer_1ab760baef6214f19938b037ba3264cc38" kind="function"><name>binary_transducer</name></member>
+    <member refid="classCPSGrader_1_1binary__transducer_1a23eeb1ef9cb3b723d0a1eb791f0d9a3e" kind="function"><name>binary_transducer</name></member>
+    <member refid="classCPSGrader_1_1binary__transducer_1a06ebd5c7e81a0662e8f05954aa68f95c" kind="function"><name>init_horizon</name></member>
+    <member refid="classCPSGrader_1_1binary__transducer_1ad48ba1d57e636578c26cdb60ab9a89c4" kind="function"><name>set_trace_data_ptr</name></member>
+    <member refid="classCPSGrader_1_1binary__transducer_1a3927bd42aadcf7f4f216ca33f7d31e46" kind="function"><name>~binary_transducer</name></member>
+  </compound>
+  <compound refid="classCPSGrader_1_1ev__transducer" kind="class"><name>CPSGrader::ev_transducer</name>
+    <member refid="classCPSGrader_1_1ev__transducer_1a9a2f30628d5c36bb3393527011213df8" kind="variable"><name>cauM</name></member>
+    <member refid="classCPSGrader_1_1ev__transducer_1a54bd7e7a74689ff2dca4e8cbe237a761" kind="variable"><name>zM</name></member>
+    <member refid="classCPSGrader_1_1ev__transducer_1ac9daa3ba486adf19cfdfb4e1e1cf1615" kind="function"><name>ev_transducer</name></member>
+    <member refid="classCPSGrader_1_1ev__transducer_1abb92e93cf43516c8621f02891b79da86" kind="function"><name>clone</name></member>
+    <member refid="classCPSGrader_1_1ev__transducer_1a702c4de0f3cfafb8f775031bfe247153" kind="function"><name>~ev_transducer</name></member>
+    <member refid="classCPSGrader_1_1ev__transducer_1ab3f46f3689c548b75ea1fa3193bec529" kind="function"><name>compute_robustness</name></member>
+    <member refid="classCPSGrader_1_1ev__transducer_1ac7b36f1972e34ff0a92c32efb5704b7a" kind="function"><name>compute_lower_rob</name></member>
+    <member refid="classCPSGrader_1_1ev__transducer_1acb772a758b60c6ab1ebd8e0443857344" kind="function"><name>compute_upper_rob</name></member>
+    <member refid="classCPSGrader_1_1ev__transducer_1ab948f9b135f034da32c53b8865bd1e59" kind="function"><name>causation_opt_upper</name></member>
+    <member refid="classCPSGrader_1_1ev__transducer_1a0c091d994f9418f993e4b6ef33d6b72c" kind="function"><name>causation_opt_lower</name></member>
+    <member refid="classCPSGrader_1_1ev__transducer_1ac9e6f73840590847538de1ad403a138e" kind="function"><name>set_duration</name></member>
+    <member refid="classCPSGrader_1_1ev__transducer_1a278a535d133525fcba33d165fc3ec4dc" kind="function"><name>print</name></member>
+    <member refid="classCPSGrader_1_1ev__transducer_1a1cdae69000b1c6baa2881021e7ea3282" kind="function"><name>print</name></member>
+  </compound>
+  <compound refid="classCPSGrader_1_1implies__transducer" kind="class"><name>CPSGrader::implies_transducer</name>
+    <member refid="classCPSGrader_1_1implies__transducer_1a5ed2fd0898ba9beedde4c788004be71f" kind="function"><name>implies_transducer</name></member>
+    <member refid="classCPSGrader_1_1implies__transducer_1a81f3ca2f3343b39b8fbac6ae7471f023" kind="function"><name>clone</name></member>
+    <member refid="classCPSGrader_1_1implies__transducer_1a5e3b6a2b6643e34025fba083e388e84b" kind="function"><name>~implies_transducer</name></member>
+    <member refid="classCPSGrader_1_1implies__transducer_1acc1734d41a5c5bbff00ed5b84efba830" kind="function"><name>compute_robustness</name></member>
+    <member refid="classCPSGrader_1_1implies__transducer_1a2b6be633da07acebf8de77f8c497fb03" kind="function"><name>compute_lower_rob</name></member>
+    <member refid="classCPSGrader_1_1implies__transducer_1a128fe5a4562e3eb51705ee80cd9d2ca3" kind="function"><name>compute_upper_rob</name></member>
+    <member refid="classCPSGrader_1_1implies__transducer_1af0b94311eae780939644605b0e117bcc" kind="function"><name>print</name></member>
+    <member refid="classCPSGrader_1_1implies__transducer_1aef1370ae8b9bf2577d062e085fa900d1" kind="function"><name>print</name></member>
+  </compound>
+  <compound refid="classCPSGrader_1_1not__transducer" kind="class"><name>CPSGrader::not_transducer</name>
+    <member refid="classCPSGrader_1_1not__transducer_1a2f6b7ca234060bd3bfce0ecd40c9c133" kind="function"><name>not_transducer</name></member>
+    <member refid="classCPSGrader_1_1not__transducer_1abc1ba4d9c02dd15ca59eb936458c0f0f" kind="function"><name>clone</name></member>
+    <member refid="classCPSGrader_1_1not__transducer_1add942e523d082510f4c6b9adebe37523" kind="function"><name>~not_transducer</name></member>
+    <member refid="classCPSGrader_1_1not__transducer_1a4f4656c389ba3c286bb5e428447369ec" kind="function"><name>compute_robustness</name></member>
+    <member refid="classCPSGrader_1_1not__transducer_1acb2fe66706d584e5654b20e974c3362b" kind="function"><name>compute_lower_rob</name></member>
+    <member refid="classCPSGrader_1_1not__transducer_1a181a24eec0220eded0dcb50afd15e26a" kind="function"><name>compute_upper_rob</name></member>
+    <member refid="classCPSGrader_1_1not__transducer_1a6439cfb626a7bd2312a08363b3a0b3df" kind="function"><name>causation_opt_upper</name></member>
+    <member refid="classCPSGrader_1_1not__transducer_1af59150aac017a9d2994a264cdbc57039" kind="function"><name>causation_opt_lower</name></member>
+    <member refid="classCPSGrader_1_1not__transducer_1a79a4099abfd7b049cc52b9afa45d47b8" kind="function"><name>set_duration</name></member>
+    <member refid="classCPSGrader_1_1not__transducer_1ad8b680a188d24c3778b3fae50c83053b" kind="function"><name>print</name></member>
+    <member refid="classCPSGrader_1_1not__transducer_1a7cbad08a7ab94bac8a2ebce022341b31" kind="function"><name>print</name></member>
+  </compound>
+  <compound refid="classCPSGrader_1_1or__transducer" kind="class"><name>CPSGrader::or_transducer</name>
+    <member refid="classCPSGrader_1_1or__transducer_1a7ea106bbdc1c5663ed0ae9ca1b77bf7f" kind="variable"><name>cau_upL</name></member>
+    <member refid="classCPSGrader_1_1or__transducer_1aac084f584710fe904ee3390a821a81bc" kind="variable"><name>cau_upR</name></member>
+    <member refid="classCPSGrader_1_1or__transducer_1ada8fdf89d0081fcd27b242179f7d9f15" kind="function"><name>or_transducer</name></member>
+    <member refid="classCPSGrader_1_1or__transducer_1a1a15450a504c340049a38de8eda35499" kind="function"><name>clone</name></member>
+    <member refid="classCPSGrader_1_1or__transducer_1abd223c9a1112f5fc4fc83665263ae3d3" kind="function"><name>~or_transducer</name></member>
+    <member refid="classCPSGrader_1_1or__transducer_1a0949c66e725f2687f43ddf6aae5098ec" kind="function"><name>compute_robustness</name></member>
+    <member refid="classCPSGrader_1_1or__transducer_1adce31ed8018014e34f186d73bca398dc" kind="function"><name>compute_lower_rob</name></member>
+    <member refid="classCPSGrader_1_1or__transducer_1ac19bce4f0c9684cf8e5a55056e46e50f" kind="function"><name>compute_upper_rob</name></member>
+    <member refid="classCPSGrader_1_1or__transducer_1a9029ecc3453838857158ef33e26f301c" kind="function"><name>causation_opt_upper</name></member>
+    <member refid="classCPSGrader_1_1or__transducer_1aaa1f0d5d7d36c4d4f109dd4f73954717" kind="function"><name>causation_opt_lower</name></member>
+    <member refid="classCPSGrader_1_1or__transducer_1a8682cf178ae2148604f4cd68a4e60369" kind="function"><name>set_duration</name></member>
+    <member refid="classCPSGrader_1_1or__transducer_1ab4d833007a508cea6d4f4bc88c318b49" kind="function"><name>print</name></member>
+    <member refid="classCPSGrader_1_1or__transducer_1af3ab7c0b52a9c6d4ddc6fe44186bcd61" kind="function"><name>print</name></member>
+  </compound>
+  <compound refid="classCPSGrader_1_1Point" kind="class"><name>CPSGrader::Point</name>
+    <member refid="classCPSGrader_1_1Point_1a625c935b473e7af05336f36a3dbcfa37" kind="variable"><name>time</name></member>
+    <member refid="classCPSGrader_1_1Point_1a0fd55f2bb41cb0f67424c2735957aed9" kind="variable"><name>value</name></member>
+    <member refid="classCPSGrader_1_1Point_1a3e144ec2ae899a83c52d6c9c66fc0d36" kind="function"><name>Point</name></member>
+    <member refid="classCPSGrader_1_1Point_1a6aff06c5a6cc57a15cf45770d4a980a4" kind="function"><name>Point</name></member>
+    <member refid="classCPSGrader_1_1Point_1ad1a23220347abf8f0b797b38165be717" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="classCPSGrader_1_1Sample" kind="class"><name>CPSGrader::Sample</name>
+    <member refid="classCPSGrader_1_1Sample_1acc1303adb3af8008a1b2752d9d32dcc7" kind="variable"><name>derivative</name></member>
+    <member refid="classCPSGrader_1_1Sample_1af1bb0e3ab77abee25d139be4054794dd" kind="function"><name>Sample</name></member>
+    <member refid="classCPSGrader_1_1Sample_1a85c152c8adc073afffe7a16cb31588df" kind="function"><name>Sample</name></member>
+    <member refid="classCPSGrader_1_1Sample_1affdaff6e0207b076f19f1f06a73bbed1" kind="function"><name>valueAt</name></member>
+    <member refid="classCPSGrader_1_1Sample_1a247daad363e0ff87fa90134c9c5ae929" kind="function"><name>timeIntersect</name></member>
+    <member refid="classCPSGrader_1_1Sample_1a2bc9c3308bcb39ac7b2f9bf5fc620155" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="classCPSGrader_1_1Sequence" kind="class"><name>CPSGrader::Sequence</name>
+    <member refid="classCPSGrader_1_1Sequence_1a42947bb3dc9ae04478658c1b47f493f8" kind="function"><name>Sequence</name></member>
+    <member refid="classCPSGrader_1_1Sequence_1a492ebe4500bf3c692b1abe2bcc13884b" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="classCPSGrader_1_1Signal" kind="class"><name>CPSGrader::Signal</name>
+    <member refid="classCPSGrader_1_1Signal_1a2c3e801ab9e7ebab46c24fea15b791a4" kind="variable"><name>BigM</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a6308afc2ebbb736a2f1271938b9fc2be" kind="variable"><name>beginTime</name></member>
+    <member refid="classCPSGrader_1_1Signal_1ad6422301194605a5a29f5ffb98d79c79" kind="variable"><name>endTime</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a7cb2885522eafe9edf184d3988f4887a" kind="function"><name>Signal</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a4f700afb11d1df94a10af2354d47ef04" kind="function"><name>Signal</name></member>
+    <member refid="classCPSGrader_1_1Signal_1aa5ccf80502037ee0bf06d11d48a78cc3" kind="function"><name>Signal</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a9fe5b10a6b4e1b78c3834ce382fe7c66" kind="function"><name>appendSample</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a3b8bf85a1eea10b6660a0574b768b2fe" kind="function"><name>appendSample</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a22a9e0120b1d387419655168d4a9e11c" kind="function"><name>appendSignal</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a3b5811ff07bcf6314d03a3cb928ce0e5" kind="function"><name>simplify</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a85f1f65f2bbe0f80959149d18c76691b" kind="function"><name>resize</name></member>
+    <member refid="classCPSGrader_1_1Signal_1aacbad901e647126bf5b8e4af00091af2" kind="function"><name>shift</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a6be4cf88bc03220751707fa172ce2ff9" kind="function"><name>addLastSample</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a065d57119f6156a1583e18639ef81939" kind="function"><name>removeInf</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a33cca1c9c71b2629c2675492babf8ce1" kind="function"><name>reset</name></member>
+    <member refid="classCPSGrader_1_1Signal_1ac0eafa63f8a13b51d0e23e38e44ad1ab" kind="function"><name>get_value</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a2465e50598a1bda451a51a889f7e9af9" kind="function"><name>dumpFile</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a805228c1d0f48247ff6f37745272d4ab" kind="function"><name>compute_not</name></member>
+    <member refid="classCPSGrader_1_1Signal_1ad9c41b0c809777ee373043395abd0229" kind="function"><name>compute_and</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a8036a76497fc32e81ef3b2d6edd52767" kind="function"><name>compute_or</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a7786eef75eaad4502ee5503b248f61fd" kind="function"><name>compute_implies</name></member>
+    <member refid="classCPSGrader_1_1Signal_1abb4edb93bc2b82f712a819b9734b96c8" kind="function"><name>compute_eventually</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a5ae9736f4c709a74cd9f2ec1b8ac0045" kind="function"><name>compute_bounded_eventually</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a9ec8aa842161dbbf18251be39a65f103" kind="function"><name>compute_timed_eventually</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a9affa8cbc706ec45ff4a529919ac540c" kind="function"><name>compute_globally</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a7587e2c98a88d6495f8c5228a60cbb94" kind="function"><name>compute_bounded_globally</name></member>
+    <member refid="classCPSGrader_1_1Signal_1ac64c6a467b94ace8489f9d9b8bb52237" kind="function"><name>compute_timed_globally</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a6471f9022fc9d3bef664582877427c2f" kind="function"><name>compute_until</name></member>
+    <member refid="classCPSGrader_1_1Signal_1ab1a2f149c0b6d654b2f5246ffee88ab2" kind="function"><name>compute_timed_until</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a315a6f0fb1ca403e3276cdfffc17d83e" kind="function"><name>compute_plateau_max</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a0632e80f5f42a048d1628ad9eaa15842" kind="function"><name>compute_plateau_min</name></member>
+    <member refid="classCPSGrader_1_1Signal_1a6249cf3a39ac43620446119b02c8c91e" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="classCPSGrader_1_1stl__atom" kind="class"><name>CPSGrader::stl_atom</name>
+    <member refid="classCPSGrader_1_1stl__atom_1a221687bccda9746908df6d421798221c" kind="variable"><name>comp</name></member>
+    <member refid="classCPSGrader_1_1stl__atom_1ac914c289970c533d4785a9ddcd42f959" kind="function"><name>stl_atom</name></member>
+    <member refid="classCPSGrader_1_1stl__atom_1a8a8da51683580820da1cc4f9028251f6" kind="function"><name>stl_atom</name></member>
+    <member refid="classCPSGrader_1_1stl__atom_1a00f9db36a556ae2292def00ed09b5b46" kind="function"><name>stl_atom</name></member>
+    <member refid="classCPSGrader_1_1stl__atom_1a072caf5a2b662f6ed28e6b3ec2509b75" kind="function"><name>clone</name></member>
+    <member refid="classCPSGrader_1_1stl__atom_1ade7f115f363cfc26c911e9bf7b205b52" kind="function"><name>~stl_atom</name></member>
+    <member refid="classCPSGrader_1_1stl__atom_1a5f172476b6c9d58692c5df4238a745b6" kind="function"><name>compute_robustness</name></member>
+    <member refid="classCPSGrader_1_1stl__atom_1a01f31fb8718b306855d7dbf96fa2d780" kind="function"><name>causation_opt_upper</name></member>
+    <member refid="classCPSGrader_1_1stl__atom_1a6a1e66dfe512deae46287bb9b98194fe" kind="function"><name>causation_opt_lower</name></member>
+    <member refid="classCPSGrader_1_1stl__atom_1a746116cc324d773431b8e6de54ed27ba" kind="function"><name>set_duration</name></member>
+    <member refid="classCPSGrader_1_1stl__atom_1ad489111f20f7fba3cc189af3be0a74e5" kind="function"><name>print</name></member>
+    <member refid="classCPSGrader_1_1stl__atom_1ad128d183c78c4f751be831cb20380492" kind="function"><name>print</name></member>
+  </compound>
+  <compound refid="classCPSGrader_1_1timed__binary__transducer" kind="class"><name>CPSGrader::timed_binary_transducer</name>
+    <member refid="classCPSGrader_1_1timed__binary__transducer_1ac52fd41e49cd24f0b48f3d2b47a0a2e9" kind="variable"><name>I</name></member>
+    <member refid="classCPSGrader_1_1timed__binary__transducer_1a05e2ab0031edb1d2b99d881a401ac639" kind="function"><name>timed_binary_transducer</name></member>
+    <member refid="classCPSGrader_1_1timed__binary__transducer_1a63f5f55fc9182e75a17be836ff488993" kind="function"><name>timed_binary_transducer</name></member>
+    <member refid="classCPSGrader_1_1timed__binary__transducer_1a6f75600c2696f83f3a5f221c19ec95e2" kind="function"><name>timed_binary_transducer</name></member>
+    <member refid="classCPSGrader_1_1timed__binary__transducer_1a7ff4ec749c7672022758fe973fb14615" kind="function"><name>init_horizon</name></member>
+    <member refid="classCPSGrader_1_1timed__binary__transducer_1aee3243a04626db2ea329b009a709f879" kind="function"><name>~timed_binary_transducer</name></member>
+  </compound>
+  <compound refid="classCPSGrader_1_1timed__unary__transducer" kind="class"><name>CPSGrader::timed_unary_transducer</name>
+    <member refid="classCPSGrader_1_1timed__unary__transducer_1aed2bf83658a168bade597c0923e4c8ca" kind="variable"><name>I</name></member>
+    <member refid="classCPSGrader_1_1timed__unary__transducer_1ab53c7a393ca50cdcd4302c573e5f47bd" kind="function"><name>timed_unary_transducer</name></member>
+    <member refid="classCPSGrader_1_1timed__unary__transducer_1a96453c96bcf9b5ed5e1b0b2153c16da3" kind="function"><name>timed_unary_transducer</name></member>
+    <member refid="classCPSGrader_1_1timed__unary__transducer_1a218d5386f1566e8f0b702545f6df86d4" kind="function"><name>timed_unary_transducer</name></member>
+    <member refid="classCPSGrader_1_1timed__unary__transducer_1a85b39def53d6e5ee265a7f85726f65ea" kind="function"><name>init_horizon</name></member>
+    <member refid="classCPSGrader_1_1timed__unary__transducer_1a0f84beac07bcc276e3abe60643ad22d9" kind="function"><name>get_end_complete</name></member>
+    <member refid="classCPSGrader_1_1timed__unary__transducer_1a685db14badf2abbbc946defbf5c37a18" kind="function"><name>get_end_complete_low</name></member>
+    <member refid="classCPSGrader_1_1timed__unary__transducer_1a5ad90688ba1b2c81e8342a970843d6f0" kind="function"><name>get_end_complete_up</name></member>
+    <member refid="classCPSGrader_1_1timed__unary__transducer_1a32153a67dde8a5c4a20a5dbea8b2e5bd" kind="function"><name>~timed_unary_transducer</name></member>
+  </compound>
+  <compound refid="classCPSGrader_1_1transducer" kind="class"><name>CPSGrader::transducer</name>
+    <member refid="classCPSGrader_1_1transducer_1ad73ab081ffe1977ad0f7abb989d2a4da" kind="variable"><name>trace_data_ptr</name></member>
+    <member refid="classCPSGrader_1_1transducer_1abea4edf32ff21d1368231821a847772d" kind="variable"><name>param_map</name></member>
+    <member refid="classCPSGrader_1_1transducer_1ad33b191ced4cb7f27f1d86ab7f0171b4" kind="variable"><name>signal_map</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a2a61a77c701815ecbeb79940f057c719" kind="variable"><name>start_time</name></member>
+    <member refid="classCPSGrader_1_1transducer_1ae74d40c958360d5cb5190ad87746c864" kind="variable"><name>end_time</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a5112602e45c5f167fb87211206813b45" kind="variable"><name>z</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a7983863530e0de4335d461cd00a54e7f" kind="variable"><name>z_up</name></member>
+    <member refid="classCPSGrader_1_1transducer_1aa9679dc8f88998242eefd789edef178d" kind="variable"><name>z_low</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a9f6ac3139fd75fe07f2a88d5a862336f" kind="variable"><name>cau</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a97f330b1082c802ee8c0f91f05e38a04" kind="variable"><name>cau_up</name></member>
+    <member refid="classCPSGrader_1_1transducer_1af32119bba8da81be20c7097eb0d44ee8" kind="variable"><name>cau_low</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a47a0c014534eb3b8e16008e9307bf5a4" kind="variable"><name>duration</name></member>
+    <member refid="classCPSGrader_1_1transducer_1afda50b237d883aabb8f2fdb50304d3d3" kind="variable"><name>check</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a041512f31a264c8aabcfdd21f39556dd" kind="function"><name>transducer</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a133c57a3bfb20aed578cc257e6e9a1eb" kind="function"><name>clone</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a366d5b3632892ffe177b1d7134637c40" kind="function"><name>~transducer</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a8e8c7e3214b8d88a6edd7821c83f6a48" kind="function"><name>init_horizon</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a2ca92d6e33f6f7eb40285c9d56b719a8" kind="function"><name>set_horizon</name></member>
+    <member refid="classCPSGrader_1_1transducer_1afd33961aef44e5b79d2e0a1d0c0ea1e9" kind="function"><name>set_duration</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a387f7e246ca12a83ed2c4c3edc95c419" kind="function"><name>set_trace_data_ptr</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a580d043d7f72bc1bf882be8a760339a9" kind="function"><name>causation_opt_upper</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a9441f8958d69ae3896d531d36e216f20" kind="function"><name>causation_opt_lower</name></member>
+    <member refid="classCPSGrader_1_1transducer_1abb46a9df698d45369da35bf36bfd332b" kind="function"><name>get_index</name></member>
+    <member refid="classCPSGrader_1_1transducer_1ada0ba16064c6d55460c0f1013f3c7d34" kind="function"><name>get_value</name></member>
+    <member refid="classCPSGrader_1_1transducer_1af15f10dcbc6f35064a4d8ce25ef855a7" kind="function"><name>double_equals</name></member>
+    <member refid="classCPSGrader_1_1transducer_1aadf8c1c8bc2ddc24bc996febf134848f" kind="function"><name>double_greater</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a9059b109c683f46e74840227e728e69b" kind="function"><name>double_less</name></member>
+    <member refid="classCPSGrader_1_1transducer_1afa124c5eeeb60ef54b5ecf3ee9856060" kind="function"><name>double_ge</name></member>
+    <member refid="classCPSGrader_1_1transducer_1ae8e24fd7bd1e091da7a62ab44cb2e6a9" kind="function"><name>double_le</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a8fd5be58875ae2d8b4833ce81f2292d2" kind="function"><name>compute_robustness</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a9a26566ad23cc15eef63d00d32ab7b3d" kind="function"><name>compute_lower_rob</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a0ba9bc26599dd484cfc940991032ddd3" kind="function"><name>compute_upper_rob</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a1a40d987cdcecac224090c6a863e03bf" kind="function"><name>update_robustness</name></member>
+    <member refid="classCPSGrader_1_1transducer_1ab86d39d2cb1d51095e3c9a4cf550fdbd" kind="function"><name>update_lower_rob</name></member>
+    <member refid="classCPSGrader_1_1transducer_1aa9a99c53e24002cddc81db96a6d1db94" kind="function"><name>update_upper_rob</name></member>
+    <member refid="classCPSGrader_1_1transducer_1abf4f77d90d735e4e1285671004d0678f" kind="function"><name>get_end_complete</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a82ee61d4f1f4d031560b1d47bd5d204e" kind="function"><name>get_end_complete_low</name></member>
+    <member refid="classCPSGrader_1_1transducer_1ad1e1aa2ecd040c6872c97c4c58c3138d" kind="function"><name>get_end_complete_up</name></member>
+    <member refid="classCPSGrader_1_1transducer_1ac1665122ed56e168e6339bacd8cabaab" kind="function"><name>print</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a4ff17ad837da12a39c76ce94828da5f1" kind="function"><name>print</name></member>
+    <member refid="classCPSGrader_1_1transducer_1ac4e59f29cbd68e4eef9c88b6962b6985" kind="function"><name>print_trace</name></member>
+    <member refid="classCPSGrader_1_1transducer_1a02d1100175307731b91b1f56b750773b" kind="function"><name>get_param</name></member>
+    <member refid="classCPSGrader_1_1transducer_1ae962b60ecb6c6540a847852abb1d24a0" kind="function"><name>get_signal</name></member>
+  </compound>
+  <compound refid="classCPSGrader_1_1unary__transducer" kind="class"><name>CPSGrader::unary_transducer</name>
+    <member refid="classCPSGrader_1_1unary__transducer_1a0d9def72713f833fa2b47a198a13a9e7" kind="variable"><name>child</name></member>
+    <member refid="classCPSGrader_1_1unary__transducer_1a482fc1eeaf00f7ef7985dcbee8ca7017" kind="function"><name>unary_transducer</name></member>
+    <member refid="classCPSGrader_1_1unary__transducer_1aee0ea5f23b5a8ffc17bfd42bd010bf69" kind="function"><name>unary_transducer</name></member>
+    <member refid="classCPSGrader_1_1unary__transducer_1ac2a4b070a6c8e7adc801dfe8b6779492" kind="function"><name>init_horizon</name></member>
+    <member refid="classCPSGrader_1_1unary__transducer_1acea339b4a955aad9287980df773d78d6" kind="function"><name>set_trace_data_ptr</name></member>
+    <member refid="classCPSGrader_1_1unary__transducer_1aa4308dbe4c0ad15215394592e2b365d3" kind="function"><name>update_robustness</name></member>
+    <member refid="classCPSGrader_1_1unary__transducer_1a86f8326dbf62a789f86534fcb2628158" kind="function"><name>update_lower_rob</name></member>
+    <member refid="classCPSGrader_1_1unary__transducer_1a8bd4451fcc9de68626a09f911cbdc415" kind="function"><name>update_upper_rob</name></member>
+    <member refid="classCPSGrader_1_1unary__transducer_1a0f1091ccb5dc39d9d8e684cb69cb2c3a" kind="function"><name>~unary_transducer</name></member>
+  </compound>
+  <compound refid="classCPSGrader_1_1until__transducer" kind="class"><name>CPSGrader::until_transducer</name>
+    <member refid="classCPSGrader_1_1until__transducer_1abea862f7eeecc4a0c6b8b9da382970c5" kind="function"><name>until_transducer</name></member>
+    <member refid="classCPSGrader_1_1until__transducer_1a478e74029b8323416e8ae66c381df77f" kind="function"><name>clone</name></member>
+    <member refid="classCPSGrader_1_1until__transducer_1aea793ea444e772158db0f027af4d0eca" kind="function"><name>~until_transducer</name></member>
+    <member refid="classCPSGrader_1_1until__transducer_1a7248a15016f57c001fedd703d84e9fc7" kind="function"><name>compute_robustness</name></member>
+    <member refid="classCPSGrader_1_1until__transducer_1aaa1aa8795b8daff39ec494da155f6e69" kind="function"><name>compute_lower_rob</name></member>
+    <member refid="classCPSGrader_1_1until__transducer_1a3143d286d657dc81481129de4ff499e0" kind="function"><name>compute_upper_rob</name></member>
+    <member refid="classCPSGrader_1_1until__transducer_1ac362be81ec90b69053b95c7af4453d09" kind="function"><name>print</name></member>
+    <member refid="classCPSGrader_1_1until__transducer_1a906709d94c656f2d91de6a39866e42bf" kind="function"><name>print</name></member>
+  </compound>
+  <compound refid="namespaceCPSGrader" kind="namespace"><name>CPSGrader</name>
+    <member refid="namespaceCPSGrader_1a70b0b67a76ace97d635c48a9c7ef4b4b" kind="enum"><name>comparator</name></member>
+    <member refid="namespaceCPSGrader_1a70b0b67a76ace97d635c48a9c7ef4b4ba0c9b3e6acac69b26ed13c834b6f3c3a7" kind="enumvalue"><name>LESSTHAN</name></member>
+    <member refid="namespaceCPSGrader_1a70b0b67a76ace97d635c48a9c7ef4b4ba037ad180c72f011da26a607521e9e982" kind="enumvalue"><name>GREATERTHAN</name></member>
+    <member refid="namespaceCPSGrader_1a84f4f66d30fbcf7385eabc24564bb06c" kind="typedef"><name>trace_data</name></member>
+    <member refid="namespaceCPSGrader_1ac855d9c8fe9450d4c68d66d8e3d37c04" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="namespaceCPSGrader_1a3c2b7e97f52d870d3042b56d55b4d064" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="namespaceCPSGrader_1ac3304b287242f2aa17cd2db13f2c9adf" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="namespaceCPSGrader_1aaab8bb35754e4ae50453659926b7e34f" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="namespaceCPSGrader_1a9801fdd531b2b01332f085d2307bb153" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="cau__interval__transducer_8cpp" kind="file"><name>cau_interval_transducer.cpp</name>
+  </compound>
+  <compound refid="cau__stl__atom_8cpp" kind="file"><name>cau_stl_atom.cpp</name>
+  </compound>
+  <compound refid="signal_8cpp" kind="file"><name>signal.cpp</name>
+  </compound>
+  <compound refid="stl__causation__opt_8cpp" kind="file"><name>stl_causation_opt.cpp</name>
+    <member refid="stl__causation__opt_8cpp_1a6a215cbfde54f82a3ce599228fc3fce5" kind="function"><name>mexFunction</name></member>
+  </compound>
+  <compound refid="stl__eval__mex__pw_8cpp" kind="file"><name>stl_eval_mex_pw.cpp</name>
+    <member refid="stl__eval__mex__pw_8cpp_1a6a215cbfde54f82a3ce599228fc3fce5" kind="function"><name>mexFunction</name></member>
+  </compound>
+  <compound refid="signal_8h" kind="file"><name>signal.h</name>
+    <member refid="signal_8h_1ae420caa0af9cbdf102ed255034e27c5b" kind="define"><name>BOTTOM</name></member>
+    <member refid="signal_8h_1afc0eef637f1016e8786e45e106a4881e" kind="define"><name>TOP</name></member>
+  </compound>
+  <compound refid="transducer_8h" kind="file"><name>transducer.h</name>
+  </compound>
+  <compound refid="dir_dfdbda394c3f7a3aa55229f33a559c41" kind="dir"><name>/home/zhenya/CauMon/src/cpp</name>
+  </compound>
+  <compound refid="dir_b0856f6b0d80ccb263b2f415c91f9e17" kind="dir"><name>/home/zhenya/CauMon/src/include</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>/home/zhenya/CauMon/src</name>
+  </compound>
+</doxygenindex>

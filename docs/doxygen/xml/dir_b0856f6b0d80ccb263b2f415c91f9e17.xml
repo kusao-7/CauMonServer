@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_b0856f6b0d80ccb263b2f415c91f9e17" kind="dir">
+    <compoundname>/home/zhenya/CauMon/src/include</compoundname>
+    <innerfile refid="signal_8h">signal.h</innerfile>
+    <innerfile refid="transducer_8h">transducer.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhenya/CauMon/src/include/"/>
+  </compounddef>
+</doxygen>

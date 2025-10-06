@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_a2801b40dc384a40eb5768d062cf6fe8" kind="dir">
+    <compoundname>/home/zhenya/CauMon/breach/Online</compoundname>
+    <innerdir refid="dir_395e02dc9cc839719e9f83957e37d876">/home/zhenya/CauMon/breach/Online/include</innerdir>
+    <innerdir refid="dir_4f4bb6580e5170020dedb3fd7878ad5c">/home/zhenya/CauMon/breach/Online/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhenya/CauMon/breach/Online/"/>
+  </compounddef>
+</doxygen>

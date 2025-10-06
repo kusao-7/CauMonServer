@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_395e02dc9cc839719e9f83957e37d876" kind="dir">
+    <compoundname>/home/zhenya/CauMon/breach/Online/include</compoundname>
+    <innerfile refid="FlexLexer_8h">FlexLexer.h</innerfile>
+    <innerfile refid="interval_8h">interval.h</innerfile>
+    <innerfile refid="robustness_8h">robustness.h</innerfile>
+    <innerfile refid="breach_2Online_2include_2signal_8h">signal.h</innerfile>
+    <innerfile refid="signal__expr_8h">signal_expr.h</innerfile>
+    <innerfile refid="stdafx_8h">stdafx.h</innerfile>
+    <innerfile refid="stl__driver_8h">stl_driver.h</innerfile>
+    <innerfile refid="stl__parser_8h">stl_parser.h</innerfile>
+    <innerfile refid="stl__scanner_8h">stl_scanner.h</innerfile>
+    <innerfile refid="tools_8h">tools.h</innerfile>
+    <innerfile refid="breach_2Online_2include_2transducer_8h">transducer.h</innerfile>
+    <innerfile refid="y_8tab_8h">y.tab.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhenya/CauMon/breach/Online/include/"/>
+  </compounddef>
+</doxygen>

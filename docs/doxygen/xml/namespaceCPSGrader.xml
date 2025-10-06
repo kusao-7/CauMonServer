@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceCPSGrader" kind="namespace" language="C++">
+    <compoundname>CPSGrader</compoundname>
+    <innerclass refid="classCPSGrader_1_1Point" prot="public">CPSGrader::Point</innerclass>
+    <innerclass refid="classCPSGrader_1_1Sample" prot="public">CPSGrader::Sample</innerclass>
+    <innerclass refid="classCPSGrader_1_1Sequence" prot="public">CPSGrader::Sequence</innerclass>
+    <innerclass refid="classCPSGrader_1_1Signal" prot="public">CPSGrader::Signal</innerclass>
+    <innerclass refid="classCPSGrader_1_1transducer" prot="public">CPSGrader::transducer</innerclass>
+    <innerclass refid="classCPSGrader_1_1unary__transducer" prot="public">CPSGrader::unary_transducer</innerclass>
+    <innerclass refid="classCPSGrader_1_1binary__transducer" prot="public">CPSGrader::binary_transducer</innerclass>
+    <innerclass refid="classCPSGrader_1_1timed__unary__transducer" prot="public">CPSGrader::timed_unary_transducer</innerclass>
+    <innerclass refid="classCPSGrader_1_1timed__binary__transducer" prot="public">CPSGrader::timed_binary_transducer</innerclass>
+    <innerclass refid="classCPSGrader_1_1not__transducer" prot="public">CPSGrader::not_transducer</innerclass>
+    <innerclass refid="classCPSGrader_1_1and__transducer" prot="public">CPSGrader::and_transducer</innerclass>
+    <innerclass refid="classCPSGrader_1_1or__transducer" prot="public">CPSGrader::or_transducer</innerclass>
+    <innerclass refid="classCPSGrader_1_1implies__transducer" prot="public">CPSGrader::implies_transducer</innerclass>
+    <innerclass refid="classCPSGrader_1_1ev__transducer" prot="public">CPSGrader::ev_transducer</innerclass>
+    <innerclass refid="classCPSGrader_1_1alw__transducer" prot="public">CPSGrader::alw_transducer</innerclass>
+    <innerclass refid="classCPSGrader_1_1until__transducer" prot="public">CPSGrader::until_transducer</innerclass>
+    <innerclass refid="classCPSGrader_1_1stl__atom" prot="public">CPSGrader::stl_atom</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceCPSGrader_1a70b0b67a76ace97d635c48a9c7ef4b4b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>comparator</name>
+        <enumvalue id="namespaceCPSGrader_1a70b0b67a76ace97d635c48a9c7ef4b4ba0c9b3e6acac69b26ed13c834b6f3c3a7" prot="public">
+          <name>LESSTHAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceCPSGrader_1a70b0b67a76ace97d635c48a9c7ef4b4ba037ad180c72f011da26a607521e9e982" prot="public">
+          <name>GREATERTHAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/transducer.h" line="573" column="5" bodyfile="/home/zhenya/CauMon/src/include/transducer.h" bodystart="573" bodyend="575"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceCPSGrader_1a84f4f66d30fbcf7385eabc24564bb06c" prot="public" static="no">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>typedef vector&lt;vector&lt;double&gt; &gt; CPSGrader::trace_data</definition>
+        <argsstring></argsstring>
+        <name>trace_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/transducer.h" line="18" column="20" bodyfile="/home/zhenya/CauMon/src/include/transducer.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceCPSGrader_1ac855d9c8fe9450d4c68d66d8e3d37c04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; CPSGrader::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const Point &amp;point)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Point" kindref="compound">Point</ref> &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/cpp/signal.cpp" line="215" column="5" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="215" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCPSGrader_1a3c2b7e97f52d870d3042b56d55b4d064" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; CPSGrader::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const Sample &amp;sample)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Sample" kindref="compound">Sample</ref> &amp;</type>
+          <declname>sample</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/cpp/signal.cpp" line="220" column="5" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="220" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCPSGrader_1ac3304b287242f2aa17cd2db13f2c9adf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; CPSGrader::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const Sequence &amp;M)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Sequence" kindref="compound">Sequence</ref> &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/cpp/signal.cpp" line="226" column="5" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="226" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCPSGrader_1aaab8bb35754e4ae50453659926b7e34f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; CPSGrader::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const Signal &amp;y)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/cpp/signal.cpp" line="237" column="5" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="237" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceCPSGrader_1a9801fdd531b2b01332f085d2307bb153" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; CPSGrader::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const transducer &amp;T)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1transducer" kindref="compound">transducer</ref> &amp;</type>
+          <declname>T</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/transducer.h" line="644" column="5" declfile="/home/zhenya/CauMon/src/include/transducer.h" declline="644" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhenya/CauMon/src/cpp/cau_interval_transducer.cpp" line="6" column="1"/>
+  </compounddef>
+</doxygen>

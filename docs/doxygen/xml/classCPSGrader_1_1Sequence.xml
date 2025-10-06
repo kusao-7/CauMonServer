@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCPSGrader_1_1Sequence" kind="class" language="C++" prot="public">
+    <compoundname>CPSGrader::Sequence</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::deque&lt; Point &gt;</basecompoundref>
+    <includes refid="signal_8h" local="no">signal.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCPSGrader_1_1Sequence_1a42947bb3dc9ae04478658c1b47f493f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::Sequence::Sequence</definition>
+        <argsstring>()</argsstring>
+        <name>Sequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="67" column="1" bodyfile="/home/zhenya/CauMon/src/include/signal.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classCPSGrader_1_1Sequence_1a492ebe4500bf3c692b1abe2bcc13884b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const Sequence &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <defname>out</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Sequence" kindref="compound">Sequence</ref> &amp;</type>
+          <defname>M</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="69" column="8" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="226" bodyend="235"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CPSGrader::Sequence</label>
+        <link refid="classCPSGrader_1_1Sequence"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::deque&lt; Point &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CPSGrader::Sequence</label>
+        <link refid="classCPSGrader_1_1Sequence"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::deque&lt; Point &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/zhenya/CauMon/src/include/signal.h" line="65" column="1" bodyfile="/home/zhenya/CauMon/src/include/signal.h" bodystart="65" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classCPSGrader_1_1Sequence_1a492ebe4500bf3c692b1abe2bcc13884b" prot="public" virt="non-virtual"><scope>CPSGrader::Sequence</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classCPSGrader_1_1Sequence_1a42947bb3dc9ae04478658c1b47f493f8" prot="public" virt="non-virtual"><scope>CPSGrader::Sequence</scope><name>Sequence</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

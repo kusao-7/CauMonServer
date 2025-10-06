@@ -1,0 +1,26 @@
+# Doxyfile for CauMon project
+
+# 输入源代码路径
+INPUT                  = ../src/cpp ../src/include
+RECURSIVE              = YES
+FILE_PATTERNS          = *.h *.hpp *.cpp
+
+# 输出到 docs/doxygen/xml
+OUTPUT_DIRECTORY       = ./doxygen
+GENERATE_XML           = YES
+XML_OUTPUT             = xml
+GENERATE_HTML          = NO
+GENERATE_LATEX         = NO
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+
+# 支持中文/UTF-8
+INPUT_ENCODING         = UTF-8
+
+# 启用图形（可选）
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+

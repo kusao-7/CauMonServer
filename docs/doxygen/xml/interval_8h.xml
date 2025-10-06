@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="interval_8h" kind="file" language="C++">
+    <compoundname>interval.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes refid="tools_8h" local="yes">tools.h</includes>
+    <includedby refid="src_2include_2transducer_8h" local="yes">/home/zhenya/CauMon/src/include/transducer.h</includedby>
+    <includedby refid="breach_2Online_2include_2transducer_8h" local="yes">/home/zhenya/CauMon/breach/Online/include/transducer.h</includedby>
+    <includedby refid="interval_8cpp" local="no">/home/zhenya/CauMon/breach/Online/src/interval.cpp</includedby>
+    <includedby refid="stl__parser_8cpp" local="no">/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp</includedby>
+    <includedby refid="stl__scanner_8cpp" local="no">/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>stdlib.h</label>
+      </node>
+      <node id="4">
+        <label>tools.h</label>
+        <link refid="tools_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>sstream</label>
+      </node>
+      <node id="1">
+        <label>/home/zhenya/CauMon/breach/Online/include/interval.h</label>
+        <link refid="interval_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="13">
+        <label>/home/zhenya/CauMon/breach/Online/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="4">
+        <label>/home/zhenya/CauMon/breach/Online/include/signal_expr.h</label>
+        <link refid="signal__expr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp</label>
+        <link refid="stl__scanner_8cpp"/>
+      </node>
+      <node id="5">
+        <label>/home/zhenya/CauMon/src/cpp/cau_stl_atom.cpp</label>
+        <link refid="cau__stl__atom_8cpp"/>
+      </node>
+      <node id="14">
+        <label>/home/zhenya/CauMon/breach/Online/src/onlineMonitorWrapper.cpp</label>
+        <link refid="onlineMonitorWrapper_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/home/zhenya/CauMon/src/include/transducer.h</label>
+        <link refid="src_2include_2transducer_8h"/>
+      </node>
+      <node id="12">
+        <label>/home/zhenya/CauMon/src/cpp/stl_eval_mex_pw.cpp</label>
+        <link refid="stl__eval__mex__pw_8cpp"/>
+      </node>
+      <node id="6">
+        <label>/home/zhenya/CauMon/breach/Online/src/signal_expr.cpp</label>
+        <link refid="signal__expr_8cpp"/>
+      </node>
+      <node id="18">
+        <label>/home/zhenya/CauMon/breach/Online/src/interval.cpp</label>
+        <link refid="interval_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/zhenya/CauMon/breach/Online/include/transducer.h</label>
+        <link refid="breach_2Online_2include_2transducer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_eval_mex.cpp</label>
+        <link refid="stl__eval__mex_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/zhenya/CauMon/breach/Online/include/interval.h</label>
+        <link refid="interval_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp</label>
+        <link refid="stl__driver_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp</label>
+        <link refid="stl__parser_8cpp"/>
+      </node>
+      <node id="17">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_monitor.cpp</label>
+        <link refid="stl__monitor_8cpp"/>
+      </node>
+      <node id="10">
+        <label>/home/zhenya/CauMon/breach/Online/include/stl_driver.h</label>
+        <link refid="stl__driver_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/home/zhenya/CauMon/src/cpp/stl_causation_opt.cpp</label>
+        <link refid="stl__causation__opt_8cpp"/>
+      </node>
+      <node id="7">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_atom.cpp</label>
+        <link refid="stl__atom_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classCPSGrader_1_1interval" prot="public">CPSGrader::interval</innerclass>
+    <innernamespace refid="namespaceCPSGrader">CPSGrader</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__INTERVAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__INTERVAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tools_8h" kindref="compound">tools.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceCPSGrader" kindref="compound">CPSGrader</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classCPSGrader_1_1interval" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCPSGrader_1_1interval" kindref="compound">interval</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14" refid="classCPSGrader_1_1interval_1ab3445d4b5a077acb1222f776a69694f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1interval_1ab3445d4b5a077acb1222f776a69694f0" kindref="member">begin</ref>;</highlight></codeline>
+<codeline lineno="15" refid="classCPSGrader_1_1interval_1aa85977561692706ec8e42d4fc8927e88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1interval_1aa85977561692706ec8e42d4fc8927e88" kindref="member">end</ref>;</highlight></codeline>
+<codeline lineno="16" refid="classCPSGrader_1_1interval_1a4e3a939ea637fa02543a70f8fbaf40ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1interval_1a4e3a939ea637fa02543a70f8fbaf40ab" kindref="member">begin_str</ref>;</highlight></codeline>
+<codeline lineno="17" refid="classCPSGrader_1_1interval_1ae66b1218b88598b3635ccbe7cfc4745a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1interval_1ae66b1218b88598b3635ccbe7cfc4745a" kindref="member">end_str</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCPSGrader_1_1interval" kindref="compound">interval</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCPSGrader_1_1interval" kindref="compound">interval</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1interval" kindref="compound">interval</ref>&amp;<sp/>that);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCPSGrader_1_1interval" kindref="compound">interval</ref><sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1interval" kindref="compound">interval</ref>&amp;<sp/>that);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1interval" kindref="compound">interval</ref>&amp;<sp/>that);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tries<sp/>to<sp/>convert<sp/>string<sp/>into<sp/>doubles,<sp/>if<sp/>fails,<sp/>keep<sp/>the<sp/>string<sp/>assuming<sp/>this<sp/>is<sp/>a<sp/>parameter<sp/>or<sp/>expression</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCPSGrader_1_1interval" kindref="compound">interval</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>b,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>e);</highlight></codeline>
+<codeline lineno="26" refid="classCPSGrader_1_1interval_1a083dbba769bbf4a2b9d2e71b974a3c1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCPSGrader_1_1interval_1a083dbba769bbf4a2b9d2e71b974a3c1a" kindref="member">interval</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e):<sp/>begin(b),<sp/>end(e)<sp/>{};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>to_string()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classCPSGrader_1_1interval_1a0e3c2d6725822fed31f198b7af3543e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1interval_1a0e3c2d6725822fed31f198b7af3543e3" kindref="member">print</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>to_string();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classCPSGrader_1_1interval_1a8c21bd8da8748b7cb6027fc3e6d68553" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1interval_1a8c21bd8da8748b7cb6027fc3e6d68553" kindref="member">print</ref>(std::ostream<sp/>&amp;os)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/>to_string();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">std::ostream&amp;<sp/><ref refid="namespaceCPSGrader_1a74510742b79d66f12cc9f2a7d4282324" kindref="member">operator&lt;&lt;</ref>(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>interval&amp;<sp/>I);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/zhenya/CauMon/breach/Online/include/interval.h"/>
+  </compounddef>
+</doxygen>

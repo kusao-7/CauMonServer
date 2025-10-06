@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structCPSGrader_1_1trace__test" kind="struct" language="C++" prot="public">
+    <compoundname>CPSGrader::trace_test</compoundname>
+    <includes refid="stl__driver_8h" local="no">stl_driver.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCPSGrader_1_1trace__test_1a7d7d9aa6c4d188a1b02d3eed3cf187dd" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CPSGrader::trace_test::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="54" column="8" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1aeda46a6d84823b355d8365b7d892c5e9" compoundref="stl__driver_8cpp" startline="238" endline="245">CPSGrader::STLDriver::add_trace_test</referencedby>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="19" endline="81">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structCPSGrader_1_1trace__test_1a3e95349ac953b79c2b0fabae6f6f55e2" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CPSGrader::trace_test::env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="55" column="8" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1aeda46a6d84823b355d8365b7d892c5e9" compoundref="stl__driver_8cpp" startline="238" endline="245">CPSGrader::STLDriver::add_trace_test</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structCPSGrader_1_1trace__test_1ae469395113a9101953330670004d321d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CPSGrader::trace_test::sim_time</definition>
+        <argsstring></argsstring>
+        <name>sim_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="56" column="8" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1aeda46a6d84823b355d8365b7d892c5e9" compoundref="stl__driver_8cpp" startline="238" endline="245">CPSGrader::STLDriver::add_trace_test</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structCPSGrader_1_1trace__test_1a234d249f251737b324dbb7c2339b7cdc" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CPSGrader::trace_test::visu</definition>
+        <argsstring></argsstring>
+        <name>visu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="57" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1aeda46a6d84823b355d8365b7d892c5e9" compoundref="stl__driver_8cpp" startline="238" endline="245">CPSGrader::STLDriver::add_trace_test</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structCPSGrader_1_1trace__test_1af4dc816daf5200c561cfe8f6449e0e96" prot="public" static="no" mutable="no">
+        <type>deque&lt; <ref refid="classCPSGrader_1_1stl__test" kindref="compound">stl_test</ref> &gt;</type>
+        <definition>deque&lt;stl_test&gt; CPSGrader::trace_test::tests</definition>
+        <argsstring></argsstring>
+        <name>tests</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="58" column="7" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="53" column="1" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="53" bodyend="59"/>
+    <listofallmembers>
+      <member refid="structCPSGrader_1_1trace__test_1a3e95349ac953b79c2b0fabae6f6f55e2" prot="public" virt="non-virtual"><scope>CPSGrader::trace_test</scope><name>env</name></member>
+      <member refid="structCPSGrader_1_1trace__test_1a7d7d9aa6c4d188a1b02d3eed3cf187dd" prot="public" virt="non-virtual"><scope>CPSGrader::trace_test</scope><name>id</name></member>
+      <member refid="structCPSGrader_1_1trace__test_1ae469395113a9101953330670004d321d" prot="public" virt="non-virtual"><scope>CPSGrader::trace_test</scope><name>sim_time</name></member>
+      <member refid="structCPSGrader_1_1trace__test_1af4dc816daf5200c561cfe8f6449e0e96" prot="public" virt="non-virtual"><scope>CPSGrader::trace_test</scope><name>tests</name></member>
+      <member refid="structCPSGrader_1_1trace__test_1a234d249f251737b324dbb7c2339b7cdc" prot="public" virt="non-virtual"><scope>CPSGrader::trace_test</scope><name>visu</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

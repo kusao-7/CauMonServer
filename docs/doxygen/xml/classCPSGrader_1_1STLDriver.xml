@@ -1,0 +1,1042 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCPSGrader_1_1STLDriver" kind="class" language="C++" prot="public">
+    <compoundname>CPSGrader::STLDriver</compoundname>
+    <includes refid="stl__driver_8h" local="no">stl_driver.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCPSGrader_1_1STLDriver_1afbbd0451deba167e618594aa2524983b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CPSGrader::STLDriver::trace_scanning</definition>
+        <argsstring></argsstring>
+        <name>trace_scanning</name>
+        <briefdescription>
+<para>DATA. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>enable debug output in the flex scanner </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="73" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="73" bodyend="-1"/>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="19" endline="81">main</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a485c9c2aa2c373ef78f503565ec000de" compoundref="stl__driver_8cpp" startline="46" endline="58">parse_stream</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCPSGrader_1_1STLDriver_1a29d73a1db5175061dad3e96f7c461ae4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CPSGrader::STLDriver::trace_parsing</definition>
+        <argsstring></argsstring>
+        <name>trace_parsing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enable debug output in the bison parser </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="76" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="76" bodyend="-1"/>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="19" endline="81">main</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a485c9c2aa2c373ef78f503565ec000de" compoundref="stl__driver_8cpp" startline="46" endline="58">parse_stream</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCPSGrader_1_1STLDriver_1afa9bff6c30e1abe02bd0ff67851a4c5b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CPSGrader::STLDriver::streamname</definition>
+        <argsstring></argsstring>
+        <name>streamname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>stream name (file or input stream) used for error messages. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="79" column="13" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1Parser_1a0b58cd729a4d669bdb46869509598dd0" compoundref="stl__parser_8cpp" startline="627" endline="1417">CPSGrader::Parser::parse</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a485c9c2aa2c373ef78f503565ec000de" compoundref="stl__driver_8cpp" startline="46" endline="58">parse_stream</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCPSGrader_1_1STLDriver_1ac4656ba3552db4e7283ce669e9b0fe3e" prot="public" static="no" mutable="no">
+        <type>map&lt; string, double &gt;</type>
+        <definition>map&lt;string, double&gt; CPSGrader::STLDriver::param_map</definition>
+        <argsstring></argsstring>
+        <name>param_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>parameters in formulas </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="85" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="85" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a5d110de75517c0a6d6fd826ea234644c" compoundref="stl__driver_8cpp" startline="89" endline="126">clear</referencedby>
+        <referencedby refid="classCPSGrader_1_1Parser_1a0b58cd729a4d669bdb46869509598dd0" compoundref="stl__parser_8cpp" startline="627" endline="1417">CPSGrader::Parser::parse</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a7077b89554597149c26bf2c7040c5577" compoundref="stl__driver_8cpp" startline="130" endline="168">print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCPSGrader_1_1STLDriver_1a3124eeea0d651ce1379eaec3d6c4e9f9" prot="public" static="no" mutable="no">
+        <type>map&lt; string, int &gt;</type>
+        <definition>map&lt;string, int&gt; CPSGrader::STLDriver::signal_map</definition>
+        <argsstring></argsstring>
+        <name>signal_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>signals in formulas </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="88" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1Parser_1a0b58cd729a4d669bdb46869509598dd0" compoundref="stl__parser_8cpp" startline="627" endline="1417">CPSGrader::Parser::parse</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCPSGrader_1_1STLDriver_1a1210fa1f2fad7a525c1a581e9fcb904a" prot="public" static="no" mutable="no">
+        <type>map&lt; string, <ref refid="classCPSGrader_1_1transducer" kindref="compound">transducer</ref> * &gt;</type>
+        <definition>map&lt;string, transducer*&gt; CPSGrader::STLDriver::formula_map</definition>
+        <argsstring></argsstring>
+        <name>formula_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>formulas defined by the driver </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="91" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a5d110de75517c0a6d6fd826ea234644c" compoundref="stl__driver_8cpp" startline="89" endline="126">clear</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1ae325bd80d9d5ba67b67dcacfdc49ab60" compoundref="stl__driver_8cpp" startline="171" endline="181">dump</referencedby>
+        <referencedby refid="onlineMonitorWrapper_8cpp_1a90b55be5367122a2cb94e9ac87253228" compoundref="onlineMonitorWrapper_8cpp" startline="252" endline="294">mdlUpdate</referencedby>
+        <referencedby refid="stl__eval__mex_8cpp_1a6a215cbfde54f82a3ce599228fc3fce5" compoundref="stl__eval__mex_8cpp" startline="11" endline="145">mexFunction</referencedby>
+        <referencedby refid="classCPSGrader_1_1Parser_1a0b58cd729a4d669bdb46869509598dd0" compoundref="stl__parser_8cpp" startline="627" endline="1417">CPSGrader::Parser::parse</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a7077b89554597149c26bf2c7040c5577" compoundref="stl__driver_8cpp" startline="130" endline="168">print</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1acf56675149ed2d382ff1a2b39f7cc111" compoundref="stl__driver_8cpp" startline="309" endline="331">test_formula</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCPSGrader_1_1STLDriver_1a3365f2b38ac5cfb97b4c8b3395c532c3" prot="public" static="no" mutable="no">
+        <type>map&lt; string, <ref refid="classCPSGrader_1_1stl__test" kindref="compound">stl_test</ref> &gt;</type>
+        <definition>map&lt;string, stl_test&gt; CPSGrader::STLDriver::stl_test_map</definition>
+        <argsstring></argsstring>
+        <name>stl_test_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tests (sets of formulas) <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="94" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="94" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a51cb16eb5e90463730de0b02fa7ecdb6" compoundref="stl__driver_8cpp" startline="248" endline="260">add_stl_test</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a5d110de75517c0a6d6fd826ea234644c" compoundref="stl__driver_8cpp" startline="89" endline="126">clear</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCPSGrader_1_1STLDriver_1ae6166510d67e96f633587b70bd12f0db" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceCPSGrader_1a6dd86f7a7af0af027ce7b805037ee3c6" kindref="member">trace_data</ref></type>
+        <definition>trace_data CPSGrader::STLDriver::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>data array - time is first column </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="97" column="12" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1ae325bd80d9d5ba67b67dcacfdc49ab60" compoundref="stl__driver_8cpp" startline="171" endline="181">dump</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1acd069522588e1e5aacfde9d66bf4d4d7" compoundref="stl__driver_8cpp" startline="347" endline="362">dump_trace_file</referencedby>
+        <referencedby refid="onlineMonitorWrapper_8cpp_1a90b55be5367122a2cb94e9ac87253228" compoundref="onlineMonitorWrapper_8cpp" startline="252" endline="294">mdlUpdate</referencedby>
+        <referencedby refid="stl__eval__mex_8cpp_1a6a215cbfde54f82a3ce599228fc3fce5" compoundref="stl__eval__mex_8cpp" startline="11" endline="145">mexFunction</referencedby>
+        <referencedby refid="classCPSGrader_1_1Parser_1a0b58cd729a4d669bdb46869509598dd0" compoundref="stl__parser_8cpp" startline="627" endline="1417">CPSGrader::Parser::parse</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a40c60ffdff5415fcb5cc02d6f2d221a9" compoundref="stl__driver_8cpp" startline="334" endline="341">print_trace</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1ab7da78706330f50e23ee521acf85a662" compoundref="stl__driver_8h" startline="236" endline="239">read_trace_file</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1acebf2ba2c9d235dba1715076c3cdca3a" compoundref="stl__driver_8cpp" startline="184" endline="235">run_tests</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a432901efc206b30abdc06054f5439044" compoundref="stl__driver_8cpp" startline="34" endline="44">STLDriver</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1acf56675149ed2d382ff1a2b39f7cc111" compoundref="stl__driver_8cpp" startline="309" endline="331">test_formula</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCPSGrader_1_1STLDriver_1a8a2d350f2af49c065ec5eb6543d5f186" prot="public" static="no" mutable="no">
+        <type>deque&lt; <ref refid="structCPSGrader_1_1trace__test" kindref="compound">trace_test</ref> &gt;</type>
+        <definition>deque&lt;trace_test&gt; CPSGrader::STLDriver::trace_test_queue</definition>
+        <argsstring></argsstring>
+        <name>trace_test_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="98" column="7" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="98" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a51cb16eb5e90463730de0b02fa7ecdb6" compoundref="stl__driver_8cpp" startline="248" endline="260">add_stl_test</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1aeda46a6d84823b355d8365b7d892c5e9" compoundref="stl__driver_8cpp" startline="238" endline="245">add_trace_test</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a5d110de75517c0a6d6fd826ea234644c" compoundref="stl__driver_8cpp" startline="89" endline="126">clear</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a570e1aeac022cf44a69051d5cd17617c" compoundref="stl__driver_8h" startline="179" endline="185">get_next_formula</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a424706eee1af61404927123039591b5d" compoundref="stl__driver_8h" startline="187" endline="193">get_next_stl_test</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a62f163d9b118e32ad34ed2be08996873" compoundref="stl__driver_8h" startline="195" endline="200">get_next_trace_test</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a447efa7bdcf0ceda3571e70aa19878d0" compoundref="stl__driver_8h" startline="206" endline="211">get_next_trace_test_env</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1ab13e463af099f23f2524c48b81b6770a" compoundref="stl__driver_8h" startline="213" endline="216">pop_next_trace_test</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a7077b89554597149c26bf2c7040c5577" compoundref="stl__driver_8cpp" startline="130" endline="168">print</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1acebf2ba2c9d235dba1715076c3cdca3a" compoundref="stl__driver_8cpp" startline="184" endline="235">run_tests</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1adc70fb31ba87176470769b4a73610bef" compoundref="stl__driver_8h" startline="202" endline="204">trace_test_queue_empty</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCPSGrader_1_1STLDriver_1aff0ca71cef3238de0d6923ad68a1e4c9" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CPSGrader::STLDriver::report</definition>
+        <argsstring></argsstring>
+        <name>report</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="100" column="8" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="100" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a5d110de75517c0a6d6fd826ea234644c" compoundref="stl__driver_8cpp" startline="89" endline="126">clear</referencedby>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="19" endline="81">main</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1acebf2ba2c9d235dba1715076c3cdca3a" compoundref="stl__driver_8cpp" startline="184" endline="235">run_tests</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCPSGrader_1_1STLDriver_1ae7e1c1af40ece62e9c56746fb0e0f05e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CPSGrader::STLDriver::test_log</definition>
+        <argsstring></argsstring>
+        <name>test_log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="101" column="8" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a5d110de75517c0a6d6fd826ea234644c" compoundref="stl__driver_8cpp" startline="89" endline="126">clear</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1ad05bb1e3da49d92bc26ac5aabf30547b" compoundref="stl__driver_8cpp" startline="364" endline="379">dump_test_log_file</referencedby>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="19" endline="81">main</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1acebf2ba2c9d235dba1715076c3cdca3a" compoundref="stl__driver_8cpp" startline="184" endline="235">run_tests</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCPSGrader_1_1STLDriver_1a94bac09b49c5458c6c604ad348d29e3d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPSGrader::STLDriver::nb_test_pos</definition>
+        <argsstring></argsstring>
+        <name>nb_test_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="102" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a5d110de75517c0a6d6fd826ea234644c" compoundref="stl__driver_8cpp" startline="89" endline="126">clear</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1ad05bb1e3da49d92bc26ac5aabf30547b" compoundref="stl__driver_8cpp" startline="364" endline="379">dump_test_log_file</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1acebf2ba2c9d235dba1715076c3cdca3a" compoundref="stl__driver_8cpp" startline="184" endline="235">run_tests</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCPSGrader_1_1STLDriver_1a864305e8288acffdca56b4cd1aab2661" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPSGrader::STLDriver::nb_test_total</definition>
+        <argsstring></argsstring>
+        <name>nb_test_total</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="103" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="103" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a51cb16eb5e90463730de0b02fa7ecdb6" compoundref="stl__driver_8cpp" startline="248" endline="260">add_stl_test</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a5d110de75517c0a6d6fd826ea234644c" compoundref="stl__driver_8cpp" startline="89" endline="126">clear</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1ad05bb1e3da49d92bc26ac5aabf30547b" compoundref="stl__driver_8cpp" startline="364" endline="379">dump_test_log_file</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCPSGrader_1_1STLDriver_1a5a33e100e7469b07d4c3f5caae365f41" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CPSGrader::STLDriver::error_flag</definition>
+        <argsstring></argsstring>
+        <name>error_flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="104" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="104" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a5d110de75517c0a6d6fd826ea234644c" compoundref="stl__driver_8cpp" startline="89" endline="126">clear</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1acebf2ba2c9d235dba1715076c3cdca3a" compoundref="stl__driver_8cpp" startline="184" endline="235">run_tests</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCPSGrader_1_1STLDriver_1a311321b00d9f6c6e5cad254ac2963779" prot="public" static="no" mutable="no">
+        <type>class <ref refid="classCPSGrader_1_1Scanner" kindref="compound">Scanner</ref> *</type>
+        <definition>class Scanner* CPSGrader::STLDriver::lexer</definition>
+        <argsstring></argsstring>
+        <name>lexer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the current lexer instance, this is used to connect the parser to the scanner. It is used in the yylex macro. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="167" column="15" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="167" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a485c9c2aa2c373ef78f503565ec000de" compoundref="stl__driver_8cpp" startline="46" endline="58">parse_stream</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classCPSGrader_1_1STLDriver_1a05e0a6403089af91626c89f08c2856aa" prot="public" static="yes" mutable="no">
+        <type>map&lt; string, <ref refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5d" kindref="member">token_type</ref> &gt;</type>
+        <definition>map&lt; string, token_type &gt; CPSGrader::STLDriver::reserved</definition>
+        <argsstring></argsstring>
+        <name>reserved</name>
+        <initializer>= map&lt;string,<ref refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5d" kindref="member">token_type</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reserved words for STL parser </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="82" column="12" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="82" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1Scanner_1a6c355a1f083cbaf52d3b2028c23f9d4a" compoundref="stl__scanner_8cpp" startline="2104" endline="2132">CPSGrader::Scanner::Scanner</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1a3bf260079acca961e7dca236766b0d9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::STLDriver::STLDriver</definition>
+        <argsstring>()</argsstring>
+        <name>STLDriver</name>
+        <briefdescription>
+<para>CONSTRUCTORS. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>construct a new parser driver context </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="109" column="1" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="23" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1a432901efc206b30abdc06054f5439044" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::STLDriver::STLDriver</definition>
+        <argsstring>(trace_data _trace)</argsstring>
+        <name>STLDriver</name>
+        <param>
+          <type><ref refid="namespaceCPSGrader_1a6dd86f7a7af0af027ce7b805037ee3c6" kindref="member">trace_data</ref></type>
+          <declname>_trace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>construct a parser driver with data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="112" column="1" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="34" bodyend="44"/>
+        <references refid="classCPSGrader_1_1STLDriver_1ae6166510d67e96f633587b70bd12f0db" compoundref="stl__driver_8h" startline="97">data</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1a80611c488834fe58a01f4a2bcbfd91ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::STLDriver::~STLDriver</definition>
+        <argsstring>()</argsstring>
+        <name>~STLDriver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="114" column="1" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1aeda46a6d84823b355d8365b7d892c5e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::STLDriver::add_trace_test</definition>
+        <argsstring>(const string &amp;test_id, const string &amp;trace_cfg, double sim_time, bool visu)</argsstring>
+        <name>add_trace_test</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>test_id</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>trace_cfg</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sim_time</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>visu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new trace_tests structure and add it to the queue </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="117" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="238" bodyend="245"/>
+        <references refid="structCPSGrader_1_1trace__test_1a3e95349ac953b79c2b0fabae6f6f55e2" compoundref="stl__driver_8h" startline="55">CPSGrader::trace_test::env</references>
+        <references refid="structCPSGrader_1_1trace__test_1a7d7d9aa6c4d188a1b02d3eed3cf187dd" compoundref="stl__driver_8h" startline="54">CPSGrader::trace_test::id</references>
+        <references refid="structCPSGrader_1_1trace__test_1ae469395113a9101953330670004d321d" compoundref="stl__driver_8h" startline="56">CPSGrader::trace_test::sim_time</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a8a2d350f2af49c065ec5eb6543d5f186" compoundref="stl__driver_8h" startline="98">trace_test_queue</references>
+        <references refid="structCPSGrader_1_1trace__test_1a234d249f251737b324dbb7c2339b7cdc" compoundref="stl__driver_8h" startline="57">CPSGrader::trace_test::visu</references>
+        <referencedby refid="classCPSGrader_1_1Parser_1a0b58cd729a4d669bdb46869509598dd0" compoundref="stl__parser_8cpp" startline="627" endline="1417">CPSGrader::Parser::parse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1a51cb16eb5e90463730de0b02fa7ecdb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::STLDriver::add_stl_test</definition>
+        <argsstring>(const string &amp;test_id)</argsstring>
+        <name>add_stl_test</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>test_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>adds an <ref refid="classCPSGrader_1_1stl__test" kindref="compound">stl_test</ref> from the stl_test_map to the current <ref refid="structCPSGrader_1_1trace__test" kindref="compound">trace_test</ref> with the local params value does nothing if the <ref refid="classCPSGrader_1_1stl__test" kindref="compound">stl_test</ref> does not exist</para>
+<para>Note: test inserted in the stl_test_map have no local parameters </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="121" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="248" bodyend="260"/>
+        <references refid="classCPSGrader_1_1STLDriver_1a864305e8288acffdca56b4cd1aab2661" compoundref="stl__driver_8h" startline="103">nb_test_total</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a3365f2b38ac5cfb97b4c8b3395c532c3" compoundref="stl__driver_8h" startline="94">stl_test_map</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a8a2d350f2af49c065ec5eb6543d5f186" compoundref="stl__driver_8h" startline="98">trace_test_queue</references>
+        <referencedby refid="classCPSGrader_1_1Parser_1a0b58cd729a4d669bdb46869509598dd0" compoundref="stl__parser_8cpp" startline="627" endline="1417">CPSGrader::Parser::parse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1a748e25f4b562460ae04e29e90691fbef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::STLDriver::add_stl_test</definition>
+        <argsstring>(const string &amp;test_id, const map&lt; string, double &gt; &amp;local_param_map)</argsstring>
+        <name>add_stl_test</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>test_id</declname>
+        </param>
+        <param>
+          <type>const map&lt; string, double &gt; &amp;</type>
+          <declname>local_param_map</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="122" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="262" bodyend="284"/>
+        <references refid="classCPSGrader_1_1STLDriver_1a864305e8288acffdca56b4cd1aab2661" compoundref="stl__driver_8h" startline="103">nb_test_total</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a3365f2b38ac5cfb97b4c8b3395c532c3" compoundref="stl__driver_8h" startline="94">stl_test_map</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a8a2d350f2af49c065ec5eb6543d5f186" compoundref="stl__driver_8h" startline="98">trace_test_queue</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1aa6e01a40aaadba3f35e151a243f1147a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::STLDriver::add_stl_test</definition>
+        <argsstring>(const string &amp;test_id, const map&lt; string, double &gt; &amp;local_param_map, transducer *formula, const string &amp;report_pos, const string &amp;report_neg, bool is_err)</argsstring>
+        <name>add_stl_test</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>test_id</declname>
+        </param>
+        <param>
+          <type>const map&lt; string, double &gt; &amp;</type>
+          <declname>local_param_map</declname>
+        </param>
+        <param>
+          <type><ref refid="classCPSGrader_1_1transducer" kindref="compound">transducer</ref> *</type>
+          <declname>formula</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>report_pos</declname>
+        </param>
+        <param>
+          <type>const string &amp;</type>
+          <declname>report_neg</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_err</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>adds an <ref refid="classCPSGrader_1_1stl__test" kindref="compound">stl_test</ref> to the current trace_tests - does nothing if the queue is empty </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="125" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="286" bodyend="307"/>
+        <references refid="classCPSGrader_1_1transducer_1a133c57a3bfb20aed578cc257e6e9a1eb">CPSGrader::transducer::clone</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a864305e8288acffdca56b4cd1aab2661" compoundref="stl__driver_8h" startline="103">nb_test_total</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a3365f2b38ac5cfb97b4c8b3395c532c3" compoundref="stl__driver_8h" startline="94">stl_test_map</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a8a2d350f2af49c065ec5eb6543d5f186" compoundref="stl__driver_8h" startline="98">trace_test_queue</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1a485c9c2aa2c373ef78f503565ec000de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPSGrader::STLDriver::parse_stream</definition>
+        <argsstring>(std::istream &amp;in, const std::string &amp;sname=&quot;stream input&quot;)</argsstring>
+        <name>parse_stream</name>
+        <param>
+          <type>std::istream &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>sname</declname>
+          <defval>&quot;stream input&quot;</defval>
+        </param>
+        <briefdescription>
+<para>PARSER. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Invoke the scanner and parser for a stream. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input stream </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream name for error messages </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if successfully parsed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="135" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="46" bodyend="58"/>
+        <references refid="classCPSGrader_1_1STLDriver_1a311321b00d9f6c6e5cad254ac2963779" compoundref="stl__driver_8h" startline="167">lexer</references>
+        <references refid="classCPSGrader_1_1Parser_1a0b58cd729a4d669bdb46869509598dd0" compoundref="stl__parser_8cpp" startline="627" endline="1417">CPSGrader::Parser::parse</references>
+        <references refid="classCPSGrader_1_1Scanner_1ac11c56d7eeb19f25a82e0858781f2e22" compoundref="stl__scanner_8cpp" startline="2138" endline="2141">CPSGrader::Scanner::set_debug</references>
+        <references refid="classCPSGrader_1_1Parser_1a3d75ecfd7b6613d53388b5ebae8c5299">CPSGrader::Parser::set_debug_level</references>
+        <references refid="classCPSGrader_1_1STLDriver_1afa9bff6c30e1abe02bd0ff67851a4c5b" compoundref="stl__driver_8h" startline="79">streamname</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a29d73a1db5175061dad3e96f7c461ae4" compoundref="stl__driver_8h" startline="76">trace_parsing</references>
+        <references refid="classCPSGrader_1_1STLDriver_1afbbd0451deba167e618594aa2524983b" compoundref="stl__driver_8h" startline="73">trace_scanning</references>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="19" endline="81">main</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a3c6f493723f41a94fa7cf1839663a57b" compoundref="stl__driver_8cpp" startline="60" endline="65">parse_file</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a0d23fc7f64a82fa33f7a9f4f42eea915" compoundref="stl__driver_8cpp" startline="67" endline="71">parse_string</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1a0d23fc7f64a82fa33f7a9f4f42eea915" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPSGrader::STLDriver::parse_string</definition>
+        <argsstring>(const std::string &amp;input, const std::string &amp;sname=&quot;string stream&quot;)</argsstring>
+        <name>parse_string</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>sname</declname>
+          <defval>&quot;string stream&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Invoke the scanner and parser on an input string. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input string </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>stream name for error messages </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if successfully parsed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="143" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="67" bodyend="71"/>
+        <references refid="classCPSGrader_1_1STLDriver_1a485c9c2aa2c373ef78f503565ec000de" compoundref="stl__driver_8cpp" startline="46" endline="58">parse_stream</references>
+        <referencedby refid="onlineMonitorWrapper_8cpp_1a0dd07daf338cf84d1aee4bb8b6771720" compoundref="onlineMonitorWrapper_8cpp" startline="233" endline="249">mdlStart</referencedby>
+        <referencedby refid="stl__eval__mex_8cpp_1a6a215cbfde54f82a3ce599228fc3fce5" compoundref="stl__eval__mex_8cpp" startline="11" endline="145">mexFunction</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1acf56675149ed2d382ff1a2b39f7cc111" compoundref="stl__driver_8cpp" startline="309" endline="331">test_formula</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1a3c6f493723f41a94fa7cf1839663a57b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPSGrader::STLDriver::parse_file</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>parse_file</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Invoke the scanner and parser on a file. Use parse_stream with a std::ifstream if detection of file reading errors is required. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input file name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if successfully parsed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="151" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="60" bodyend="65"/>
+        <references refid="classCPSGrader_1_1STLDriver_1a485c9c2aa2c373ef78f503565ec000de" compoundref="stl__driver_8cpp" startline="46" endline="58">parse_stream</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1aa721c96535782721c3fd44247c9d7d69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::STLDriver::error</definition>
+        <argsstring>(const class location &amp;l, const std::string &amp;m)</argsstring>
+        <name>error</name>
+        <param>
+          <type>const class location &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Error handling with associated line number. This can be modified to output the error e.g. to a dialog box. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="159" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="75" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1ada6099cfc5541f245ad78c86298b79d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::STLDriver::error</definition>
+        <argsstring>(const std::string &amp;m)</argsstring>
+        <name>error</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>General error handling. This can be modified to output the error e.g. to a dialog box. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="163" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1acebf2ba2c9d235dba1715076c3cdca3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPSGrader::STLDriver::run_tests</definition>
+        <argsstring>()</argsstring>
+        <name>run_tests</name>
+        <briefdescription>
+<para>API. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>runs the tests of the front of trace_tests_queue and pop them assumes that data has been filled with the appropriate trace data</para>
+<para>run all stl tests for the next <ref refid="structCPSGrader_1_1trace__test" kindref="compound">trace_test</ref> and write results in report </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="173" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="184" bodyend="235"/>
+        <references refid="classCPSGrader_1_1transducer_1a8fd5be58875ae2d8b4833ce81f2292d2">CPSGrader::transducer::compute_robustness</references>
+        <references refid="tools_8h_1a37bd2c7d247892c6f95ece9b6a1ccfca" compoundref="tools_8h" startline="32" endline="38">d_to_s</references>
+        <references refid="classCPSGrader_1_1STLDriver_1ae6166510d67e96f633587b70bd12f0db" compoundref="stl__driver_8h" startline="97">data</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a5a33e100e7469b07d4c3f5caae365f41" compoundref="stl__driver_8h" startline="104">error_flag</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a570e1aeac022cf44a69051d5cd17617c" compoundref="stl__driver_8h" startline="179" endline="185">get_next_formula</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a424706eee1af61404927123039591b5d" compoundref="stl__driver_8h" startline="187" endline="193">get_next_stl_test</references>
+        <references refid="classCPSGrader_1_1transducer_1a622c8f49def94baa842f203f2e3e3fe3" compoundref="transducer_8cpp" startline="8" endline="9">CPSGrader::transducer::init_horizon</references>
+        <references refid="classCPSGrader_1_1stl__test_1a566dbffee48acc5aa506a20583792627" compoundref="stl__driver_8h" startline="29">CPSGrader::stl_test::is_error</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a94bac09b49c5458c6c604ad348d29e3d" compoundref="stl__driver_8h" startline="102">nb_test_pos</references>
+        <references refid="classCPSGrader_1_1STLDriver_1aff0ca71cef3238de0d6923ad68a1e4c9" compoundref="stl__driver_8h" startline="100">report</references>
+        <references refid="classCPSGrader_1_1stl__test_1a797d214fd70d46067f3a1035f31c7cca" compoundref="stl__driver_8h" startline="28">CPSGrader::stl_test::report_negative</references>
+        <references refid="classCPSGrader_1_1stl__test_1a74c8fcade5e97fa70a5d7b90806ec211" compoundref="stl__driver_8h" startline="27">CPSGrader::stl_test::report_positive</references>
+        <references refid="classCPSGrader_1_1stl__test_1aa3ad7c8d74011b91e0f8f4300170016b" compoundref="stl__driver_8h" startline="24">CPSGrader::stl_test::test_id</references>
+        <references refid="classCPSGrader_1_1STLDriver_1ae7e1c1af40ece62e9c56746fb0e0f05e" compoundref="stl__driver_8h" startline="101">test_log</references>
+        <references refid="classCPSGrader_1_1transducer_1a9e63c62dd4cb5420f57b96c1db00c915" compoundref="src_2include_2transducer_8h" startline="27">CPSGrader::transducer::trace_data_ptr</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a8a2d350f2af49c065ec5eb6543d5f186" compoundref="stl__driver_8h" startline="98">trace_test_queue</references>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a5f75ee15ef5a33a5e192c2afb52efbf0" compoundref="stl__driver_8h" startline="219" endline="221">run_next_trace_test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1acf56675149ed2d382ff1a2b39f7cc111" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double CPSGrader::STLDriver::test_formula</definition>
+        <argsstring>(const string &amp;)</argsstring>
+        <name>test_formula</name>
+        <param>
+          <type>const string &amp;</type>
+          <defname>phi_in</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>monitor a single formula requires data is not empty </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="176" column="8" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="309" bodyend="331"/>
+        <references refid="classCPSGrader_1_1transducer_1a8fd5be58875ae2d8b4833ce81f2292d2">CPSGrader::transducer::compute_robustness</references>
+        <references refid="classCPSGrader_1_1STLDriver_1ae6166510d67e96f633587b70bd12f0db" compoundref="stl__driver_8h" startline="97">data</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a1210fa1f2fad7a525c1a581e9fcb904a" compoundref="stl__driver_8h" startline="91">formula_map</references>
+        <references refid="classCPSGrader_1_1transducer_1a622c8f49def94baa842f203f2e3e3fe3" compoundref="transducer_8cpp" startline="8" endline="9">CPSGrader::transducer::init_horizon</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a0d23fc7f64a82fa33f7a9f4f42eea915" compoundref="stl__driver_8cpp" startline="67" endline="71">parse_string</references>
+        <references refid="classCPSGrader_1_1transducer_1a9e63c62dd4cb5420f57b96c1db00c915" compoundref="src_2include_2transducer_8h" startline="27">CPSGrader::transducer::trace_data_ptr</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1a570e1aeac022cf44a69051d5cd17617c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCPSGrader_1_1transducer" kindref="compound">transducer</ref> *</type>
+        <definition>transducer* CPSGrader::STLDriver::get_next_formula</definition>
+        <argsstring>() const</argsstring>
+        <name>get_next_formula</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gets next formula to test </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="179" column="20" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="179" bodyend="185"/>
+        <references refid="classCPSGrader_1_1STLDriver_1a8a2d350f2af49c065ec5eb6543d5f186" compoundref="stl__driver_8h" startline="98">trace_test_queue</references>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a5d110de75517c0a6d6fd826ea234644c" compoundref="stl__driver_8cpp" startline="89" endline="126">clear</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1acebf2ba2c9d235dba1715076c3cdca3a" compoundref="stl__driver_8cpp" startline="184" endline="235">run_tests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1a424706eee1af61404927123039591b5d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classCPSGrader_1_1stl__test" kindref="compound">stl_test</ref> *</type>
+        <definition>const stl_test* CPSGrader::STLDriver::get_next_stl_test</definition>
+        <argsstring>() const</argsstring>
+        <name>get_next_stl_test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="187" column="24" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="187" bodyend="193"/>
+        <references refid="classCPSGrader_1_1STLDriver_1a8a2d350f2af49c065ec5eb6543d5f186" compoundref="stl__driver_8h" startline="98">trace_test_queue</references>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1acebf2ba2c9d235dba1715076c3cdca3a" compoundref="stl__driver_8cpp" startline="184" endline="235">run_tests</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1a62f163d9b118e32ad34ed2be08996873" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structCPSGrader_1_1trace__test" kindref="compound">trace_test</ref> *</type>
+        <definition>const trace_test* CPSGrader::STLDriver::get_next_trace_test</definition>
+        <argsstring>() const</argsstring>
+        <name>get_next_trace_test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="195" column="26" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="195" bodyend="200"/>
+        <references refid="classCPSGrader_1_1STLDriver_1a8a2d350f2af49c065ec5eb6543d5f186" compoundref="stl__driver_8h" startline="98">trace_test_queue</references>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="19" endline="81">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1adc70fb31ba87176470769b4a73610bef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const bool</type>
+        <definition>const bool CPSGrader::STLDriver::trace_test_queue_empty</definition>
+        <argsstring>()</argsstring>
+        <name>trace_test_queue_empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="202" column="19" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="202" bodyend="204"/>
+        <references refid="classCPSGrader_1_1STLDriver_1a8a2d350f2af49c065ec5eb6543d5f186" compoundref="stl__driver_8h" startline="98">trace_test_queue</references>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a447efa7bdcf0ceda3571e70aa19878d0" compoundref="stl__driver_8h" startline="206" endline="211">get_next_trace_test_env</referencedby>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="19" endline="81">main</referencedby>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1ab13e463af099f23f2524c48b81b6770a" compoundref="stl__driver_8h" startline="213" endline="216">pop_next_trace_test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1a447efa7bdcf0ceda3571e70aa19878d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const string</type>
+        <definition>const string CPSGrader::STLDriver::get_next_trace_test_env</definition>
+        <argsstring>()</argsstring>
+        <name>get_next_trace_test_env</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="206" column="21" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="206" bodyend="211"/>
+        <references refid="classCPSGrader_1_1STLDriver_1a8a2d350f2af49c065ec5eb6543d5f186" compoundref="stl__driver_8h" startline="98">trace_test_queue</references>
+        <references refid="classCPSGrader_1_1STLDriver_1adc70fb31ba87176470769b4a73610bef" compoundref="stl__driver_8h" startline="202" endline="204">trace_test_queue_empty</references>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="19" endline="81">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1ab13e463af099f23f2524c48b81b6770a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::STLDriver::pop_next_trace_test</definition>
+        <argsstring>()</argsstring>
+        <name>pop_next_trace_test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="213" column="13" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="213" bodyend="216"/>
+        <references refid="classCPSGrader_1_1STLDriver_1a8a2d350f2af49c065ec5eb6543d5f186" compoundref="stl__driver_8h" startline="98">trace_test_queue</references>
+        <references refid="classCPSGrader_1_1STLDriver_1adc70fb31ba87176470769b4a73610bef" compoundref="stl__driver_8h" startline="202" endline="204">trace_test_queue_empty</references>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="19" endline="81">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1a5f75ee15ef5a33a5e192c2afb52efbf0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::STLDriver::run_next_trace_test</definition>
+        <argsstring>()</argsstring>
+        <name>run_next_trace_test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="219" column="13" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="219" bodyend="221"/>
+        <references refid="classCPSGrader_1_1STLDriver_1acebf2ba2c9d235dba1715076c3cdca3a" compoundref="stl__driver_8cpp" startline="184" endline="235">run_tests</references>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="19" endline="81">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1a5d110de75517c0a6d6fd826ea234644c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::STLDriver::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>UTILITY FUNCTIONS. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>clear assigned formulas and trace_test_queue </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="226" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="89" bodyend="126"/>
+        <references refid="classCPSGrader_1_1STLDriver_1a5a33e100e7469b07d4c3f5caae365f41" compoundref="stl__driver_8h" startline="104">error_flag</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a1210fa1f2fad7a525c1a581e9fcb904a" compoundref="stl__driver_8h" startline="91">formula_map</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a570e1aeac022cf44a69051d5cd17617c" compoundref="stl__driver_8h" startline="179" endline="185">get_next_formula</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a94bac09b49c5458c6c604ad348d29e3d" compoundref="stl__driver_8h" startline="102">nb_test_pos</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a864305e8288acffdca56b4cd1aab2661" compoundref="stl__driver_8h" startline="103">nb_test_total</references>
+        <references refid="classCPSGrader_1_1STLDriver_1ac4656ba3552db4e7283ce669e9b0fe3e" compoundref="stl__driver_8h" startline="85">param_map</references>
+        <references refid="classCPSGrader_1_1STLDriver_1aff0ca71cef3238de0d6923ad68a1e4c9" compoundref="stl__driver_8h" startline="100">report</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a3365f2b38ac5cfb97b4c8b3395c532c3" compoundref="stl__driver_8h" startline="94">stl_test_map</references>
+        <references refid="classCPSGrader_1_1STLDriver_1ae7e1c1af40ece62e9c56746fb0e0f05e" compoundref="stl__driver_8h" startline="101">test_log</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a8a2d350f2af49c065ec5eb6543d5f186" compoundref="stl__driver_8h" startline="98">trace_test_queue</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1a7077b89554597149c26bf2c7040c5577" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::STLDriver::print</definition>
+        <argsstring>(ostream &amp;out) const</argsstring>
+        <name>print</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prints driver to stream output </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="229" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="130" bodyend="168"/>
+        <references refid="classCPSGrader_1_1STLDriver_1a1210fa1f2fad7a525c1a581e9fcb904a" compoundref="stl__driver_8h" startline="91">formula_map</references>
+        <references refid="classCPSGrader_1_1STLDriver_1ac4656ba3552db4e7283ce669e9b0fe3e" compoundref="stl__driver_8h" startline="85">param_map</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a8a2d350f2af49c065ec5eb6543d5f186" compoundref="stl__driver_8h" startline="98">trace_test_queue</references>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="19" endline="81">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1a6f445095b8b790987c5f6099e4b8bb31" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::STLDriver::print</definition>
+        <argsstring>() const</argsstring>
+        <name>print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prints driver to standard output </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="232" column="13" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="232" bodyend="232"/>
+        <references refid="classCPSGrader_1_1STLDriver_1a6f445095b8b790987c5f6099e4b8bb31" compoundref="stl__driver_8h" startline="232" endline="232">print</references>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a6f445095b8b790987c5f6099e4b8bb31" compoundref="stl__driver_8h" startline="232" endline="232">print</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1ab7da78706330f50e23ee521acf85a662" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPSGrader::STLDriver::read_trace_file</definition>
+        <argsstring>(string trace_file_name)</argsstring>
+        <name>read_trace_file</name>
+        <param>
+          <type>string</type>
+          <declname>trace_file_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read a trace file </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="236" column="13" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="236" bodyend="239"/>
+        <references refid="classCPSGrader_1_1STLDriver_1ae6166510d67e96f633587b70bd12f0db" compoundref="stl__driver_8h" startline="97">data</references>
+        <references refid="tools_8h_1af247b2859e458c1879fae0e4dd9bae47" compoundref="stl__monitor_8cpp" startline="20" endline="41">read_trace</references>
+        <referencedby refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="main_8cpp" startline="19" endline="81">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1ae325bd80d9d5ba67b67dcacfdc49ab60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::STLDriver::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dump all assigned formulas satisfaction function to a file</para>
+<para>compute robustness for all formulas defined in the driver and write results in files </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="242" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="171" bodyend="181"/>
+        <references refid="classCPSGrader_1_1STLDriver_1ae6166510d67e96f633587b70bd12f0db" compoundref="stl__driver_8h" startline="97">data</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a1210fa1f2fad7a525c1a581e9fcb904a" compoundref="stl__driver_8h" startline="91">formula_map</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1acd069522588e1e5aacfde9d66bf4d4d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::STLDriver::dump_trace_file</definition>
+        <argsstring>(const string &amp;)</argsstring>
+        <name>dump_trace_file</name>
+        <param>
+          <type>const string &amp;</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="243" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="347" bodyend="362"/>
+        <references refid="classCPSGrader_1_1STLDriver_1ae6166510d67e96f633587b70bd12f0db" compoundref="stl__driver_8h" startline="97">data</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1ad05bb1e3da49d92bc26ac5aabf30547b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CPSGrader::STLDriver::dump_test_log_file</definition>
+        <argsstring>(const string &amp;)</argsstring>
+        <name>dump_test_log_file</name>
+        <param>
+          <type>const string &amp;</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="244" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="364" bodyend="379"/>
+        <references refid="classCPSGrader_1_1STLDriver_1a94bac09b49c5458c6c604ad348d29e3d" compoundref="stl__driver_8h" startline="102">nb_test_pos</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a864305e8288acffdca56b4cd1aab2661" compoundref="stl__driver_8h" startline="103">nb_test_total</references>
+        <references refid="classCPSGrader_1_1STLDriver_1ae7e1c1af40ece62e9c56746fb0e0f05e" compoundref="stl__driver_8h" startline="101">test_log</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1a40c60ffdff5415fcb5cc02d6f2d221a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::STLDriver::print_trace</definition>
+        <argsstring>(ostream &amp;os)</argsstring>
+        <name>print_trace</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="245" column="10" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="334" bodyend="341"/>
+        <references refid="classCPSGrader_1_1STLDriver_1ae6166510d67e96f633587b70bd12f0db" compoundref="stl__driver_8h" startline="97">data</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1STLDriver_1ac6b4e429b3d33a04cb3bec7cb36b1197" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::STLDriver::print_trace</definition>
+        <argsstring>()</argsstring>
+        <name>print_trace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="246" column="10" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp" bodystart="343" bodyend="345"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The Driver class brings together all components. It creates an instance of the <ref refid="classCPSGrader_1_1Parser" kindref="compound">Parser</ref> and <ref refid="classCPSGrader_1_1Scanner" kindref="compound">Scanner</ref> classes and connects them. Then the input stream is fed into the scanner object and the parser gets it&apos;s token sequence. Furthermore the driver object is available in the grammar rules as a parameter. Therefore the driver class contains a reference to the structure into which the parsed data is saved. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>STLFlexLexer</label>
+      </node>
+      <node id="2">
+        <label>CPSGrader::Scanner</label>
+        <link refid="classCPSGrader_1_1Scanner"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CPSGrader::STLDriver</label>
+        <link refid="classCPSGrader_1_1STLDriver"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>lexer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" line="67" column="1" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_driver.h" bodystart="67" bodyend="247"/>
+    <listofallmembers>
+      <member refid="classCPSGrader_1_1STLDriver_1a51cb16eb5e90463730de0b02fa7ecdb6" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>add_stl_test</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a748e25f4b562460ae04e29e90691fbef" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>add_stl_test</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1aa6e01a40aaadba3f35e151a243f1147a" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>add_stl_test</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1aeda46a6d84823b355d8365b7d892c5e9" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>add_trace_test</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a5d110de75517c0a6d6fd826ea234644c" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>clear</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1ae6166510d67e96f633587b70bd12f0db" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>data</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1ae325bd80d9d5ba67b67dcacfdc49ab60" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>dump</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1ad05bb1e3da49d92bc26ac5aabf30547b" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>dump_test_log_file</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1acd069522588e1e5aacfde9d66bf4d4d7" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>dump_trace_file</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1aa721c96535782721c3fd44247c9d7d69" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>error</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1ada6099cfc5541f245ad78c86298b79d9" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>error</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a5a33e100e7469b07d4c3f5caae365f41" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>error_flag</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a1210fa1f2fad7a525c1a581e9fcb904a" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>formula_map</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a570e1aeac022cf44a69051d5cd17617c" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>get_next_formula</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a424706eee1af61404927123039591b5d" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>get_next_stl_test</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a62f163d9b118e32ad34ed2be08996873" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>get_next_trace_test</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a447efa7bdcf0ceda3571e70aa19878d0" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>get_next_trace_test_env</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a311321b00d9f6c6e5cad254ac2963779" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>lexer</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a94bac09b49c5458c6c604ad348d29e3d" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>nb_test_pos</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a864305e8288acffdca56b4cd1aab2661" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>nb_test_total</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1ac4656ba3552db4e7283ce669e9b0fe3e" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>param_map</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a3c6f493723f41a94fa7cf1839663a57b" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>parse_file</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a485c9c2aa2c373ef78f503565ec000de" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>parse_stream</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a0d23fc7f64a82fa33f7a9f4f42eea915" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>parse_string</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1ab13e463af099f23f2524c48b81b6770a" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>pop_next_trace_test</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a7077b89554597149c26bf2c7040c5577" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>print</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a6f445095b8b790987c5f6099e4b8bb31" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>print</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a40c60ffdff5415fcb5cc02d6f2d221a9" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>print_trace</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1ac6b4e429b3d33a04cb3bec7cb36b1197" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>print_trace</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1ab7da78706330f50e23ee521acf85a662" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>read_trace_file</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1aff0ca71cef3238de0d6923ad68a1e4c9" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>report</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a05e0a6403089af91626c89f08c2856aa" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>reserved</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a5f75ee15ef5a33a5e192c2afb52efbf0" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>run_next_trace_test</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1acebf2ba2c9d235dba1715076c3cdca3a" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>run_tests</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a3124eeea0d651ce1379eaec3d6c4e9f9" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>signal_map</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a3365f2b38ac5cfb97b4c8b3395c532c3" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>stl_test_map</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a3bf260079acca961e7dca236766b0d9c" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>STLDriver</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a432901efc206b30abdc06054f5439044" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>STLDriver</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1afa9bff6c30e1abe02bd0ff67851a4c5b" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>streamname</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1acf56675149ed2d382ff1a2b39f7cc111" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>test_formula</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1ae7e1c1af40ece62e9c56746fb0e0f05e" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>test_log</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a29d73a1db5175061dad3e96f7c461ae4" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>trace_parsing</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1afbbd0451deba167e618594aa2524983b" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>trace_scanning</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a8a2d350f2af49c065ec5eb6543d5f186" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>trace_test_queue</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1adc70fb31ba87176470769b4a73610bef" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>trace_test_queue_empty</name></member>
+      <member refid="classCPSGrader_1_1STLDriver_1a80611c488834fe58a01f4a2bcbfd91ef" prot="public" virt="non-virtual"><scope>CPSGrader::STLDriver</scope><name>~STLDriver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

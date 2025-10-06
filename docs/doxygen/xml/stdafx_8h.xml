@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="stdafx_8h" kind="file" language="C++">
+    <compoundname>stdafx.h</compoundname>
+    <includedby refid="cau__interval__transducer_8cpp" local="yes">/home/zhenya/CauMon/src/cpp/cau_interval_transducer.cpp</includedby>
+    <includedby refid="cau__stl__atom_8cpp" local="yes">/home/zhenya/CauMon/src/cpp/cau_stl_atom.cpp</includedby>
+    <includedby refid="src_2cpp_2signal_8cpp" local="yes">/home/zhenya/CauMon/src/cpp/signal.cpp</includedby>
+    <includedby refid="interval_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/interval.cpp</includedby>
+    <includedby refid="interval__transducer_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/interval_transducer.cpp</includedby>
+    <includedby refid="robustness_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/robustness.cpp</includedby>
+    <includedby refid="breach_2Online_2src_2signal_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/signal.cpp</includedby>
+    <includedby refid="signal__expr_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/signal_expr.cpp</includedby>
+    <includedby refid="stl__atom_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/stl_atom.cpp</includedby>
+    <includedby refid="stl__driver_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp</includedby>
+    <includedby refid="stl__parser_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp</includedby>
+    <includedby refid="stl__scanner_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp</includedby>
+    <includedby refid="tools_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/tools.cpp</includedby>
+    <includedby refid="transducer_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/transducer.cpp</includedby>
+    <includedby refid="update__transducer_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/update_transducer.cpp</includedby>
+    <invincdepgraph>
+      <node id="16">
+        <label>/home/zhenya/CauMon/breach/Online/src/update_transducer.cpp</label>
+        <link refid="update__transducer_8cpp"/>
+      </node>
+      <node id="7">
+        <label>/home/zhenya/CauMon/breach/Online/src/robustness.cpp</label>
+        <link refid="robustness_8cpp"/>
+      </node>
+      <node id="14">
+        <label>/home/zhenya/CauMon/breach/Online/src/tools.cpp</label>
+        <link refid="tools_8cpp"/>
+      </node>
+      <node id="6">
+        <label>/home/zhenya/CauMon/breach/Online/src/interval_transducer.cpp</label>
+        <link refid="interval__transducer_8cpp"/>
+      </node>
+      <node id="4">
+        <label>/home/zhenya/CauMon/src/cpp/signal.cpp</label>
+        <link refid="src_2cpp_2signal_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/home/zhenya/CauMon/breach/Online/src/signal.cpp</label>
+        <link refid="breach_2Online_2src_2signal_8cpp"/>
+      </node>
+      <node id="13">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp</label>
+        <link refid="stl__scanner_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/zhenya/CauMon/src/cpp/cau_stl_atom.cpp</label>
+        <link refid="cau__stl__atom_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/zhenya/CauMon/breach/Online/include/stdafx.h</label>
+        <link refid="stdafx_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/home/zhenya/CauMon/breach/Online/src/transducer.cpp</label>
+        <link refid="transducer_8cpp"/>
+      </node>
+      <node id="9">
+        <label>/home/zhenya/CauMon/breach/Online/src/signal_expr.cpp</label>
+        <link refid="signal__expr_8cpp"/>
+      </node>
+      <node id="5">
+        <label>/home/zhenya/CauMon/breach/Online/src/interval.cpp</label>
+        <link refid="interval_8cpp"/>
+      </node>
+      <node id="11">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp</label>
+        <link refid="stl__driver_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/home/zhenya/CauMon/src/cpp/cau_interval_transducer.cpp</label>
+        <link refid="cau__interval__transducer_8cpp"/>
+      </node>
+      <node id="12">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp</label>
+        <link refid="stl__parser_8cpp"/>
+      </node>
+      <node id="10">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_atom.cpp</label>
+        <link refid="stl__atom_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+    </programlisting>
+    <location file="/home/zhenya/CauMon/breach/Online/include/stdafx.h"/>
+  </compounddef>
+</doxygen>

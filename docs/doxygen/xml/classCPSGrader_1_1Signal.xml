@@ -1,0 +1,761 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCPSGrader_1_1Signal" kind="class" language="C++" prot="public">
+    <compoundname>CPSGrader::Signal</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">std::deque&lt; Sample &gt;</basecompoundref>
+    <includes refid="signal_8h" local="no">signal.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classCPSGrader_1_1Signal_1a2c3e801ab9e7ebab46c24fea15b791a4" prot="public" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double CPSGrader::Signal::BigM</definition>
+        <argsstring></argsstring>
+        <name>BigM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="76" column="15" bodyfile="/home/zhenya/CauMon/src/include/signal.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCPSGrader_1_1Signal_1a6308afc2ebbb736a2f1271938b9fc2be" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CPSGrader::Signal::beginTime</definition>
+        <argsstring></argsstring>
+        <name>beginTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="78" column="8" bodyfile="/home/zhenya/CauMon/src/include/signal.h" bodystart="78" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1Signal_1a9fe5b10a6b4e1b78c3834ce382fe7c66" compoundref="signal_8cpp" startline="42" endline="56">appendSample</referencedby>
+        <referencedby refid="classCPSGrader_1_1Signal_1a33cca1c9c71b2629c2675492babf8ce1" compoundref="signal_8cpp" startline="185" endline="188">reset</referencedby>
+        <referencedby refid="classCPSGrader_1_1Signal_1a85f1f65f2bbe0f80959149d18c76691b" compoundref="signal_8cpp" startline="99" endline="161">resize</referencedby>
+        <referencedby refid="classCPSGrader_1_1Signal_1aacbad901e647126bf5b8e4af00091af2" compoundref="signal_8cpp" startline="163" endline="172">shift</referencedby>
+        <referencedby refid="classCPSGrader_1_1Signal_1a4f700afb11d1df94a10af2354d47ef04" compoundref="signal_8cpp" startline="7" endline="13">Signal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCPSGrader_1_1Signal_1ad6422301194605a5a29f5ffb98d79c79" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CPSGrader::Signal::endTime</definition>
+        <argsstring></argsstring>
+        <name>endTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="79" column="8" bodyfile="/home/zhenya/CauMon/src/include/signal.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1Signal_1a6be4cf88bc03220751707fa172ce2ff9" compoundref="signal_8cpp" startline="37" endline="40">addLastSample</referencedby>
+        <referencedby refid="classCPSGrader_1_1Signal_1a9fe5b10a6b4e1b78c3834ce382fe7c66" compoundref="signal_8cpp" startline="42" endline="56">appendSample</referencedby>
+        <referencedby refid="classCPSGrader_1_1and__transducer_1abc533032d862ed939073547b00d1ec6b" compoundref="cau__interval__transducer_8cpp" startline="41" endline="65">CPSGrader::and_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1or__transducer_1aaa1f0d5d7d36c4d4f109dd4f73954717" compoundref="cau__interval__transducer_8cpp" startline="108" endline="121">CPSGrader::or_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1a0c091d994f9418f993e4b6ef33d6b72c" compoundref="cau__interval__transducer_8cpp" startline="231" endline="255">CPSGrader::ev_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1ae46766485e9012f45716a109b41ce1e3" compoundref="cau__interval__transducer_8cpp" startline="298" endline="346">CPSGrader::alw_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1and__transducer_1a353ab9eb8c960432e090d3311add48d6" compoundref="cau__interval__transducer_8cpp" startline="15" endline="31">CPSGrader::and_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1or__transducer_1a9029ecc3453838857158ef33e26f301c" compoundref="cau__interval__transducer_8cpp" startline="75" endline="99">CPSGrader::or_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1ab948f9b135f034da32c53b8865bd1e59" compoundref="cau__interval__transducer_8cpp" startline="174" endline="221">CPSGrader::ev_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1a7f1dcafe11d15835cdf4a3a89fbd5506" compoundref="cau__interval__transducer_8cpp" startline="264" endline="289">CPSGrader::alw_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1Signal_1a33cca1c9c71b2629c2675492babf8ce1" compoundref="signal_8cpp" startline="185" endline="188">reset</referencedby>
+        <referencedby refid="classCPSGrader_1_1Signal_1a85f1f65f2bbe0f80959149d18c76691b" compoundref="signal_8cpp" startline="99" endline="161">resize</referencedby>
+        <referencedby refid="classCPSGrader_1_1Signal_1aacbad901e647126bf5b8e4af00091af2" compoundref="signal_8cpp" startline="163" endline="172">shift</referencedby>
+        <referencedby refid="classCPSGrader_1_1Signal_1a4f700afb11d1df94a10af2354d47ef04" compoundref="signal_8cpp" startline="7" endline="13">Signal</referencedby>
+        <referencedby refid="classCPSGrader_1_1Signal_1a3b5811ff07bcf6314d03a3cb928ce0e5" compoundref="signal_8cpp" startline="84" endline="97">simplify</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a7cb2885522eafe9edf184d3988f4887a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::Signal::Signal</definition>
+        <argsstring>()</argsstring>
+        <name>Signal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="80" column="1" bodyfile="/home/zhenya/CauMon/src/include/signal.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a4f700afb11d1df94a10af2354d47ef04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::Signal::Signal</definition>
+        <argsstring>(double, double, int)</argsstring>
+        <name>Signal</name>
+        <param>
+          <type>double</type>
+          <defname>T</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>V</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="81" column="1" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="7" bodyend="13"/>
+        <references refid="classCPSGrader_1_1Signal_1a6308afc2ebbb736a2f1271938b9fc2be" compoundref="signal_8h" startline="78">beginTime</references>
+        <references refid="classCPSGrader_1_1Signal_1ad6422301194605a5a29f5ffb98d79c79" compoundref="signal_8h" startline="79">endTime</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1aa5ccf80502037ee0bf06d11d48a78cc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::Signal::Signal</definition>
+        <argsstring>(double *, double *, int)</argsstring>
+        <name>Signal</name>
+        <param>
+          <type>double *</type>
+          <defname>T</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>V</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="82" column="1" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="15" bodyend="35"/>
+        <references refid="classCPSGrader_1_1Signal_1a6308afc2ebbb736a2f1271938b9fc2be" compoundref="signal_8h" startline="78">beginTime</references>
+        <references refid="classCPSGrader_1_1Signal_1ad6422301194605a5a29f5ffb98d79c79" compoundref="signal_8h" startline="79">endTime</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a9fe5b10a6b4e1b78c3834ce382fe7c66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::appendSample</definition>
+        <argsstring>(double, double)</argsstring>
+        <name>appendSample</name>
+        <param>
+          <type>double</type>
+          <defname>t</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>v</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="83" column="6" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="42" bodyend="56"/>
+        <references refid="classCPSGrader_1_1Signal_1a6308afc2ebbb736a2f1271938b9fc2be" compoundref="signal_8h" startline="78">beginTime</references>
+        <references refid="classCPSGrader_1_1Signal_1ad6422301194605a5a29f5ffb98d79c79" compoundref="signal_8h" startline="79">endTime</references>
+        <referencedby refid="classCPSGrader_1_1Signal_1a22a9e0120b1d387419655168d4a9e11c" compoundref="signal_8cpp" startline="74" endline="82">appendSignal</referencedby>
+        <referencedby refid="classCPSGrader_1_1not__transducer_1af59150aac017a9d2994a264cdbc57039" compoundref="cau__interval__transducer_8cpp" startline="152" endline="165">CPSGrader::not_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1and__transducer_1abc533032d862ed939073547b00d1ec6b" compoundref="cau__interval__transducer_8cpp" startline="41" endline="65">CPSGrader::and_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1or__transducer_1aaa1f0d5d7d36c4d4f109dd4f73954717" compoundref="cau__interval__transducer_8cpp" startline="108" endline="121">CPSGrader::or_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1a0c091d994f9418f993e4b6ef33d6b72c" compoundref="cau__interval__transducer_8cpp" startline="231" endline="255">CPSGrader::ev_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1ae46766485e9012f45716a109b41ce1e3" compoundref="cau__interval__transducer_8cpp" startline="298" endline="346">CPSGrader::alw_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1stl__atom_1a6a1e66dfe512deae46287bb9b98194fe" compoundref="cau__stl__atom_8cpp" startline="71" endline="108">CPSGrader::stl_atom::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1not__transducer_1a6439cfb626a7bd2312a08363b3a0b3df" compoundref="cau__interval__transducer_8cpp" startline="130" endline="143">CPSGrader::not_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1and__transducer_1a353ab9eb8c960432e090d3311add48d6" compoundref="cau__interval__transducer_8cpp" startline="15" endline="31">CPSGrader::and_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1or__transducer_1a9029ecc3453838857158ef33e26f301c" compoundref="cau__interval__transducer_8cpp" startline="75" endline="99">CPSGrader::or_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1ab948f9b135f034da32c53b8865bd1e59" compoundref="cau__interval__transducer_8cpp" startline="174" endline="221">CPSGrader::ev_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1a7f1dcafe11d15835cdf4a3a89fbd5506" compoundref="cau__interval__transducer_8cpp" startline="264" endline="289">CPSGrader::alw_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1stl__atom_1a01f31fb8718b306855d7dbf96fa2d780" compoundref="cau__stl__atom_8cpp" startline="24" endline="62">CPSGrader::stl_atom::causation_opt_upper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a3b8bf85a1eea10b6660a0574b768b2fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::appendSample</definition>
+        <argsstring>(double, double, double)</argsstring>
+        <name>appendSample</name>
+        <param>
+          <type>double</type>
+          <defname>t</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>v</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>d</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="84" column="6" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="58" bodyend="72"/>
+        <references refid="classCPSGrader_1_1Signal_1a6308afc2ebbb736a2f1271938b9fc2be" compoundref="signal_8h" startline="78">beginTime</references>
+        <references refid="classCPSGrader_1_1Signal_1ad6422301194605a5a29f5ffb98d79c79" compoundref="signal_8h" startline="79">endTime</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a22a9e0120b1d387419655168d4a9e11c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::appendSignal</definition>
+        <argsstring>(Signal)</argsstring>
+        <name>appendSignal</name>
+        <param>
+          <type><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref></type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="85" column="10" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="74" bodyend="82"/>
+        <references refid="classCPSGrader_1_1Signal_1a9fe5b10a6b4e1b78c3834ce382fe7c66" compoundref="signal_8cpp" startline="42" endline="56">appendSample</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a3b5811ff07bcf6314d03a3cb928ce0e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::simplify</definition>
+        <argsstring>()</argsstring>
+        <name>simplify</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="86" column="10" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="84" bodyend="97"/>
+        <references refid="classCPSGrader_1_1Signal_1ad6422301194605a5a29f5ffb98d79c79" compoundref="signal_8h" startline="79">endTime</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a85f1f65f2bbe0f80959149d18c76691b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::resize</definition>
+        <argsstring>(double, double, double)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>double</type>
+          <defname>s</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>t</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>v</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="87" column="6" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="99" bodyend="161"/>
+        <references refid="classCPSGrader_1_1Signal_1a6308afc2ebbb736a2f1271938b9fc2be" compoundref="signal_8h" startline="78">beginTime</references>
+        <references refid="classCPSGrader_1_1Sample_1acc1303adb3af8008a1b2752d9d32dcc7" compoundref="signal_8h" startline="43">CPSGrader::Sample::derivative</references>
+        <references refid="classCPSGrader_1_1Signal_1ad6422301194605a5a29f5ffb98d79c79" compoundref="signal_8h" startline="79">endTime</references>
+        <references refid="classCPSGrader_1_1Sample_1affdaff6e0207b076f19f1f06a73bbed1" compoundref="signal_8h" startline="55" endline="57">CPSGrader::Sample::valueAt</references>
+        <referencedby refid="classCPSGrader_1_1and__transducer_1abc533032d862ed939073547b00d1ec6b" compoundref="cau__interval__transducer_8cpp" startline="41" endline="65">CPSGrader::and_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1or__transducer_1aaa1f0d5d7d36c4d4f109dd4f73954717" compoundref="cau__interval__transducer_8cpp" startline="108" endline="121">CPSGrader::or_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1a0c091d994f9418f993e4b6ef33d6b72c" compoundref="cau__interval__transducer_8cpp" startline="231" endline="255">CPSGrader::ev_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1ae46766485e9012f45716a109b41ce1e3" compoundref="cau__interval__transducer_8cpp" startline="298" endline="346">CPSGrader::alw_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1and__transducer_1a353ab9eb8c960432e090d3311add48d6" compoundref="cau__interval__transducer_8cpp" startline="15" endline="31">CPSGrader::and_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1or__transducer_1a9029ecc3453838857158ef33e26f301c" compoundref="cau__interval__transducer_8cpp" startline="75" endline="99">CPSGrader::or_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1ab948f9b135f034da32c53b8865bd1e59" compoundref="cau__interval__transducer_8cpp" startline="174" endline="221">CPSGrader::ev_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1a7f1dcafe11d15835cdf4a3a89fbd5506" compoundref="cau__interval__transducer_8cpp" startline="264" endline="289">CPSGrader::alw_transducer::causation_opt_upper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1aacbad901e647126bf5b8e4af00091af2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::shift</definition>
+        <argsstring>(double)</argsstring>
+        <name>shift</name>
+        <param>
+          <type>double</type>
+          <defname>a</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="88" column="6" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="163" bodyend="172"/>
+        <references refid="classCPSGrader_1_1Signal_1a6308afc2ebbb736a2f1271938b9fc2be" compoundref="signal_8h" startline="78">beginTime</references>
+        <references refid="classCPSGrader_1_1Signal_1ad6422301194605a5a29f5ffb98d79c79" compoundref="signal_8h" startline="79">endTime</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a6be4cf88bc03220751707fa172ce2ff9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::addLastSample</definition>
+        <argsstring>()</argsstring>
+        <name>addLastSample</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="89" column="10" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="37" bodyend="40"/>
+        <references refid="classCPSGrader_1_1Signal_1ad6422301194605a5a29f5ffb98d79c79" compoundref="signal_8h" startline="79">endTime</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a065d57119f6156a1583e18639ef81939" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::removeInf</definition>
+        <argsstring>()</argsstring>
+        <name>removeInf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="90" column="6" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="174" bodyend="183"/>
+        <references refid="signal_8h_1ae420caa0af9cbdf102ed255034e27c5b" compoundref="signal_8h" startline="12">BOTTOM</references>
+        <references refid="signal_8h_1afc0eef637f1016e8786e45e106a4881e" compoundref="signal_8h" startline="13">TOP</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a33cca1c9c71b2629c2675492babf8ce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="91" column="10" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="185" bodyend="188"/>
+        <references refid="classCPSGrader_1_1Signal_1a6308afc2ebbb736a2f1271938b9fc2be" compoundref="signal_8h" startline="78">beginTime</references>
+        <references refid="classCPSGrader_1_1Signal_1ad6422301194605a5a29f5ffb98d79c79" compoundref="signal_8h" startline="79">endTime</references>
+        <referencedby refid="classCPSGrader_1_1stl__atom_1a6a1e66dfe512deae46287bb9b98194fe" compoundref="cau__stl__atom_8cpp" startline="71" endline="108">CPSGrader::stl_atom::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1stl__atom_1a01f31fb8718b306855d7dbf96fa2d780" compoundref="cau__stl__atom_8cpp" startline="24" endline="62">CPSGrader::stl_atom::causation_opt_upper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1ac0eafa63f8a13b51d0e23e38e44ad1ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double CPSGrader::Signal::get_value</definition>
+        <argsstring>(double, int)</argsstring>
+        <name>get_value</name>
+        <param>
+          <type>double</type>
+          <defname>t</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>dir</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="93" column="12" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="190" bodyend="213"/>
+        <references refid="signal_8h_1ae420caa0af9cbdf102ed255034e27c5b" compoundref="signal_8h" startline="12">BOTTOM</references>
+        <references refid="signal_8h_1afc0eef637f1016e8786e45e106a4881e" compoundref="signal_8h" startline="13">TOP</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a2465e50598a1bda451a51a889f7e9af9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::dumpFile</definition>
+        <argsstring>(const string filename) const</argsstring>
+        <name>dumpFile</name>
+        <param>
+          <type>const string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="97" column="6" bodyfile="/home/zhenya/CauMon/src/include/signal.h" bodystart="97" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a805228c1d0f48247ff6f37745272d4ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::compute_not</definition>
+        <argsstring>(const Signal &amp;)</argsstring>
+        <name>compute_not</name>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> becomes neg of signal argument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Robustness computation functions - all these methods first clear content </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="114" column="10"/>
+        <referencedby refid="classCPSGrader_1_1not__transducer_1af59150aac017a9d2994a264cdbc57039" compoundref="cau__interval__transducer_8cpp" startline="152" endline="165">CPSGrader::not_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1not__transducer_1a6439cfb626a7bd2312a08363b3a0b3df" compoundref="cau__interval__transducer_8cpp" startline="130" endline="143">CPSGrader::not_transducer::causation_opt_upper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1ad9c41b0c809777ee373043395abd0229" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::compute_and</definition>
+        <argsstring>(const Signal &amp;, const Signal &amp;)</argsstring>
+        <name>compute_and</name>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> becomes conjunction (min) of the two arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="117" column="10"/>
+        <referencedby refid="classCPSGrader_1_1and__transducer_1abc533032d862ed939073547b00d1ec6b" compoundref="cau__interval__transducer_8cpp" startline="41" endline="65">CPSGrader::and_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1ae46766485e9012f45716a109b41ce1e3" compoundref="cau__interval__transducer_8cpp" startline="298" endline="346">CPSGrader::alw_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1and__transducer_1a353ab9eb8c960432e090d3311add48d6" compoundref="cau__interval__transducer_8cpp" startline="15" endline="31">CPSGrader::and_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1or__transducer_1a9029ecc3453838857158ef33e26f301c" compoundref="cau__interval__transducer_8cpp" startline="75" endline="99">CPSGrader::or_transducer::causation_opt_upper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a8036a76497fc32e81ef3b2d6edd52767" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::compute_or</definition>
+        <argsstring>(const Signal &amp;, const Signal &amp;)</argsstring>
+        <name>compute_or</name>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> becomes disjunction (max) of the two arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="120" column="10"/>
+        <referencedby refid="classCPSGrader_1_1and__transducer_1abc533032d862ed939073547b00d1ec6b" compoundref="cau__interval__transducer_8cpp" startline="41" endline="65">CPSGrader::and_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1or__transducer_1aaa1f0d5d7d36c4d4f109dd4f73954717" compoundref="cau__interval__transducer_8cpp" startline="108" endline="121">CPSGrader::or_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1or__transducer_1a9029ecc3453838857158ef33e26f301c" compoundref="cau__interval__transducer_8cpp" startline="75" endline="99">CPSGrader::or_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1ab948f9b135f034da32c53b8865bd1e59" compoundref="cau__interval__transducer_8cpp" startline="174" endline="221">CPSGrader::ev_transducer::causation_opt_upper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a7786eef75eaad4502ee5503b248f61fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::compute_implies</definition>
+        <argsstring>(const Signal &amp;, const Signal &amp;)</argsstring>
+        <name>compute_implies</name>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> becomes implication (max of not x and y) of the two arguments. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="123" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1abb4edb93bc2b82f712a819b9734b96c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::compute_eventually</definition>
+        <argsstring>(const Signal &amp;)</argsstring>
+        <name>compute_eventually</name>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> becomes robust eventually of argument. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="126" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a5ae9736f4c709a74cd9f2ec1b8ac0045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::compute_bounded_eventually</definition>
+        <argsstring>(const Signal &amp;, double)</argsstring>
+        <name>compute_bounded_eventually</name>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+<para>ev_[0, a) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="129" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a9ec8aa842161dbbf18251be39a65f103" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::compute_timed_eventually</definition>
+        <argsstring>(const Signal &amp;, double, double)</argsstring>
+        <name>compute_timed_eventually</name>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+<para>ev_[a,b] </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="132" column="10"/>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1a0c091d994f9418f993e4b6ef33d6b72c" compoundref="cau__interval__transducer_8cpp" startline="231" endline="255">CPSGrader::ev_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1ae46766485e9012f45716a109b41ce1e3" compoundref="cau__interval__transducer_8cpp" startline="298" endline="346">CPSGrader::alw_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1ab948f9b135f034da32c53b8865bd1e59" compoundref="cau__interval__transducer_8cpp" startline="174" endline="221">CPSGrader::ev_transducer::causation_opt_upper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a9affa8cbc706ec45ff4a529919ac540c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::compute_globally</definition>
+        <argsstring>(const Signal &amp;)</argsstring>
+        <name>compute_globally</name>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> becomes robust globally of argument. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="135" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a7587e2c98a88d6495f8c5228a60cbb94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::compute_bounded_globally</definition>
+        <argsstring>(const Signal &amp;, double)</argsstring>
+        <name>compute_bounded_globally</name>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+<para>alw_[0, a) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="138" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1ac64c6a467b94ace8489f9d9b8bb52237" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::compute_timed_globally</definition>
+        <argsstring>(const Signal &amp;, double, double)</argsstring>
+        <name>compute_timed_globally</name>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+<para>alw_[a,b] </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="141" column="10"/>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1ae46766485e9012f45716a109b41ce1e3" compoundref="cau__interval__transducer_8cpp" startline="298" endline="346">CPSGrader::alw_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1ab948f9b135f034da32c53b8865bd1e59" compoundref="cau__interval__transducer_8cpp" startline="174" endline="221">CPSGrader::ev_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1a7f1dcafe11d15835cdf4a3a89fbd5506" compoundref="cau__interval__transducer_8cpp" startline="264" endline="289">CPSGrader::alw_transducer::causation_opt_upper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a6471f9022fc9d3bef664582877427c2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::compute_until</definition>
+        <argsstring>(const Signal &amp;, const Signal &amp;)</argsstring>
+        <name>compute_until</name>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> becomes robust untimed until. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="144" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1ab1a2f149c0b6d654b2f5246ffee88ab2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::compute_timed_until</definition>
+        <argsstring>(const Signal &amp;, const Signal &amp;, double, double)</argsstring>
+        <name>compute_timed_until</name>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+<para>until_[a,b] </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="147" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a315a6f0fb1ca403e3276cdfffc17d83e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::compute_plateau_max</definition>
+        <argsstring>(const Signal &amp;, double)</argsstring>
+        <name>compute_plateau_max</name>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+<para>computes max lemire window of size a of argument signal </para>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO Auxiliary routines (should be privatized probably) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="152" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Signal_1a0632e80f5f42a048d1628ad9eaa15842" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Signal::compute_plateau_min</definition>
+        <argsstring>(const Signal &amp;, double)</argsstring>
+        <name>compute_plateau_min</name>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="153" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classCPSGrader_1_1Signal_1a6249cf3a39ac43620446119b02c8c91e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const Signal &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <defname>out</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> &amp;</type>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="156" column="8" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="237" bodyend="247"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CPSGrader::Signal</label>
+        <link refid="classCPSGrader_1_1Signal"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::deque&lt; Sample &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CPSGrader::Signal</label>
+        <link refid="classCPSGrader_1_1Signal"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>std::deque&lt; Sample &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/zhenya/CauMon/src/include/signal.h" line="73" column="1" bodyfile="/home/zhenya/CauMon/src/include/signal.h" bodystart="73" bodyend="157"/>
+    <listofallmembers>
+      <member refid="classCPSGrader_1_1Signal_1a6be4cf88bc03220751707fa172ce2ff9" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>addLastSample</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a9fe5b10a6b4e1b78c3834ce382fe7c66" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>appendSample</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a3b8bf85a1eea10b6660a0574b768b2fe" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>appendSample</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a22a9e0120b1d387419655168d4a9e11c" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>appendSignal</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a6308afc2ebbb736a2f1271938b9fc2be" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>beginTime</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a2c3e801ab9e7ebab46c24fea15b791a4" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>BigM</name></member>
+      <member refid="classCPSGrader_1_1Signal_1ad9c41b0c809777ee373043395abd0229" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>compute_and</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a5ae9736f4c709a74cd9f2ec1b8ac0045" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>compute_bounded_eventually</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a7587e2c98a88d6495f8c5228a60cbb94" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>compute_bounded_globally</name></member>
+      <member refid="classCPSGrader_1_1Signal_1abb4edb93bc2b82f712a819b9734b96c8" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>compute_eventually</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a9affa8cbc706ec45ff4a529919ac540c" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>compute_globally</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a7786eef75eaad4502ee5503b248f61fd" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>compute_implies</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a805228c1d0f48247ff6f37745272d4ab" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>compute_not</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a8036a76497fc32e81ef3b2d6edd52767" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>compute_or</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a315a6f0fb1ca403e3276cdfffc17d83e" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>compute_plateau_max</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a0632e80f5f42a048d1628ad9eaa15842" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>compute_plateau_min</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a9ec8aa842161dbbf18251be39a65f103" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>compute_timed_eventually</name></member>
+      <member refid="classCPSGrader_1_1Signal_1ac64c6a467b94ace8489f9d9b8bb52237" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>compute_timed_globally</name></member>
+      <member refid="classCPSGrader_1_1Signal_1ab1a2f149c0b6d654b2f5246ffee88ab2" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>compute_timed_until</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a6471f9022fc9d3bef664582877427c2f" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>compute_until</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a2465e50598a1bda451a51a889f7e9af9" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>dumpFile</name></member>
+      <member refid="classCPSGrader_1_1Signal_1ad6422301194605a5a29f5ffb98d79c79" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>endTime</name></member>
+      <member refid="classCPSGrader_1_1Signal_1ac0eafa63f8a13b51d0e23e38e44ad1ab" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>get_value</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a6249cf3a39ac43620446119b02c8c91e" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a065d57119f6156a1583e18639ef81939" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>removeInf</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a33cca1c9c71b2629c2675492babf8ce1" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>reset</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a85f1f65f2bbe0f80959149d18c76691b" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>resize</name></member>
+      <member refid="classCPSGrader_1_1Signal_1aacbad901e647126bf5b8e4af00091af2" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>shift</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a7cb2885522eafe9edf184d3988f4887a" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>Signal</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a4f700afb11d1df94a10af2354d47ef04" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>Signal</name></member>
+      <member refid="classCPSGrader_1_1Signal_1aa5ccf80502037ee0bf06d11d48a78cc3" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>Signal</name></member>
+      <member refid="classCPSGrader_1_1Signal_1a3b5811ff07bcf6314d03a3cb928ce0e5" prot="public" virt="non-virtual"><scope>CPSGrader::Signal</scope><name>simplify</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

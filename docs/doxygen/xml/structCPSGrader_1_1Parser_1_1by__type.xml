@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structCPSGrader_1_1Parser_1_1by__type" kind="struct" language="C++" prot="public">
+    <compoundname>CPSGrader::Parser::by_type</compoundname>
+    <includes refid="stl__parser_8h" local="no">stl_parser.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structCPSGrader_1_1Parser_1_1by__type_1a1fe4bb8a5bd6d6d5813ce8da83a7f22a" prot="public" static="no">
+        <type><ref refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5d" kindref="member">token_type</ref></type>
+        <definition>typedef token_type CPSGrader::Parser::by_type::kind_type</definition>
+        <argsstring></argsstring>
+        <name>kind_type</name>
+        <briefdescription>
+<para>The symbol type as needed by the constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="277" column="26" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCPSGrader_1_1Parser_1_1by__type_1a6c916cc5f1ffbe3215efa00df123892d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPSGrader::Parser::by_type::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The symbol type. <emphasis>empty_symbol</emphasis> when empty. An int, not token_number_type, to be able to store empty_symbol. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="298" column="11" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="298" bodyend="-1"/>
+        <referencedby refid="structCPSGrader_1_1Parser_1_1by__type_1a3a6b82ef4b97e7bc0c4656fc9a3e7161" compoundref="stl__parser_8cpp" startline="323" endline="327">move</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structCPSGrader_1_1Parser_1_1by__type_1a9d9f81c031ff86a701e1cee157631560" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::Parser::by_type::by_type</definition>
+        <argsstring>()</argsstring>
+        <name>by_type</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="271" column="7" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp" bodystart="300" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPSGrader_1_1Parser_1_1by__type_1ac6b80b9f9fedbd70c89780c239b49928" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::Parser::by_type::by_type</definition>
+        <argsstring>(const by_type &amp;other)</argsstring>
+        <name>by_type</name>
+        <param>
+          <type>const <ref refid="structCPSGrader_1_1Parser_1_1by__type" kindref="compound">by_type</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="274" column="7" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp" bodystart="305" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPSGrader_1_1Parser_1_1by__type_1af702aa520a96423615e9069b6ccab71b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::Parser::by_type::by_type</definition>
+        <argsstring>(kind_type t)</argsstring>
+        <name>by_type</name>
+        <param>
+          <type><ref refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5d" kindref="member">kind_type</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Constructor from (external) token numbers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="280" column="7" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp" bodystart="310" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPSGrader_1_1Parser_1_1by__type_1a31e3f211616388dc7d7a5e6a5742c120" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Parser::by_type::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Record that this symbol is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="283" column="12" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp" bodystart="316" bodyend="319"/>
+        <references refid="classCPSGrader_1_1Parser_1a34b33e1864e09c33597a0b35922b2a18a6b8a52af330c8b51045bfafc4d4755a8" compoundref="stl__parser_8h" startline="212">CPSGrader::Parser::empty_symbol</references>
+        <referencedby refid="structCPSGrader_1_1Parser_1_1by__type_1a3a6b82ef4b97e7bc0c4656fc9a3e7161" compoundref="stl__parser_8cpp" startline="323" endline="327">move</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="structCPSGrader_1_1Parser_1_1by__type_1a3a6b82ef4b97e7bc0c4656fc9a3e7161" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Parser::by_type::move</definition>
+        <argsstring>(by_type &amp;that)</argsstring>
+        <name>move</name>
+        <param>
+          <type><ref refid="structCPSGrader_1_1Parser_1_1by__type" kindref="compound">by_type</ref> &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+<para>Steal the symbol type from <emphasis>that</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="286" column="12" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp" bodystart="323" bodyend="327"/>
+        <references refid="structCPSGrader_1_1Parser_1_1by__type_1a31e3f211616388dc7d7a5e6a5742c120" compoundref="stl__parser_8cpp" startline="316" endline="319">clear</references>
+        <references refid="structCPSGrader_1_1Parser_1_1by__type_1a6c916cc5f1ffbe3215efa00df123892d" compoundref="stl__parser_8h" startline="298">type</references>
+      </memberdef>
+      <memberdef kind="function" id="structCPSGrader_1_1Parser_1_1by__type_1abcdc47dc8ed7b3d7b9bcdc940a32b4e3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCPSGrader_1_1Parser_1a75273d8342530f75fabdc2c327a0c3eb" kindref="member">symbol_number_type</ref></type>
+        <definition>int CPSGrader::Parser::by_type::type_get</definition>
+        <argsstring>() const</argsstring>
+        <name>type_get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The (internal) type number (corresponding to <emphasis>type</emphasis>). <emphasis>empty</emphasis> when empty. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="290" column="26" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp" bodystart="331" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPSGrader_1_1Parser_1_1by__type_1a102a2c0037262d57311fb799d0f54f5d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5d" kindref="member">token_type</ref></type>
+        <definition>token_type CPSGrader::Parser::by_type::token</definition>
+        <argsstring>() const</argsstring>
+        <name>token</name>
+        <briefdescription>
+<para>The token. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="293" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Type access provider for token (enum) based symbols. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="268" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="269" bodyend="299"/>
+    <listofallmembers>
+      <member refid="structCPSGrader_1_1Parser_1_1by__type_1a9d9f81c031ff86a701e1cee157631560" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::by_type</scope><name>by_type</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__type_1ac6b80b9f9fedbd70c89780c239b49928" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::by_type</scope><name>by_type</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__type_1af702aa520a96423615e9069b6ccab71b" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::by_type</scope><name>by_type</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__type_1a31e3f211616388dc7d7a5e6a5742c120" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::by_type</scope><name>clear</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__type_1a1fe4bb8a5bd6d6d5813ce8da83a7f22a" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::by_type</scope><name>kind_type</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__type_1a3a6b82ef4b97e7bc0c4656fc9a3e7161" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::by_type</scope><name>move</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__type_1a102a2c0037262d57311fb799d0f54f5d" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::by_type</scope><name>token</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__type_1a6c916cc5f1ffbe3215efa00df123892d" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::by_type</scope><name>type</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__type_1abcdc47dc8ed7b3d7b9bcdc940a32b4e3" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::by_type</scope><name>type_get</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classFlexLexer" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>FlexLexer</compoundname>
+    <derivedcompoundref refid="classyyFlexLexer" prot="public" virt="non-virtual">yyFlexLexer</derivedcompoundref>
+    <includes refid="FlexLexer_8h" local="no">FlexLexer.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classFlexLexer_1a31e594872cba4bb896011d3ee1f75f0d" prot="protected" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* FlexLexer::yytext</definition>
+        <argsstring></argsstring>
+        <name>yytext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" line="95" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" bodystart="95" bodyend="-1"/>
+        <referencedby refid="classFlexLexer_1aefb1ea757e0e455ae229ae099b4240c2" compoundref="FlexLexer_8h" startline="65" endline="65">YYText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFlexLexer_1a4afe49bd3115c3fa0767019a39052158" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t FlexLexer::yyleng</definition>
+        <argsstring></argsstring>
+        <name>yyleng</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" line="96" column="8" bodyfile="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" bodystart="96" bodyend="-1"/>
+        <referencedby refid="classFlexLexer_1aac68a61beb1e564ed2f8a0724e860f34" compoundref="FlexLexer_8h" startline="66" endline="66">YYLeng</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFlexLexer_1a511f8fed6925478cb9925edce88024c7" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FlexLexer::yylineno</definition>
+        <argsstring></argsstring>
+        <name>yylineno</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" line="97" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="classFlexLexer_1a835d3243729ffa4912949ea44b241f3b" compoundref="FlexLexer_8h" startline="89" endline="89">lineno</referencedby>
+        <referencedby refid="classyyFlexLexer_1a327ec30fcb12fcdbff3a0b776ed40504" compoundref="stl__scanner_8cpp" startline="1189" endline="1215">yyFlexLexer::yyFlexLexer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classFlexLexer_1afb25c8701977e6f510799f4cf8a4a029" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FlexLexer::yy_flex_debug</definition>
+        <argsstring></argsstring>
+        <name>yy_flex_debug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" line="98" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" bodystart="98" bodyend="-1"/>
+        <referencedby refid="classFlexLexer_1a71d0a4ad9db57c86b44e84c407eb21f1" compoundref="FlexLexer_8h" startline="91" endline="91">debug</referencedby>
+        <referencedby refid="classFlexLexer_1a1da05b19b783fd94e8a65cb4ee02dec8" compoundref="FlexLexer_8h" startline="92" endline="92">set_debug</referencedby>
+        <referencedby refid="classyyFlexLexer_1a327ec30fcb12fcdbff3a0b776ed40504" compoundref="stl__scanner_8cpp" startline="1189" endline="1215">yyFlexLexer::yyFlexLexer</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFlexLexer_1a513c4982ef52db6d43151becbf3fe05a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual FlexLexer::~FlexLexer</definition>
+        <argsstring>()</argsstring>
+        <name>~FlexLexer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" line="63" column="9" bodyfile="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlexLexer_1aefb1ea757e0e455ae229ae099b4240c2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* FlexLexer::YYText</definition>
+        <argsstring>() const</argsstring>
+        <name>YYText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" line="65" column="12" bodyfile="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" bodystart="65" bodyend="65"/>
+        <references refid="classFlexLexer_1a31e594872cba4bb896011d3ee1f75f0d" compoundref="FlexLexer_8h" startline="95">yytext</references>
+      </memberdef>
+      <memberdef kind="function" id="classFlexLexer_1aac68a61beb1e564ed2f8a0724e860f34" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t FlexLexer::YYLeng</definition>
+        <argsstring>() const</argsstring>
+        <name>YYLeng</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" line="66" column="8" bodyfile="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" bodystart="66" bodyend="66"/>
+        <references refid="classFlexLexer_1a4afe49bd3115c3fa0767019a39052158" compoundref="FlexLexer_8h" startline="96">yyleng</references>
+      </memberdef>
+      <memberdef kind="function" id="classFlexLexer_1a3fa4649c1866a483fc391923ca90ca1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void FlexLexer::yy_switch_to_buffer</definition>
+        <argsstring>(struct yy_buffer_state *new_buffer)=0</argsstring>
+        <name>yy_switch_to_buffer</name>
+        <reimplementedby refid="classyyFlexLexer_1ad1d304c93cf758e1ae4db98d9ca35ad0">yy_switch_to_buffer</reimplementedby>
+        <param>
+          <type>struct <ref refid="structyy__buffer__state" kindref="compound">yy_buffer_state</ref> *</type>
+          <declname>new_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlexLexer_1a9e0d5e33726e0270b241a730a3028990" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>struct <ref refid="structyy__buffer__state" kindref="compound">yy_buffer_state</ref> *</type>
+        <definition>virtual struct yy_buffer_state* FlexLexer::yy_create_buffer</definition>
+        <argsstring>(FLEX_STD istream *s, int size)=0</argsstring>
+        <name>yy_create_buffer</name>
+        <reimplementedby refid="classyyFlexLexer_1ac72d57010353577c918e72eba3d8972a">yy_create_buffer</reimplementedby>
+        <param>
+          <type><ref refid="FlexLexer_8h_1ae50ff830f34b9e244163babb41a1552d" kindref="member">FLEX_STD</ref> istream *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlexLexer_1a6c59180ab84ba98af3704ba2cb018230" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void FlexLexer::yy_delete_buffer</definition>
+        <argsstring>(struct yy_buffer_state *b)=0</argsstring>
+        <name>yy_delete_buffer</name>
+        <reimplementedby refid="classyyFlexLexer_1a645a8ebb5b2b5b80707d053a0eb7a21a">yy_delete_buffer</reimplementedby>
+        <param>
+          <type>struct <ref refid="structyy__buffer__state" kindref="compound">yy_buffer_state</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" line="72" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlexLexer_1a15aea8e169874756674e4f79553e68ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void FlexLexer::yyrestart</definition>
+        <argsstring>(FLEX_STD istream *s)=0</argsstring>
+        <name>yyrestart</name>
+        <reimplementedby refid="classyyFlexLexer_1ab337dd3bd9504644164c0600d960b6e2">yyrestart</reimplementedby>
+        <param>
+          <type><ref refid="FlexLexer_8h_1ae50ff830f34b9e244163babb41a1552d" kindref="member">FLEX_STD</ref> istream *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" line="73" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFlexLexer_1a1b1f93d24f5a97f50eb1747fac568ccb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int FlexLexer::yylex</definition>
+        <argsstring>()=0</argsstring>
+        <name>yylex</name>
+        <reimplementedby refid="classyyFlexLexer_1a17db927e4266920dc3f00a06733fb868">yylex</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" line="75" column="13"/>
+        <referencedby refid="classFlexLexer_1a5ec7f8b71a9cd9142963f0d924ddaa7c" compoundref="FlexLexer_8h" startline="78" endline="82">yylex</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFlexLexer_1a5ec7f8b71a9cd9142963f0d924ddaa7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int FlexLexer::yylex</definition>
+        <argsstring>(FLEX_STD istream *new_in, FLEX_STD ostream *new_out=0)</argsstring>
+        <name>yylex</name>
+        <param>
+          <type><ref refid="FlexLexer_8h_1ae50ff830f34b9e244163babb41a1552d" kindref="member">FLEX_STD</ref> istream *</type>
+          <declname>new_in</declname>
+        </param>
+        <param>
+          <type><ref refid="FlexLexer_8h_1ae50ff830f34b9e244163babb41a1552d" kindref="member">FLEX_STD</ref> ostream *</type>
+          <declname>new_out</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" line="78" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" bodystart="78" bodyend="82"/>
+        <references refid="classFlexLexer_1a09dd0826a8540365a74c2167795bbc61">switch_streams</references>
+        <references refid="classFlexLexer_1a1b1f93d24f5a97f50eb1747fac568ccb">yylex</references>
+      </memberdef>
+      <memberdef kind="function" id="classFlexLexer_1a09dd0826a8540365a74c2167795bbc61" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void FlexLexer::switch_streams</definition>
+        <argsstring>(FLEX_STD istream *new_in=0, FLEX_STD ostream *new_out=0)=0</argsstring>
+        <name>switch_streams</name>
+        <reimplementedby refid="classyyFlexLexer_1ae88d47b620670ef7a924f4fe1e70774b">switch_streams</reimplementedby>
+        <param>
+          <type><ref refid="FlexLexer_8h_1ae50ff830f34b9e244163babb41a1552d" kindref="member">FLEX_STD</ref> istream *</type>
+          <declname>new_in</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="FlexLexer_8h_1ae50ff830f34b9e244163babb41a1552d" kindref="member">FLEX_STD</ref> ostream *</type>
+          <declname>new_out</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" line="86" column="14"/>
+        <referencedby refid="classFlexLexer_1a5ec7f8b71a9cd9142963f0d924ddaa7c" compoundref="FlexLexer_8h" startline="78" endline="82">yylex</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classFlexLexer_1a835d3243729ffa4912949ea44b241f3b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int FlexLexer::lineno</definition>
+        <argsstring>() const</argsstring>
+        <name>lineno</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" line="89" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" bodystart="89" bodyend="89"/>
+        <references refid="classFlexLexer_1a511f8fed6925478cb9925edce88024c7" compoundref="FlexLexer_8h" startline="97">yylineno</references>
+      </memberdef>
+      <memberdef kind="function" id="classFlexLexer_1a71d0a4ad9db57c86b44e84c407eb21f1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int FlexLexer::debug</definition>
+        <argsstring>() const</argsstring>
+        <name>debug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" line="91" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" bodystart="91" bodyend="91"/>
+        <references refid="classFlexLexer_1afb25c8701977e6f510799f4cf8a4a029" compoundref="FlexLexer_8h" startline="98">yy_flex_debug</references>
+      </memberdef>
+      <memberdef kind="function" id="classFlexLexer_1a1da05b19b783fd94e8a65cb4ee02dec8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FlexLexer::set_debug</definition>
+        <argsstring>(int flag)</argsstring>
+        <name>set_debug</name>
+        <param>
+          <type>int</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" line="92" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" bodystart="92" bodyend="92"/>
+        <references refid="classFlexLexer_1afb25c8701977e6f510799f4cf8a4a029" compoundref="FlexLexer_8h" startline="98">yy_flex_debug</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FlexLexer</label>
+        <link refid="classFlexLexer"/>
+      </node>
+      <node id="2">
+        <label>yyFlexLexer</label>
+        <link refid="classyyFlexLexer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" line="61" column="1" bodyfile="/home/zhenya/CauMon/breach/Online/include/FlexLexer.h" bodystart="61" bodyend="99"/>
+    <listofallmembers>
+      <member refid="classFlexLexer_1a71d0a4ad9db57c86b44e84c407eb21f1" prot="public" virt="non-virtual"><scope>FlexLexer</scope><name>debug</name></member>
+      <member refid="classFlexLexer_1a835d3243729ffa4912949ea44b241f3b" prot="public" virt="non-virtual"><scope>FlexLexer</scope><name>lineno</name></member>
+      <member refid="classFlexLexer_1a1da05b19b783fd94e8a65cb4ee02dec8" prot="public" virt="non-virtual"><scope>FlexLexer</scope><name>set_debug</name></member>
+      <member refid="classFlexLexer_1a09dd0826a8540365a74c2167795bbc61" prot="public" virt="pure-virtual"><scope>FlexLexer</scope><name>switch_streams</name></member>
+      <member refid="classFlexLexer_1a9e0d5e33726e0270b241a730a3028990" prot="public" virt="pure-virtual"><scope>FlexLexer</scope><name>yy_create_buffer</name></member>
+      <member refid="classFlexLexer_1a6c59180ab84ba98af3704ba2cb018230" prot="public" virt="pure-virtual"><scope>FlexLexer</scope><name>yy_delete_buffer</name></member>
+      <member refid="classFlexLexer_1afb25c8701977e6f510799f4cf8a4a029" prot="protected" virt="non-virtual"><scope>FlexLexer</scope><name>yy_flex_debug</name></member>
+      <member refid="classFlexLexer_1a3fa4649c1866a483fc391923ca90ca1d" prot="public" virt="pure-virtual"><scope>FlexLexer</scope><name>yy_switch_to_buffer</name></member>
+      <member refid="classFlexLexer_1a4afe49bd3115c3fa0767019a39052158" prot="protected" virt="non-virtual"><scope>FlexLexer</scope><name>yyleng</name></member>
+      <member refid="classFlexLexer_1aac68a61beb1e564ed2f8a0724e860f34" prot="public" virt="non-virtual"><scope>FlexLexer</scope><name>YYLeng</name></member>
+      <member refid="classFlexLexer_1a1b1f93d24f5a97f50eb1747fac568ccb" prot="public" virt="pure-virtual"><scope>FlexLexer</scope><name>yylex</name></member>
+      <member refid="classFlexLexer_1a5ec7f8b71a9cd9142963f0d924ddaa7c" prot="public" virt="non-virtual"><scope>FlexLexer</scope><name>yylex</name></member>
+      <member refid="classFlexLexer_1a511f8fed6925478cb9925edce88024c7" prot="protected" virt="non-virtual"><scope>FlexLexer</scope><name>yylineno</name></member>
+      <member refid="classFlexLexer_1a15aea8e169874756674e4f79553e68ed" prot="public" virt="pure-virtual"><scope>FlexLexer</scope><name>yyrestart</name></member>
+      <member refid="classFlexLexer_1a31e594872cba4bb896011d3ee1f75f0d" prot="protected" virt="non-virtual"><scope>FlexLexer</scope><name>yytext</name></member>
+      <member refid="classFlexLexer_1aefb1ea757e0e455ae229ae099b4240c2" prot="public" virt="non-virtual"><scope>FlexLexer</scope><name>YYText</name></member>
+      <member refid="classFlexLexer_1a513c4982ef52db6d43151becbf3fe05a" prot="public" virt="virtual"><scope>FlexLexer</scope><name>~FlexLexer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="stl__causation__opt_8cpp" kind="file" language="C++">
+    <compoundname>stl_causation_opt.cpp</compoundname>
+    <includes local="yes">mex.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">sstream</includes>
+    <includes local="yes">stl_driver.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>stl_driver.h</label>
+      </node>
+      <node id="5">
+        <label>sstream</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="1">
+        <label>/home/zhenya/CauMon/src/cpp/stl_causation_opt.cpp</label>
+        <link refid="stl__causation__opt_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mex.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacestd">std</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="stl__causation__opt_8cpp_1a6a215cbfde54f82a3ce599228fc3fce5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mexFunction</definition>
+        <argsstring>(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])</argsstring>
+        <name>mexFunction</name>
+        <param>
+          <type>int</type>
+          <declname>nlhs</declname>
+        </param>
+        <param>
+          <type>mxArray *</type>
+          <declname>plhs</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nrhs</declname>
+        </param>
+        <param>
+          <type>const mxArray *</type>
+          <declname>prhs</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>MEX function entry point for optimized STL causation monitoring. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the main entry point for the optimized MATLAB MEX interface. It processes input arguments, parses the STL formula, and computes optimized robustness bounds for online monitoring with causation analysis using the most efficient algorithms.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nlhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of left-hand side arguments (outputs) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>plhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of left-hand side arguments (outputs) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nrhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of right-hand side arguments (inputs) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of right-hand side arguments (inputs) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>double debug = (double)(round(0.0*100)/100);</para>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/cpp/stl_causation_opt.cpp" line="51" column="6" bodyfile="/home/zhenya/CauMon/src/cpp/stl_causation_opt.cpp" bodystart="51" bodyend="152"/>
+        <references refid="classCPSGrader_1_1transducer_1a9441f8958d69ae3896d531d36e216f20" compoundref="transducer_8h" startline="68" endline="68">CPSGrader::transducer::causation_opt_lower</references>
+        <references refid="classCPSGrader_1_1transducer_1a580d043d7f72bc1bf882be8a760339a9" compoundref="transducer_8h" startline="67" endline="67">CPSGrader::transducer::causation_opt_upper</references>
+        <references refid="classCPSGrader_1_1transducer_1a133c57a3bfb20aed578cc257e6e9a1eb">CPSGrader::transducer::clone</references>
+        <references refid="classCPSGrader_1_1transducer_1afd33961aef44e5b79d2e0a1d0c0ea1e9" compoundref="transducer_8h" startline="59" endline="59">CPSGrader::transducer::set_duration</references>
+        <references refid="classCPSGrader_1_1transducer_1a2ca92d6e33f6f7eb40285c9d56b719a8" compoundref="transducer_8h" startline="53" endline="57">CPSGrader::transducer::set_horizon</references>
+        <references refid="classCPSGrader_1_1transducer_1a387f7e246ca12a83ed2c4c3edc95c419" compoundref="transducer_8h" startline="63" endline="65">CPSGrader::transducer::set_trace_data_ptr</references>
+        <references refid="classCPSGrader_1_1transducer_1a5112602e45c5f167fb87211206813b45" compoundref="transducer_8h" startline="36">CPSGrader::transducer::z</references>
+        <references refid="classCPSGrader_1_1transducer_1aa9679dc8f88998242eefd789edef178d" compoundref="transducer_8h" startline="36">CPSGrader::transducer::z_low</references>
+        <references refid="classCPSGrader_1_1transducer_1a7983863530e0de4335d461cd00a54e7f" compoundref="transducer_8h" startline="36">CPSGrader::transducer::z_up</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>MEX interface for optimized STL causation monitoring. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This file provides a MATLAB MEX interface for optimized online STL monitoring with causation analysis. It is an optimized version of stl_causation.cpp that uses the causation_opt_upper() and causation_opt_lower() methods for more efficient computation of robustness bounds in causation analysis.</para>
+<para>The MEX function accepts:<itemizedlist>
+<listitem><para>Signal names</para>
+</listitem><listitem><para>STL formula as string</para>
+</listitem><listitem><para>Data array</para>
+</listitem><listitem><para>Time interval</para>
+</listitem></itemizedlist>
+</para>
+<para>And returns:<itemizedlist>
+<listitem><para>Upper bound robustness values (optimized causation)</para>
+</listitem><listitem><para>Lower bound robustness values (optimized causation)</para>
+</listitem></itemizedlist>
+</para>
+<para>Key differences from stl_causation.cpp:<itemizedlist>
+<listitem><para>Uses causation_opt_upper/lower instead of compute_qnmono_upper/lower</para>
+</listitem><listitem><para>More efficient computation for causation analysis</para>
+</listitem><listitem><para>Optimized for real-time monitoring scenarios</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="author"><para><ref refid="namespaceCPSGrader" kindref="compound">CPSGrader</ref> Team </para>
+</simplesect>
+<simplesect kind="date"><para>2023 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>include<sp/>stuff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mex.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stl_driver.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceCPSGrader" kindref="compound">CPSGrader</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="stl__causation__opt_8cpp_1a6a215cbfde54f82a3ce599228fc3fce5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="stl__causation__opt_8cpp_1a6a215cbfde54f82a3ce599228fc3fce5" kindref="member">mexFunction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nlhs,<sp/>mxArray<sp/>*plhs[],</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nrhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>mxArray<sp/>*prhs[]<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>fcout;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nrhs&lt;=1)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mexErrMsgTxt(</highlight><highlight class="stringliteral">&quot;four<sp/>inputs<sp/>are<sp/>expected:<sp/>signal<sp/>names,<sp/>a<sp/>formula<sp/>(string),<sp/>data<sp/>(array),<sp/>time<sp/>interval<sp/>(array<sp/>of<sp/>size<sp/>2).&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>read<sp/>inputs:<sp/>a<sp/>string<sp/>and<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*signal_buf<sp/>=<sp/>mxArrayToString(prhs[0]);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*stl_buf<sp/>=<sp/>mxArrayToString(prhs[1]);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>phi_st<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;signal<sp/>&quot;</highlight><highlight class="normal">+<sp/>string(signal_buf)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;phi:=&quot;</highlight><highlight class="normal"><sp/>+<sp/>string(stl_buf);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>data<sp/>dimensions<sp/>and<sp/>pointers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>m<sp/>=<sp/>mxGetM(prhs[2]);<sp/><sp/></highlight><highlight class="comment">//<sp/>Number<sp/>of<sp/>signals</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n=<sp/><sp/>mxGetN(prhs[2]);<sp/><sp/></highlight><highlight class="comment">//<sp/>Number<sp/>of<sp/>time<sp/>points</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*data_in<sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>mxGetPr(prhs[2]);<sp/><sp/></highlight><highlight class="comment">//<sp/>Input<sp/>data<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*time_in<sp/>=<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*)<sp/>mxGetPr(prhs[3]);<sp/><sp/></highlight><highlight class="comment">//<sp/>Time<sp/>interval<sp/>[start,<sp/>end]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>STL<sp/>driver<sp/>for<sp/>formula<sp/>parsing<sp/>and<sp/>monitoring</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>STLDriver<sp/>stl_driver<sp/>=<sp/>STLDriver();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>sample;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>for(int<sp/>i<sp/>=<sp/>0;<sp/>i&lt;n;<sp/>i++){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for(int<sp/>j<sp/>=<sp/>0;<sp/>j&lt;m;<sp/>j++)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sample.push_back(data_in[j+<sp/>i*m]);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stl_driver.data.push_back(sample);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sample.clear();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//cout<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Variables<sp/>for<sp/>robustness<sp/>computation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCPSGrader_1_1transducer" kindref="compound">transducer</ref><sp/>*<sp/>phi;<sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rob,<sp/>rob_up,<sp/>rob_low;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>rob<sp/>=<sp/>rob_up<sp/>=<sp/>rob_low<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>z,<sp/>z_up,<sp/>z_low;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Parse<sp/>the<sp/>STL<sp/>formula</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>parse_success<sp/>=<sp/>stl_driver.parse_string(phi_st);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>output<sp/>arrays<sp/>for<sp/>MATLAB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>plhs[0]<sp/>=<sp/>mxCreateDoubleMatrix(1,n,<sp/>mxREAL);<sp/><sp/></highlight><highlight class="comment">//<sp/>Upper<sp/>bound<sp/>robustness<sp/>(optimized)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>plhs[1]<sp/>=<sp/>mxCreateDoubleMatrix(1,n,<sp/>mxREAL);<sp/><sp/></highlight><highlight class="comment">//<sp/>Lower<sp/>bound<sp/>robustness<sp/>(optimized)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*rob_up_ptr<sp/>=<sp/>mxGetPr(plhs[0]);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*rob_low_ptr<sp/>=<sp/>mxGetPr(plhs[1]);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(parse_success)<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clone<sp/>the<sp/>parsed<sp/>formula<sp/>and<sp/>set<sp/>monitoring<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>phi<sp/>=<sp/>stl_driver.formula_map[</highlight><highlight class="stringliteral">&quot;phi&quot;</highlight><highlight class="normal">]-&gt;<ref refid="classCPSGrader_1_1transducer_1a133c57a3bfb20aed578cc257e6e9a1eb" kindref="member">clone</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>phi-&gt;<ref refid="classCPSGrader_1_1transducer_1a2ca92d6e33f6f7eb40285c9d56b719a8" kindref="member">set_horizon</ref>(time_in[0],<sp/>time_in[1]);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>phi-&gt;<ref refid="classCPSGrader_1_1transducer_1afd33961aef44e5b79d2e0a1d0c0ea1e9" kindref="member">set_duration</ref>();<sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>duration<sp/>for<sp/>optimized<sp/>causation<sp/>analysis</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Process<sp/>each<sp/>time<sp/>point<sp/>for<sp/>optimized<sp/>online<sp/>monitoring</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>sample;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>instant<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//double<sp/>debug<sp/>=<sp/>0.0;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n;<sp/>i++){</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Collect<sp/>all<sp/>signal<sp/>values<sp/>for<sp/>current<sp/>time<sp/>point</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>m;<sp/>j++){</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sample.push_back(data_in[j<sp/>+<sp/>i*m]);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(j<sp/>==<sp/>0){</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>instant<sp/>=<sp/>data_in[j<sp/>+<sp/>i*m];<sp/><sp/></highlight><highlight class="comment">//<sp/>Store<sp/>time<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>current<sp/>sample<sp/>to<sp/>trace<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stl_driver.data.push_back(sample);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sample.clear();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>phi-&gt;<ref refid="classCPSGrader_1_1transducer_1a387f7e246ca12a83ed2c4c3edc95c419" kindref="member">set_trace_data_ptr</ref>(stl_driver.data);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Compute<sp/>optimized<sp/>causation<sp/>robustness<sp/>bounds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>These<sp/>methods<sp/>are<sp/>more<sp/>efficient<sp/>than<sp/>the<sp/>quasi-monotonic<sp/>versions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rob_up<sp/>=<sp/>phi-&gt;<ref refid="classCPSGrader_1_1transducer_1a580d043d7f72bc1bf882be8a760339a9" kindref="member">causation_opt_upper</ref>();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rob_low=<sp/>phi-&gt;<ref refid="classCPSGrader_1_1transducer_1a9441f8958d69ae3896d531d36e216f20" kindref="member">causation_opt_lower</ref>();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Store<sp/>results<sp/>in<sp/>output<sp/>arrays</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rob_up_ptr[i]<sp/>=<sp/>rob_up;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rob_low_ptr[i]<sp/>=<sp/>rob_low;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cout<sp/>&lt;&lt;<sp/>&quot;results&quot;<sp/>&lt;&lt;<sp/>rob<sp/>&lt;&lt;&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>rob_up&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>rob_low<sp/>&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Store<sp/>final<sp/>signal<sp/>states<sp/>(for<sp/>debugging<sp/>or<sp/>further<sp/>analysis)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z<sp/>=<sp/><sp/>phi-&gt;<ref refid="classCPSGrader_1_1transducer_1a5112602e45c5f167fb87211206813b45" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z_low<sp/>=<sp/>phi-&gt;<ref refid="classCPSGrader_1_1transducer_1aa9679dc8f88998242eefd789edef178d" kindref="member">z_low</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>z_up<sp/>=<sp/>phi-&gt;<ref refid="classCPSGrader_1_1transducer_1a7983863530e0de4335d461cd00a54e7f" kindref="member">z_up</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mexErrMsgTxt(</highlight><highlight class="stringliteral">&quot;Problem<sp/>parsing<sp/>formula.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clean<sp/>up<sp/>allocated<sp/>memory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>mxFree(signal_buf);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>mxFree(stl_buf);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>phi;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/zhenya/CauMon/src/cpp/stl_causation_opt.cpp"/>
+  </compounddef>
+</doxygen>
