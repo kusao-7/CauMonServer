@@ -1,0 +1,18 @@
+version: 2
+
+sphinx:
+  configuration: docs/source/conf.py
+
+build:
+  os: ubuntu
+  tools:
+    python: "3.10"
+
+python:
+  install:
+    - requirements: docs/requirements.txt
+
+apt_packages:
+  - doxygen
+  - graphviz
+
