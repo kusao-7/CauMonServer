@@ -1,6 +1,4 @@
-# CauMon: An Informative Online Monitor for Signal Temporal Logic
-
-This repository is for the artifact evaluation of the paper ""
+# CauMon: A Tool for Online Monitoring against Signal Temporal Logic
 
 ## Run in your local machine
 
@@ -21,4 +19,4 @@ This repository is for the artifact evaluation of the paper ""
   
 - Start MATLAB GUI, run `configure.m`
 
-- Run examples, such as `Figure2a.m`
+### Usage
