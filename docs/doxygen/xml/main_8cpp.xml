@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="main_8cpp" kind="file" language="C++">
+    <compoundname>main.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">string</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">limits</includes>
+    <includes refid="stl__driver_8h" local="yes">stl_driver.h</includes>
+    <incdepgraph>
+      <node id="11">
+        <label>limits</label>
+      </node>
+      <node id="16">
+        <label>iterator</label>
+      </node>
+      <node id="26">
+        <label>location.hh</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="22">
+        <label>tools.h</label>
+        <link refid="tools_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>cmath</label>
+      </node>
+      <node id="17">
+        <label>robustness.h</label>
+        <link refid="robustness_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>stdexcept</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="13">
+        <label>map</label>
+      </node>
+      <node id="1">
+        <label>/home/zhenya/CauMon/breach/Online/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>fstream</label>
+      </node>
+      <node id="25">
+        <label>stack.hh</label>
+      </node>
+      <node id="19">
+        <label>signal.h</label>
+        <link refid="breach_2Online_2include_2signal_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdio</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+      <node id="10">
+        <label>sstream</label>
+      </node>
+      <node id="23">
+        <label>stl_parser.h</label>
+        <link refid="stl__parser_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>transducer.h</label>
+        <link refid="breach_2Online_2include_2transducer_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>interval.h</label>
+        <link refid="interval_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cstdlib</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="14">
+        <label>deque</label>
+      </node>
+      <node id="12">
+        <label>stl_driver.h</label>
+        <link refid="stl__driver_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdio.h</label>
+      </node>
+      <node id="20">
+        <label>mex.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is <ref refid="namespaceCPSGrader" kindref="compound">CPSGrader</ref> default executable. It reads a test plan and output a report. For each test in the test plan, a data file is read, and a set of stl tests are executed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/src/main.cpp" line="19" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/src/main.cpp" bodystart="19" bodyend="81"/>
+        <references refid="classCPSGrader_1_1STLDriver_1a62f163d9b118e32ad34ed2be08996873" compoundref="stl__driver_8h" startline="195" endline="200">CPSGrader::STLDriver::get_next_trace_test</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a447efa7bdcf0ceda3571e70aa19878d0" compoundref="stl__driver_8h" startline="206" endline="211">CPSGrader::STLDriver::get_next_trace_test_env</references>
+        <references refid="structCPSGrader_1_1trace__test_1a7d7d9aa6c4d188a1b02d3eed3cf187dd" compoundref="stl__driver_8h" startline="54">CPSGrader::trace_test::id</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a485c9c2aa2c373ef78f503565ec000de" compoundref="stl__driver_8cpp" startline="46" endline="58">CPSGrader::STLDriver::parse_stream</references>
+        <references refid="classCPSGrader_1_1STLDriver_1ab13e463af099f23f2524c48b81b6770a" compoundref="stl__driver_8h" startline="213" endline="216">CPSGrader::STLDriver::pop_next_trace_test</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a7077b89554597149c26bf2c7040c5577" compoundref="stl__driver_8cpp" startline="130" endline="168">CPSGrader::STLDriver::print</references>
+        <references refid="classCPSGrader_1_1STLDriver_1ab7da78706330f50e23ee521acf85a662" compoundref="stl__driver_8h" startline="236" endline="239">CPSGrader::STLDriver::read_trace_file</references>
+        <references refid="classCPSGrader_1_1STLDriver_1aff0ca71cef3238de0d6923ad68a1e4c9" compoundref="stl__driver_8h" startline="100">CPSGrader::STLDriver::report</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a5f75ee15ef5a33a5e192c2afb52efbf0" compoundref="stl__driver_8h" startline="219" endline="221">CPSGrader::STLDriver::run_next_trace_test</references>
+        <references refid="classCPSGrader_1_1STLDriver_1ae7e1c1af40ece62e9c56746fb0e0f05e" compoundref="stl__driver_8h" startline="101">CPSGrader::STLDriver::test_log</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a29d73a1db5175061dad3e96f7c461ae4" compoundref="stl__driver_8h" startline="76">CPSGrader::STLDriver::trace_parsing</references>
+        <references refid="classCPSGrader_1_1STLDriver_1afbbd0451deba167e618594aa2524983b" compoundref="stl__driver_8h" startline="73">CPSGrader::STLDriver::trace_scanning</references>
+        <references refid="classCPSGrader_1_1STLDriver_1adc70fb31ba87176470769b4a73610bef" compoundref="stl__driver_8h" startline="202" endline="204">CPSGrader::STLDriver::trace_test_queue_empty</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stl__driver_8h" kindref="compound">stl_driver.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceCPSGrader" kindref="compound">CPSGrader</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argv)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Command<sp/>line<sp/>options:</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>-p<sp/>sets<sp/>parser<sp/>debugger<sp/>on</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>-s<sp/>sets<sp/>scanning<sp/>debugger<sp/>on</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/>-t<sp/>filename<sp/>uses<sp/>filename<sp/>as<sp/>trace<sp/>file</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>debug_parsing(</highlight><highlight class="keyword">false</highlight><highlight class="normal">),<sp/>debug_scanning(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>random_trace(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len_trace(0);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ai<sp/>=<sp/>1;<sp/>ai<sp/>&lt;<sp/>argc;<sp/>++ai)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(argv[ai]<sp/>==<sp/>std::string(</highlight><highlight class="stringliteral">&quot;-p&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>debug_parsing<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(argv[ai]<sp/>==<sp/>std::string(</highlight><highlight class="stringliteral">&quot;-s&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>debug_scanning<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(argv[ai]<sp/>==<sp/>std::string(</highlight><highlight class="stringliteral">&quot;-r&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>random_trace<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ai++;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>len_trace<sp/>=<sp/>atoi(argv[ai]);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>instantiates<sp/>the<sp/>STLDriver</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCPSGrader_1_1STLDriver" kindref="compound">STLDriver</ref><sp/>stl_driver<sp/>=<sp/><ref refid="classCPSGrader_1_1STLDriver" kindref="compound">STLDriver</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>stl_driver.<ref refid="classCPSGrader_1_1STLDriver_1a29d73a1db5175061dad3e96f7c461ae4" kindref="member">trace_parsing</ref><sp/>=<sp/>debug_parsing;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>stl_driver.<ref refid="classCPSGrader_1_1STLDriver_1afbbd0451deba167e618594aa2524983b" kindref="member">trace_scanning</ref><sp/>=<sp/>debug_scanning;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>read<sp/>a<sp/>file<sp/>with<sp/>expressions<sp/>(last<sp/>command<sp/>line<sp/>argument<sp/>is<sp/>stl<sp/>file)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>std::fstream<sp/>infile(argv[argc<sp/>-<sp/>1]);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!infile.good())<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>open<sp/>file:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>argv[argc<sp/>-<sp/>1]<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>stl_driver.<ref refid="classCPSGrader_1_1STLDriver_1a485c9c2aa2c373ef78f503565ec000de" kindref="member">parse_stream</ref>(infile,<sp/>argv[argc<sp/>-<sp/>1]);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(result)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stl_driver.<ref refid="classCPSGrader_1_1STLDriver_1a7077b89554597149c26bf2c7040c5577" kindref="member">print</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!stl_driver.<ref refid="classCPSGrader_1_1STLDriver_1adc70fb31ba87176470769b4a73610bef" kindref="member">trace_test_queue_empty</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>trace_file_name<sp/>=<sp/>stl_driver.<ref refid="classCPSGrader_1_1STLDriver_1a447efa7bdcf0ceda3571e70aa19878d0" kindref="member">get_next_trace_test_env</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>success<sp/>=<sp/>stl_driver.<ref refid="classCPSGrader_1_1STLDriver_1ab7da78706330f50e23ee521acf85a662" kindref="member">read_trace_file</ref>(trace_file_name);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(success)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stl_driver.<ref refid="classCPSGrader_1_1STLDriver_1a5f75ee15ef5a33a5e192c2afb52efbf0" kindref="member">run_next_trace_test</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stl_driver.<ref refid="classCPSGrader_1_1STLDriver_1aff0ca71cef3238de0d6923ad68a1e4c9" kindref="member">report</ref><sp/>=<sp/>stl_driver.<ref refid="classCPSGrader_1_1STLDriver_1aff0ca71cef3238de0d6923ad68a1e4c9" kindref="member">report</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;Skipped<sp/>test<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>stl_driver.<ref refid="classCPSGrader_1_1STLDriver_1a62f163d9b118e32ad34ed2be08996873" kindref="member">get_next_trace_test</ref>()-&gt;<ref refid="structCPSGrader_1_1trace__test_1a7d7d9aa6c4d188a1b02d3eed3cf187dd" kindref="member">id</ref><sp/>+</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stl_driver.<ref refid="classCPSGrader_1_1STLDriver_1ab13e463af099f23f2524c48b81b6770a" kindref="member">pop_next_trace_test</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Report:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>stl_driver.<ref refid="classCPSGrader_1_1STLDriver_1aff0ca71cef3238de0d6923ad68a1e4c9" kindref="member">report</ref><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Test<sp/>log:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>stl_driver.<ref refid="classCPSGrader_1_1STLDriver_1ae7e1c1af40ece62e9c56746fb0e0f05e" kindref="member">test_log</ref><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Problem<sp/>parsing<sp/>test_plan<sp/>file.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;done.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/zhenya/CauMon/breach/Online/src/main.cpp"/>
+  </compounddef>
+</doxygen>

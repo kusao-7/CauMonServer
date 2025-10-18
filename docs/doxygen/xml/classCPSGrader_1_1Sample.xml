@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCPSGrader_1_1Sample" kind="class" language="C++" prot="public">
+    <compoundname>CPSGrader::Sample</compoundname>
+    <basecompoundref refid="classCPSGrader_1_1Point" prot="public" virt="non-virtual">CPSGrader::Point</basecompoundref>
+    <includes refid="signal_8h" local="no">signal.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCPSGrader_1_1Sample_1acc1303adb3af8008a1b2752d9d32dcc7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CPSGrader::Sample::derivative</definition>
+        <argsstring></argsstring>
+        <name>derivative</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="43" column="8" bodyfile="/home/zhenya/CauMon/src/include/signal.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1Signal_1a85f1f65f2bbe0f80959149d18c76691b" compoundref="signal_8cpp" startline="99" endline="161">CPSGrader::Signal::resize</referencedby>
+        <referencedby refid="classCPSGrader_1_1Sample_1a247daad363e0ff87fa90134c9c5ae929" compoundref="signal_8h" startline="60" endline="62">timeIntersect</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCPSGrader_1_1Sample_1af1bb0e3ab77abee25d139be4054794dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::Sample::Sample</definition>
+        <argsstring>()</argsstring>
+        <name>Sample</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="45" column="1" bodyfile="/home/zhenya/CauMon/src/include/signal.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Sample_1a85c152c8adc073afffe7a16cb31588df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::Sample::Sample</definition>
+        <argsstring>(double t, double v, double d)</argsstring>
+        <name>Sample</name>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="46" column="1" bodyfile="/home/zhenya/CauMon/src/include/signal.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Sample_1affdaff6e0207b076f19f1f06a73bbed1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CPSGrader::Sample::valueAt</definition>
+        <argsstring>(const double &amp;) const</argsstring>
+        <name>valueAt</name>
+        <param>
+          <type>const double &amp;</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="48" column="8" bodyfile="/home/zhenya/CauMon/src/include/signal.h" bodystart="55" bodyend="57"/>
+        <referencedby refid="classCPSGrader_1_1Signal_1a85f1f65f2bbe0f80959149d18c76691b" compoundref="signal_8cpp" startline="99" endline="161">CPSGrader::Signal::resize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Sample_1a247daad363e0ff87fa90134c9c5ae929" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double CPSGrader::Sample::timeIntersect</definition>
+        <argsstring>(const Sample &amp;) const</argsstring>
+        <name>timeIntersect</name>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Sample" kindref="compound">Sample</ref> &amp;</type>
+          <defname>point</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="49" column="8" bodyfile="/home/zhenya/CauMon/src/include/signal.h" bodystart="60" bodyend="62"/>
+        <references refid="classCPSGrader_1_1Sample_1acc1303adb3af8008a1b2752d9d32dcc7" compoundref="signal_8h" startline="43">derivative</references>
+        <references refid="classCPSGrader_1_1Point_1a625c935b473e7af05336f36a3dbcfa37" compoundref="signal_8h" startline="32">CPSGrader::Point::time</references>
+        <references refid="classCPSGrader_1_1Point_1a0fd55f2bb41cb0f67424c2735957aed9" compoundref="signal_8h" startline="33">CPSGrader::Point::value</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classCPSGrader_1_1Sample_1a2bc9c3308bcb39ac7b2f9bf5fc620155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;, const Sample &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <defname>out</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1Sample" kindref="compound">Sample</ref> &amp;</type>
+          <defname>sample</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/signal.h" line="51" column="8" bodyfile="/home/zhenya/CauMon/src/cpp/signal.cpp" bodystart="220" bodyend="224"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CPSGrader::Point</label>
+        <link refid="classCPSGrader_1_1Point"/>
+      </node>
+      <node id="1">
+        <label>CPSGrader::Sample</label>
+        <link refid="classCPSGrader_1_1Sample"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CPSGrader::Point</label>
+        <link refid="classCPSGrader_1_1Point"/>
+      </node>
+      <node id="1">
+        <label>CPSGrader::Sample</label>
+        <link refid="classCPSGrader_1_1Sample"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/zhenya/CauMon/src/include/signal.h" line="41" column="1" bodyfile="/home/zhenya/CauMon/src/include/signal.h" bodystart="41" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classCPSGrader_1_1Sample_1acc1303adb3af8008a1b2752d9d32dcc7" prot="public" virt="non-virtual"><scope>CPSGrader::Sample</scope><name>derivative</name></member>
+      <member refid="classCPSGrader_1_1Sample_1a2bc9c3308bcb39ac7b2f9bf5fc620155" prot="public" virt="non-virtual"><scope>CPSGrader::Sample</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classCPSGrader_1_1Point_1a3e144ec2ae899a83c52d6c9c66fc0d36" prot="public" virt="non-virtual"><scope>CPSGrader::Sample</scope><name>Point</name></member>
+      <member refid="classCPSGrader_1_1Point_1a6aff06c5a6cc57a15cf45770d4a980a4" prot="public" virt="non-virtual"><scope>CPSGrader::Sample</scope><name>Point</name></member>
+      <member refid="classCPSGrader_1_1Sample_1af1bb0e3ab77abee25d139be4054794dd" prot="public" virt="non-virtual"><scope>CPSGrader::Sample</scope><name>Sample</name></member>
+      <member refid="classCPSGrader_1_1Sample_1a85c152c8adc073afffe7a16cb31588df" prot="public" virt="non-virtual"><scope>CPSGrader::Sample</scope><name>Sample</name></member>
+      <member refid="classCPSGrader_1_1Point_1a625c935b473e7af05336f36a3dbcfa37" prot="public" virt="non-virtual"><scope>CPSGrader::Sample</scope><name>time</name></member>
+      <member refid="classCPSGrader_1_1Sample_1a247daad363e0ff87fa90134c9c5ae929" prot="public" virt="non-virtual"><scope>CPSGrader::Sample</scope><name>timeIntersect</name></member>
+      <member refid="classCPSGrader_1_1Point_1a0fd55f2bb41cb0f67424c2735957aed9" prot="public" virt="non-virtual"><scope>CPSGrader::Sample</scope><name>value</name></member>
+      <member refid="classCPSGrader_1_1Sample_1affdaff6e0207b076f19f1f06a73bbed1" prot="public" virt="non-virtual"><scope>CPSGrader::Sample</scope><name>valueAt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

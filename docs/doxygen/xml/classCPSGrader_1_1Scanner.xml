@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCPSGrader_1_1Scanner" kind="class" language="C++" prot="public">
+    <compoundname>CPSGrader::Scanner</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">STLFlexLexer</basecompoundref>
+    <includes refid="stl__scanner_8h" local="no">stl_scanner.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCPSGrader_1_1Scanner_1a6c355a1f083cbaf52d3b2028c23f9d4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::Scanner::Scanner</definition>
+        <argsstring>(std::istream *arg_yyin=0, std::ostream *arg_yyout=0)</argsstring>
+        <name>Scanner</name>
+        <param>
+          <type>std::istream *</type>
+          <declname>arg_yyin</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>std::ostream *</type>
+          <declname>arg_yyout</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new scanner object. The streams arg_yyin and arg_yyout default to cin and cout, but that assignment is only made when initializing in <ref refid="stl__parser_8cpp_1a5611300548b2030d86b6ab9168132b88" kindref="member">yylex()</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_scanner.h" line="41" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" bodystart="2104" bodyend="2132"/>
+        <references refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dade34454c9e32007b1938cbe017ebd406" compoundref="stl__parser_8h" startline="188">CPSGrader::Parser::token::ABS</references>
+        <references refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da082c41ce6211ac789a58a70fdfd05ab8" compoundref="stl__parser_8h" startline="175">CPSGrader::Parser::token::AND</references>
+        <references refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dacf743d69d19c34c0e2edbaa1b905077d" compoundref="stl__parser_8h" startline="193">CPSGrader::Parser::token::BOOL_FALSE</references>
+        <references refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dacb0c462ad3dc86ac05d3d1abba825982" compoundref="stl__parser_8h" startline="192">CPSGrader::Parser::token::BOOL_TRUE</references>
+        <references refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dadeedcaa5bb84b99109f3d2c0ba569c67" compoundref="stl__parser_8h" startline="178">CPSGrader::Parser::token::BOX</references>
+        <references refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dad2e3a386e40e17ba8f00e0e040740b22" compoundref="stl__parser_8h" startline="179">CPSGrader::Parser::token::DIAMOND</references>
+        <references refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dae4b18aec84bdb058711ac7b4d7d4444f" compoundref="stl__parser_8h" startline="173">CPSGrader::Parser::token::NOT</references>
+        <references refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dab332d6b02265dec8af07d727edc4e313" compoundref="stl__parser_8h" startline="176">CPSGrader::Parser::token::OR</references>
+        <references refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da4a6a36b33b11df86a5e891659a641d7c" compoundref="stl__parser_8h" startline="189">CPSGrader::Parser::token::PARAM_DECL</references>
+        <references refid="classCPSGrader_1_1STLDriver_1a05e0a6403089af91626c89f08c2856aa" compoundref="stl__driver_8h" startline="82">CPSGrader::STLDriver::reserved</references>
+        <references refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5daf69592df8ac89163a0628fbe1c8ffc05" compoundref="stl__parser_8h" startline="190">CPSGrader::Parser::token::SIGNAL_DECL</references>
+        <references refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5daa46910fbea7688804bb7c655a832055e" compoundref="stl__parser_8h" startline="191">CPSGrader::Parser::token::TEST</references>
+        <references refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dae592fc445b2b7b468b9d2f05f316af72" compoundref="stl__parser_8h" startline="181">CPSGrader::Parser::token::TIME</references>
+        <references refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da7b4f04368f9b294faf80d90c513f99c6" compoundref="stl__parser_8h" startline="180">CPSGrader::Parser::token::UNTIL</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Scanner_1aa5258865a846c63660f3ace6566c385f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>CPSGrader::Scanner::~Scanner</definition>
+        <argsstring>()</argsstring>
+        <name>~Scanner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Required for virtual functions </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_scanner.h" line="45" column="13" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" bodystart="2134" bodyend="2136"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Scanner_1a1d5a61784b480b05fc5b4ea426675d8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5d" kindref="member">Parser::token_type</ref></type>
+        <definition>virtual Parser::token_type CPSGrader::Scanner::lex</definition>
+        <argsstring>(Parser::semantic_type *yylval, Parser::location_type *yylloc, class STLDriver &amp;driver)</argsstring>
+        <name>lex</name>
+        <param>
+          <type><ref refid="unionCPSGrader_1_1Parser_1_1semantic__type" kindref="compound">Parser::semantic_type</ref> *</type>
+          <declname>yylval</declname>
+        </param>
+        <param>
+          <type><ref refid="classCPSGrader_1_1Parser_1a92d8bc3531d11e778e65874ac9ee9fdc" kindref="member">Parser::location_type</ref> *</type>
+          <declname>yylloc</declname>
+        </param>
+        <param>
+          <type>class <ref refid="classCPSGrader_1_1STLDriver" kindref="compound">STLDriver</ref> &amp;</type>
+          <declname>driver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the main lexing function. It is generated by flex according to the macro declaration YY_DECL above. The generated bison parser then calls this virtual function to fetch new tokens. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_scanner.h" line="50" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1Scanner_1ac11c56d7eeb19f25a82e0858781f2e22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Scanner::set_debug</definition>
+        <argsstring>(bool b)</argsstring>
+        <name>set_debug</name>
+        <param>
+          <type>bool</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable debug output (via arg_yyout) if compiled into the scanner. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_scanner.h" line="57" column="10" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" bodystart="2138" bodyend="2141"/>
+        <referencedby refid="classCPSGrader_1_1STLDriver_1a485c9c2aa2c373ef78f503565ec000de" compoundref="stl__driver_8cpp" startline="46" endline="58">CPSGrader::STLDriver::parse_stream</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classCPSGrader_1_1Scanner" kindref="compound">Scanner</ref> is a derived class to add some extra function to the scanner class. Flex itself creates a class named <ref refid="classyyFlexLexer" kindref="compound">yyFlexLexer</ref>, which is renamed using macros to STLFlexLexer. However we change the context of the generated <ref refid="stl__parser_8cpp_1a5611300548b2030d86b6ab9168132b88" kindref="member">yylex()</ref> function to be contained within the <ref refid="classCPSGrader_1_1Scanner" kindref="compound">Scanner</ref> class. This is required because the <ref refid="stl__parser_8cpp_1a5611300548b2030d86b6ab9168132b88" kindref="member">yylex()</ref> defined in ExampleFlexLexer has no parameters. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>STLFlexLexer</label>
+      </node>
+      <node id="1">
+        <label>CPSGrader::Scanner</label>
+        <link refid="classCPSGrader_1_1Scanner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>STLFlexLexer</label>
+      </node>
+      <node id="1">
+        <label>CPSGrader::Scanner</label>
+        <link refid="classCPSGrader_1_1Scanner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/zhenya/CauMon/breach/Online/include/stl_scanner.h" line="35" column="1" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_scanner.h" bodystart="36" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classCPSGrader_1_1Scanner_1a1d5a61784b480b05fc5b4ea426675d8d" prot="public" virt="virtual"><scope>CPSGrader::Scanner</scope><name>lex</name></member>
+      <member refid="classCPSGrader_1_1Scanner_1a6c355a1f083cbaf52d3b2028c23f9d4a" prot="public" virt="non-virtual"><scope>CPSGrader::Scanner</scope><name>Scanner</name></member>
+      <member refid="classCPSGrader_1_1Scanner_1ac11c56d7eeb19f25a82e0858781f2e22" prot="public" virt="non-virtual"><scope>CPSGrader::Scanner</scope><name>set_debug</name></member>
+      <member refid="classCPSGrader_1_1Scanner_1aa5258865a846c63660f3ace6566c385f" prot="public" virt="virtual"><scope>CPSGrader::Scanner</scope><name>~Scanner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

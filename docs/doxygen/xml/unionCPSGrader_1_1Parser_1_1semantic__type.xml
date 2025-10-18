@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="unionCPSGrader_1_1Parser_1_1semantic__type" kind="union" language="C++" prot="public">
+    <compoundname>CPSGrader::Parser::semantic_type</compoundname>
+    <includes refid="stl__parser_8h" local="no">stl_parser.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionCPSGrader_1_1Parser_1_1semantic__type_1aabfea6224807aa0240b55711617df2cc" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char CPSGrader::Parser::semantic_type::sval</definition>
+        <argsstring></argsstring>
+        <name>sval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="137" column="44" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionCPSGrader_1_1Parser_1_1semantic__type_1a9be003afecd04efb647ecd2418a94b7a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CPSGrader::Parser::semantic_type::integerVal</definition>
+        <argsstring></argsstring>
+        <name>integerVal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="138" column="44" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionCPSGrader_1_1Parser_1_1semantic__type_1acf6a66005c53447190f2a6cac4916917" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CPSGrader::Parser::semantic_type::doubleVal</definition>
+        <argsstring></argsstring>
+        <name>doubleVal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="139" column="44" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionCPSGrader_1_1Parser_1_1semantic__type_1a374f2d6edca02523facbb6c51ca1b8e6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CPSGrader::Parser::semantic_type::boolVal</definition>
+        <argsstring></argsstring>
+        <name>boolVal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="140" column="44" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionCPSGrader_1_1Parser_1_1semantic__type_1a9059670329e2bc307deb44ebcf8f59ac" prot="public" static="no" mutable="no">
+        <type>std::string *</type>
+        <definition>std::string* CPSGrader::Parser::semantic_type::stringVal</definition>
+        <argsstring></argsstring>
+        <name>stringVal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="141" column="43" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionCPSGrader_1_1Parser_1_1semantic__type_1a18d2eb99d5b79b5699f7892fba4a3c80" prot="public" static="no" mutable="no">
+        <type><ref refid="classCPSGrader_1_1transducer" kindref="compound">CPSGrader::transducer</ref> *</type>
+        <definition>CPSGrader::transducer* CPSGrader::Parser::semantic_type::transducer_ptr</definition>
+        <argsstring></argsstring>
+        <name>transducer_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="142" column="43" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionCPSGrader_1_1Parser_1_1semantic__type_1ae17f27d514d9e60f91288ff1bc41d4b7" prot="public" static="no" mutable="no">
+        <type><ref refid="classCPSGrader_1_1interval" kindref="compound">CPSGrader::interval</ref> *</type>
+        <definition>CPSGrader::interval* CPSGrader::Parser::semantic_type::interval_ptr</definition>
+        <argsstring></argsstring>
+        <name>interval_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="143" column="43" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionCPSGrader_1_1Parser_1_1semantic__type_1a2407765c939a2b3757241e5ad2b5451e" prot="public" static="no" mutable="no">
+        <type>std::map&lt; string, double &gt; *</type>
+        <definition>std::map&lt;string,double&gt;* CPSGrader::Parser::semantic_type::param_map_ptr</definition>
+        <argsstring></argsstring>
+        <name>param_map_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="144" column="28" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionCPSGrader_1_1Parser_1_1semantic__type_1ab13ab8348d698a887f96f4ce8697a9aa" prot="public" static="no" mutable="no">
+        <type><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref> *</type>
+        <definition>Signal* CPSGrader::Parser::semantic_type::signal_ptr</definition>
+        <argsstring></argsstring>
+        <name>signal_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="145" column="43" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Symbol semantic values. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>CPSGrader::Parser::semantic_type</label>
+        <link refid="unionCPSGrader_1_1Parser_1_1semantic__type"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>signal_ptr</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>interval_ptr</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>transducer_ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CPSGrader::Signal</label>
+        <link refid="classCPSGrader_1_1Signal"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>CPSGrader::transducer</label>
+        <link refid="classCPSGrader_1_1transducer"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cau</edgelabel>
+          <edgelabel>cau_low</edgelabel>
+          <edgelabel>cau_up</edgelabel>
+          <edgelabel>z</edgelabel>
+          <edgelabel>z_low</edgelabel>
+          <edgelabel>z_up</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>std::deque&lt; Sample &gt;</label>
+      </node>
+      <node id="4">
+        <label>CPSGrader::interval</label>
+        <link refid="classCPSGrader_1_1interval"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="133" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="134" bodyend="148"/>
+    <listofallmembers>
+      <member refid="unionCPSGrader_1_1Parser_1_1semantic__type_1a374f2d6edca02523facbb6c51ca1b8e6" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::semantic_type</scope><name>boolVal</name></member>
+      <member refid="unionCPSGrader_1_1Parser_1_1semantic__type_1acf6a66005c53447190f2a6cac4916917" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::semantic_type</scope><name>doubleVal</name></member>
+      <member refid="unionCPSGrader_1_1Parser_1_1semantic__type_1a9be003afecd04efb647ecd2418a94b7a" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::semantic_type</scope><name>integerVal</name></member>
+      <member refid="unionCPSGrader_1_1Parser_1_1semantic__type_1ae17f27d514d9e60f91288ff1bc41d4b7" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::semantic_type</scope><name>interval_ptr</name></member>
+      <member refid="unionCPSGrader_1_1Parser_1_1semantic__type_1a2407765c939a2b3757241e5ad2b5451e" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::semantic_type</scope><name>param_map_ptr</name></member>
+      <member refid="unionCPSGrader_1_1Parser_1_1semantic__type_1ab13ab8348d698a887f96f4ce8697a9aa" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::semantic_type</scope><name>signal_ptr</name></member>
+      <member refid="unionCPSGrader_1_1Parser_1_1semantic__type_1a9059670329e2bc307deb44ebcf8f59ac" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::semantic_type</scope><name>stringVal</name></member>
+      <member refid="unionCPSGrader_1_1Parser_1_1semantic__type_1aabfea6224807aa0240b55711617df2cc" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::semantic_type</scope><name>sval</name></member>
+      <member refid="unionCPSGrader_1_1Parser_1_1semantic__type_1a18d2eb99d5b79b5699f7892fba4a3c80" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::semantic_type</scope><name>transducer_ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

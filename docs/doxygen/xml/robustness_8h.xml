@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="robustness_8h" kind="file" language="C++">
+    <compoundname>robustness.h</compoundname>
+    <includes local="no">cmath</includes>
+    <includes refid="breach_2Online_2include_2signal_8h" local="yes">signal.h</includes>
+    <includedby refid="src_2include_2transducer_8h" local="yes">/home/zhenya/CauMon/src/include/transducer.h</includedby>
+    <includedby refid="breach_2Online_2include_2transducer_8h" local="yes">/home/zhenya/CauMon/breach/Online/include/transducer.h</includedby>
+    <includedby refid="robustness_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/robustness.cpp</includedby>
+    <includedby refid="stl__parser_8cpp" local="no">/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>limits</label>
+      </node>
+      <node id="2">
+        <label>cmath</label>
+      </node>
+      <node id="1">
+        <label>/home/zhenya/CauMon/breach/Online/include/robustness.h</label>
+        <link refid="robustness_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>fstream</label>
+      </node>
+      <node id="3">
+        <label>signal.h</label>
+        <link refid="breach_2Online_2include_2signal_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>deque</label>
+      </node>
+      <node id="8">
+        <label>mex.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="18">
+        <label>/home/zhenya/CauMon/breach/Online/src/robustness.cpp</label>
+        <link refid="robustness_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/home/zhenya/CauMon/breach/Online/include/robustness.h</label>
+        <link refid="robustness_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/home/zhenya/CauMon/breach/Online/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="4">
+        <label>/home/zhenya/CauMon/breach/Online/include/signal_expr.h</label>
+        <link refid="signal__expr_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp</label>
+        <link refid="stl__scanner_8cpp"/>
+      </node>
+      <node id="5">
+        <label>/home/zhenya/CauMon/src/cpp/cau_stl_atom.cpp</label>
+        <link refid="cau__stl__atom_8cpp"/>
+      </node>
+      <node id="14">
+        <label>/home/zhenya/CauMon/breach/Online/src/onlineMonitorWrapper.cpp</label>
+        <link refid="onlineMonitorWrapper_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/home/zhenya/CauMon/src/include/transducer.h</label>
+        <link refid="src_2include_2transducer_8h"/>
+      </node>
+      <node id="12">
+        <label>/home/zhenya/CauMon/src/cpp/stl_eval_mex_pw.cpp</label>
+        <link refid="stl__eval__mex__pw_8cpp"/>
+      </node>
+      <node id="6">
+        <label>/home/zhenya/CauMon/breach/Online/src/signal_expr.cpp</label>
+        <link refid="signal__expr_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/home/zhenya/CauMon/breach/Online/include/transducer.h</label>
+        <link refid="breach_2Online_2include_2transducer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_eval_mex.cpp</label>
+        <link refid="stl__eval__mex_8cpp"/>
+      </node>
+      <node id="15">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp</label>
+        <link refid="stl__driver_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp</label>
+        <link refid="stl__parser_8cpp"/>
+      </node>
+      <node id="17">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_monitor.cpp</label>
+        <link refid="stl__monitor_8cpp"/>
+      </node>
+      <node id="10">
+        <label>/home/zhenya/CauMon/breach/Online/include/stl_driver.h</label>
+        <link refid="stl__driver_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/home/zhenya/CauMon/src/cpp/stl_causation_opt.cpp</label>
+        <link refid="stl__causation__opt_8cpp"/>
+      </node>
+      <node id="7">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_atom.cpp</label>
+        <link refid="stl__atom_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceCPSGrader">CPSGrader</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="breach_2Online_2include_2signal_8h" kindref="compound">signal.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceCPSGrader" kindref="compound">CPSGrader</ref><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>MAIN<sp/>PROCEDURES</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>these<sp/>functions<sp/>allocate<sp/>a<sp/>new<sp/>Signal<sp/>which<sp/>address<sp/>is<sp/>returned</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">Signal<sp/>*<sp/><ref refid="namespaceCPSGrader_1afb83646b0041739019a0b1749042f295" kindref="member">computeNot</ref>(Signal<sp/>*);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">Signal<sp/>*<sp/><ref refid="namespaceCPSGrader_1a5d8a5b5a7e3e8ca4efdaa9cbeaf9ddea" kindref="member">computeAnd</ref>(Signal<sp/>*,<sp/>Signal<sp/>*);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">Signal<sp/>*<sp/><ref refid="namespaceCPSGrader_1a2202cc5d4433d9fe4d245d05a1a5f284" kindref="member">computeOr</ref>(Signal<sp/>*,<sp/>Signal<sp/>*);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">Signal<sp/>*<sp/><ref refid="namespaceCPSGrader_1a0c27d07312a630651a7a8af2b4331dd3" kindref="member">computeImplies</ref>(Signal<sp/>*,<sp/>Signal<sp/>*);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">Signal<sp/>*<sp/><ref refid="namespaceCPSGrader_1aad4484057931e3109057944b8dc9e5a1" kindref="member">computeEventually</ref>(Signal<sp/>*);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">Signal<sp/>*<sp/><ref refid="namespaceCPSGrader_1a81f4291d086e3f87809e50b150890229" kindref="member">computeGlobally</ref>(Signal<sp/>*);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">Signal<sp/>*<sp/><ref refid="namespaceCPSGrader_1ab020947cc2a058094c4c0430f90caab8" kindref="member">computeUntil</ref>(Signal<sp/>*,<sp/>Signal<sp/>*);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">Signal<sp/>*<sp/><ref refid="namespaceCPSGrader_1a37f29177de25a399204932dcdeac6503" kindref="member">computeTimedUntil</ref>(Signal<sp/>*,<sp/>Signal<sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>SUBROUTINES</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//adds<sp/>to<sp/>front<sp/>of<sp/>the<sp/>signal<sp/>passed<sp/>as<sp/>pointer<sp/>the<sp/>robustness<sp/>of<sp/>a<sp/>conjuction<sp/>of<sp/>a<sp/>linear<sp/>segment,<sp/>represented<sp/>as<sp/>(Sample,<sp/>double)<sp/>with<sp/>an<sp/>arbiratry<sp/>signal<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceCPSGrader_1ad9495f955662e7244b87974a467ef97a" kindref="member">computeSegmentAnd</ref>(Signal<sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Sample<sp/>&amp;,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>Signal::const_reverse_iterator<sp/>&amp;);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//specialization<sp/>of<sp/>the<sp/>former<sp/>for<sp/>constant<sp/>segment,<sp/>represented<sp/>as<sp/>(double,<sp/>double,<sp/>double)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="namespaceCPSGrader_1a6e35fb36bd63044d4d30a55e24a90790" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceCPSGrader_1a6e35fb36bd63044d4d30a55e24a90790" kindref="member">computeConstantSegmentAnd</ref>(<ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>Signal::const_reverse_iterator<sp/>&amp;);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//adds<sp/>to<sp/>front<sp/>of<sp/>the<sp/>signal<sp/>passed<sp/>as<sp/>pointer<sp/>the<sp/>robustness<sp/>of<sp/>a<sp/>conjuction<sp/>for<sp/>arbitrary<sp/>signals<sp/>passed<sp/>as<sp/>iterators<sp/>between<sp/>times<sp/>passed<sp/>as<sp/>doubles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceCPSGrader_1a411d2e83ca70085d01da3a3d2002136e" kindref="member">computePartialAnd</ref>(<ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>*,<sp/>Signal::const_reverse_iterator<sp/>&amp;,<sp/>Signal::const_reverse_iterator<sp/>&amp;,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//disjunction:<sp/>identical<sp/>to<sp/>conjunction,<sp/>operator<sp/>&quot;&lt;&quot;<sp/>switched<sp/>with<sp/>operator<sp/>&quot;&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="namespaceCPSGrader_1a187e9cc6101d6cb93fb139f76dcba972" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceCPSGrader_1a187e9cc6101d6cb93fb139f76dcba972" kindref="member">computeSegmentOr</ref>(<ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Sample" kindref="compound">Sample</ref><sp/>&amp;,<sp/>Signal::const_reverse_iterator<sp/>&amp;,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35" refid="namespaceCPSGrader_1a96750927347d2cf243a1547358bb4acd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceCPSGrader_1a96750927347d2cf243a1547358bb4acd" kindref="member">computeConstantSegmentOr</ref>(<ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>Signal::const_reverse_iterator<sp/>&amp;,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceCPSGrader_1a1cad8af6cc8715d6f45079a65aba3886" kindref="member">computePartialOr</ref>(<ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>*,<sp/>Signal::const_reverse_iterator<sp/>&amp;,<sp/>Signal::const_reverse_iterator<sp/>&amp;,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//adds<sp/>to<sp/>front<sp/>of<sp/>the<sp/>signal<sp/>passed<sp/>as<sp/>pointer<sp/>the<sp/>robustness<sp/>of<sp/>an<sp/>eventually<sp/>for<sp/>an<sp/>aribrary<sp/>signal<sp/>passed<sp/>as<sp/>iterator<sp/>between<sp/>times<sp/>passed<sp/>as<sp/>doubles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceCPSGrader_1a71d65a029ad97f183cc5ed845b17acf8" kindref="member">computePartialEventually</ref>(<ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>*,<sp/>Signal::const_reverse_iterator<sp/>&amp;,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//idem<sp/>computeSegmentAnd,<sp/>with<sp/>an<sp/>extra<sp/>parameter<sp/>for<sp/>the<sp/>last<sp/>known<sp/>value<sp/>of<sp/>the<sp/>Until</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceCPSGrader_1ad6f2eab2ce0c4da0230087bc603014ee" kindref="member">computeSegmentUntil</ref>(<ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Sample" kindref="compound">Sample</ref><sp/>&amp;,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>Signal::const_reverse_iterator<sp/>&amp;,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>these<sp/>functions<sp/>work<sp/>on<sp/>the<sp/>whole<sp/>length<sp/>of<sp/>arbitrary<sp/>signals<sp/>and<sp/>allocate<sp/>a<sp/>new<sp/>Signal<sp/>which<sp/>address<sp/>is<sp/>returned.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>second<sp/>argument<sp/>is<sp/>a<sp/>temorization<sp/>constraint<sp/>&quot;a&quot;,<sp/>such<sp/>that<sp/>we<sp/>compute<sp/>the<sp/>robustness<sp/>of<sp/>E_[0;a]<sp/>or<sp/>G_[0;a]<sp/>respectively</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>*<sp/><ref refid="namespaceCPSGrader_1a6778354a74e949876347234571a24978" kindref="member">plateauMax</ref>(<ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>*<sp/><ref refid="namespaceCPSGrader_1a4a672d179b685b1a0ad280afafe68e5e" kindref="member">computeBoundedEventually</ref>(<ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>*<sp/><ref refid="namespaceCPSGrader_1a02ffee00be66cdce2bc51e6f3b28318c" kindref="member">plateauMin</ref>(<ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>*<sp/><ref refid="namespaceCPSGrader_1ada928418e73942777cff11474622cb56" kindref="member">computeBoundedGlobally</ref>(<ref refid="classCPSGrader_1_1Signal" kindref="compound">Signal</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/zhenya/CauMon/breach/Online/include/robustness.h"/>
+  </compounddef>
+</doxygen>

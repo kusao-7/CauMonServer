@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structCPSGrader_1_1Parser_1_1stack__symbol__type" kind="struct" language="C++" prot="private">
+    <compoundname>CPSGrader::Parser::stack_symbol_type</compoundname>
+    <basecompoundref refid="structCPSGrader_1_1Parser_1_1basic__symbol" prot="public" virt="non-virtual">CPSGrader::Parser::basic_symbol&lt; by_state &gt;</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structCPSGrader_1_1Parser_1_1stack__symbol__type_1a6c570f16f177553d688633723ab7500e" prot="public" static="no">
+        <type><ref refid="structCPSGrader_1_1Parser_1_1basic__symbol" kindref="compound">basic_symbol</ref>&lt; by_state &gt;</type>
+        <definition>typedef basic_symbol&lt;by_state&gt; CPSGrader::Parser::stack_symbol_type::super_type</definition>
+        <argsstring></argsstring>
+        <name>super_type</name>
+        <briefdescription>
+<para>Superclass. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="472" column="28" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structCPSGrader_1_1Parser_1_1stack__symbol__type_1abe5bb72dfe996a8535b667de4c7b10f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::Parser::stack_symbol_type::stack_symbol_type</definition>
+        <argsstring>()</argsstring>
+        <name>stack_symbol_type</name>
+        <briefdescription>
+<para>Construct an empty symbol. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="474" column="7" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp" bodystart="379" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPSGrader_1_1Parser_1_1stack__symbol__type_1a38726a26441878cff0b12b07e412c5a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::Parser::stack_symbol_type::stack_symbol_type</definition>
+        <argsstring>(state_type s, symbol_type &amp;sym)</argsstring>
+        <name>stack_symbol_type</name>
+        <param>
+          <type>state_type</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="classCPSGrader_1_1Parser_1a2396ee54f00651781478f8be81feb86f" kindref="member">symbol_type</ref> &amp;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+<para>Steal the contents from <emphasis>sym</emphasis> to build this. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="476" column="7" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp" bodystart="384" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPSGrader_1_1Parser_1_1stack__symbol__type_1a5066d1f09c08848e4c4fd5b76e1440ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>stack_symbol_type &amp;</type>
+        <definition>Parser::stack_symbol_type &amp; CPSGrader::Parser::stack_symbol_type::operator=</definition>
+        <argsstring>(const stack_symbol_type &amp;that)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const stack_symbol_type &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+<para>Assignment, needed by push_back. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="478" column="25" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp" bodystart="394" bodyend="400"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&quot;Internal&quot; symbol: element of the stack. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CPSGrader::Parser::basic_symbol&lt; by_state &gt;</label>
+        <link refid="structCPSGrader_1_1Parser_1_1basic__symbol"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CPSGrader::Parser::stack_symbol_type</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CPSGrader::Parser::by_state</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CPSGrader::Parser::basic_symbol&lt; by_state &gt;</label>
+        <link refid="structCPSGrader_1_1Parser_1_1basic__symbol"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CPSGrader::Parser::stack_symbol_type</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CPSGrader::Parser::by_state</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="469" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="470" bodyend="479"/>
+    <listofallmembers>
+      <member refid="structCPSGrader_1_1Parser_1_1basic__symbol_1af79a143b6e8e60ccbd28711bf305d597" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>basic_symbol</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1basic__symbol_1aa1a0c4a902a93ea49f88505f199223c6" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>basic_symbol</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1basic__symbol_1a40e91542605cfeb9119c5fdad738cf48" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>basic_symbol</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1basic__symbol_1acd92fe4585899cd0ef2e120dff384729" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>basic_symbol</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__state_1ab7b1d6c057b024d4df5eed204e77c8d6" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>by_state</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__state_1ab95a3adc64f092659a342d0edc7989bf" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>by_state</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__state_1a69dfcd48bff5de1def03bc49da7e0c0d" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>by_state</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1basic__symbol_1a23018d56842642576d87bab1fac58f07" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>clear</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1basic__symbol_1ac4f0d15cf4925ce89c8a9186552be116" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>empty</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__state_1a4cce803eead5ee2ad845fbef294de335a8f748b2a15ad24f5688cd973ae3e8e48" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>empty_state</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__state_1a804d6faeeee369ce663d7fa440f6d4dd" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>kind_type</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1basic__symbol_1a46a1c0b6b3e7a2f4f2d700aef3574b10" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>location</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1basic__symbol_1a0afc4f59aea20549ed6778662ef0d4c3" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>move</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__state_1a496d94da3b81ed79c2f01dbc02771618" prot="public" virt="non-virtual" ambiguityscope="CPSGrader::Parser::by_state::"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>move</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1stack__symbol__type_1a5066d1f09c08848e4c4fd5b76e1440ab" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>operator=</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1stack__symbol__type_1abe5bb72dfe996a8535b667de4c7b10f2" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>stack_symbol_type</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1stack__symbol__type_1a38726a26441878cff0b12b07e412c5a5" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>stack_symbol_type</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__state_1af0ef2053d22f9166d0104a6ec20b1552" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>state</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1stack__symbol__type_1a6c570f16f177553d688633723ab7500e" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>super_type</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__state_1a4602af90628dbea8271569beeb3c7d34" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>type_get</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1basic__symbol_1a94bd1db322dd64580b5cd3f5ed436f6d" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>value</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1basic__symbol_1a26b3954e352c9e5c6f2e2ce1fcaccb80" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::stack_symbol_type</scope><name>~basic_symbol</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

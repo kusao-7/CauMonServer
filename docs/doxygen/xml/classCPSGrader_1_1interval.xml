@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCPSGrader_1_1interval" kind="class" language="C++" prot="public">
+    <compoundname>CPSGrader::interval</compoundname>
+    <includes refid="interval_8h" local="no">interval.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCPSGrader_1_1interval_1ab3445d4b5a077acb1222f776a69694f0" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CPSGrader::interval::begin</definition>
+        <argsstring></argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/interval.h" line="14" column="8" bodyfile="/home/zhenya/CauMon/breach/Online/include/interval.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1a0c091d994f9418f993e4b6ef33d6b72c" compoundref="cau__interval__transducer_8cpp" startline="231" endline="255">CPSGrader::ev_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1ae46766485e9012f45716a109b41ce1e3" compoundref="cau__interval__transducer_8cpp" startline="298" endline="346">CPSGrader::alw_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1ab948f9b135f034da32c53b8865bd1e59" compoundref="cau__interval__transducer_8cpp" startline="174" endline="221">CPSGrader::ev_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1a7f1dcafe11d15835cdf4a3a89fbd5506" compoundref="cau__interval__transducer_8cpp" startline="264" endline="289">CPSGrader::alw_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1ac7b36f1972e34ff0a92c32efb5704b7a" compoundref="interval__transducer_8cpp" startline="150" endline="181">CPSGrader::ev_transducer::compute_lower_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1ac586be825ba578f41df050d6f1828144" compoundref="interval__transducer_8cpp" startline="220" endline="255">CPSGrader::alw_transducer::compute_lower_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1until__transducer_1aaa1aa8795b8daff39ec494da155f6e69" compoundref="interval__transducer_8cpp" startline="291" endline="310">CPSGrader::until_transducer::compute_lower_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1ab3f46f3689c548b75ea1fa3193bec529" compoundref="transducer_8cpp" startline="89" endline="123">CPSGrader::ev_transducer::compute_robustness</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1aa2732242bf4f821405bba48c4cf2a580" compoundref="transducer_8cpp" startline="125" endline="146">CPSGrader::alw_transducer::compute_robustness</referencedby>
+        <referencedby refid="classCPSGrader_1_1until__transducer_1a7248a15016f57c001fedd703d84e9fc7" compoundref="transducer_8cpp" startline="212" endline="225">CPSGrader::until_transducer::compute_robustness</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1acb772a758b60c6ab1ebd8e0443857344" compoundref="interval__transducer_8cpp" startline="183" endline="217">CPSGrader::ev_transducer::compute_upper_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1a967b10c82b3afd198b45673b012a26c6" compoundref="interval__transducer_8cpp" startline="257" endline="288">CPSGrader::alw_transducer::compute_upper_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1until__transducer_1a3143d286d657dc81481129de4ff499e0" compoundref="interval__transducer_8cpp" startline="312" endline="329">CPSGrader::until_transducer::compute_upper_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1interval_1a285e44cbd91dfeb9f86656a13f0d2fd2" compoundref="interval_8cpp" startline="25" endline="30">copy</referencedby>
+        <referencedby refid="classCPSGrader_1_1timed__unary__transducer_1a85b39def53d6e5ee265a7f85726f65ea" compoundref="transducer_8cpp" startline="23" endline="35">CPSGrader::timed_unary_transducer::init_horizon</referencedby>
+        <referencedby refid="classCPSGrader_1_1timed__binary__transducer_1a7ff4ec749c7672022758fe973fb14615" compoundref="transducer_8cpp" startline="37" endline="48">CPSGrader::timed_binary_transducer::init_horizon</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCPSGrader_1_1interval_1aa85977561692706ec8e42d4fc8927e88" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double CPSGrader::interval::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/interval.h" line="15" column="8" bodyfile="/home/zhenya/CauMon/breach/Online/include/interval.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1a0c091d994f9418f993e4b6ef33d6b72c" compoundref="cau__interval__transducer_8cpp" startline="231" endline="255">CPSGrader::ev_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1ae46766485e9012f45716a109b41ce1e3" compoundref="cau__interval__transducer_8cpp" startline="298" endline="346">CPSGrader::alw_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1ab948f9b135f034da32c53b8865bd1e59" compoundref="cau__interval__transducer_8cpp" startline="174" endline="221">CPSGrader::ev_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1a7f1dcafe11d15835cdf4a3a89fbd5506" compoundref="cau__interval__transducer_8cpp" startline="264" endline="289">CPSGrader::alw_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1ac7b36f1972e34ff0a92c32efb5704b7a" compoundref="interval__transducer_8cpp" startline="150" endline="181">CPSGrader::ev_transducer::compute_lower_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1ac586be825ba578f41df050d6f1828144" compoundref="interval__transducer_8cpp" startline="220" endline="255">CPSGrader::alw_transducer::compute_lower_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1until__transducer_1aaa1aa8795b8daff39ec494da155f6e69" compoundref="interval__transducer_8cpp" startline="291" endline="310">CPSGrader::until_transducer::compute_lower_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1ab3f46f3689c548b75ea1fa3193bec529" compoundref="transducer_8cpp" startline="89" endline="123">CPSGrader::ev_transducer::compute_robustness</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1aa2732242bf4f821405bba48c4cf2a580" compoundref="transducer_8cpp" startline="125" endline="146">CPSGrader::alw_transducer::compute_robustness</referencedby>
+        <referencedby refid="classCPSGrader_1_1until__transducer_1a7248a15016f57c001fedd703d84e9fc7" compoundref="transducer_8cpp" startline="212" endline="225">CPSGrader::until_transducer::compute_robustness</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1acb772a758b60c6ab1ebd8e0443857344" compoundref="interval__transducer_8cpp" startline="183" endline="217">CPSGrader::ev_transducer::compute_upper_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1a967b10c82b3afd198b45673b012a26c6" compoundref="interval__transducer_8cpp" startline="257" endline="288">CPSGrader::alw_transducer::compute_upper_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1until__transducer_1a3143d286d657dc81481129de4ff499e0" compoundref="interval__transducer_8cpp" startline="312" endline="329">CPSGrader::until_transducer::compute_upper_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1interval_1a285e44cbd91dfeb9f86656a13f0d2fd2" compoundref="interval_8cpp" startline="25" endline="30">copy</referencedby>
+        <referencedby refid="classCPSGrader_1_1timed__unary__transducer_1a49d7fa9b83b23a5e51bdfb9a6882b481" compoundref="transducer_8cpp" startline="62" endline="66">CPSGrader::timed_unary_transducer::get_end_complete</referencedby>
+        <referencedby refid="classCPSGrader_1_1timed__unary__transducer_1ac0cf57c3513db742eb8c21827e358172" compoundref="transducer_8cpp" startline="68" endline="72">CPSGrader::timed_unary_transducer::get_end_complete_low</referencedby>
+        <referencedby refid="classCPSGrader_1_1timed__unary__transducer_1ae3b2bc128f2632d8fce2b47d586036f4" compoundref="transducer_8cpp" startline="74" endline="78">CPSGrader::timed_unary_transducer::get_end_complete_up</referencedby>
+        <referencedby refid="classCPSGrader_1_1timed__unary__transducer_1a85b39def53d6e5ee265a7f85726f65ea" compoundref="transducer_8cpp" startline="23" endline="35">CPSGrader::timed_unary_transducer::init_horizon</referencedby>
+        <referencedby refid="classCPSGrader_1_1timed__binary__transducer_1a7ff4ec749c7672022758fe973fb14615" compoundref="transducer_8cpp" startline="37" endline="48">CPSGrader::timed_binary_transducer::init_horizon</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCPSGrader_1_1interval_1a4e3a939ea637fa02543a70f8fbaf40ab" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CPSGrader::interval::begin_str</definition>
+        <argsstring></argsstring>
+        <name>begin_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/interval.h" line="16" column="8" bodyfile="/home/zhenya/CauMon/breach/Online/include/interval.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1a0c091d994f9418f993e4b6ef33d6b72c" compoundref="cau__interval__transducer_8cpp" startline="231" endline="255">CPSGrader::ev_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1ae46766485e9012f45716a109b41ce1e3" compoundref="cau__interval__transducer_8cpp" startline="298" endline="346">CPSGrader::alw_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1ab948f9b135f034da32c53b8865bd1e59" compoundref="cau__interval__transducer_8cpp" startline="174" endline="221">CPSGrader::ev_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1a7f1dcafe11d15835cdf4a3a89fbd5506" compoundref="cau__interval__transducer_8cpp" startline="264" endline="289">CPSGrader::alw_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1ac7b36f1972e34ff0a92c32efb5704b7a" compoundref="interval__transducer_8cpp" startline="150" endline="181">CPSGrader::ev_transducer::compute_lower_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1ac586be825ba578f41df050d6f1828144" compoundref="interval__transducer_8cpp" startline="220" endline="255">CPSGrader::alw_transducer::compute_lower_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1until__transducer_1aaa1aa8795b8daff39ec494da155f6e69" compoundref="interval__transducer_8cpp" startline="291" endline="310">CPSGrader::until_transducer::compute_lower_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1ab3f46f3689c548b75ea1fa3193bec529" compoundref="transducer_8cpp" startline="89" endline="123">CPSGrader::ev_transducer::compute_robustness</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1aa2732242bf4f821405bba48c4cf2a580" compoundref="transducer_8cpp" startline="125" endline="146">CPSGrader::alw_transducer::compute_robustness</referencedby>
+        <referencedby refid="classCPSGrader_1_1until__transducer_1a7248a15016f57c001fedd703d84e9fc7" compoundref="transducer_8cpp" startline="212" endline="225">CPSGrader::until_transducer::compute_robustness</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1acb772a758b60c6ab1ebd8e0443857344" compoundref="interval__transducer_8cpp" startline="183" endline="217">CPSGrader::ev_transducer::compute_upper_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1a967b10c82b3afd198b45673b012a26c6" compoundref="interval__transducer_8cpp" startline="257" endline="288">CPSGrader::alw_transducer::compute_upper_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1until__transducer_1a3143d286d657dc81481129de4ff499e0" compoundref="interval__transducer_8cpp" startline="312" endline="329">CPSGrader::until_transducer::compute_upper_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1interval_1a285e44cbd91dfeb9f86656a13f0d2fd2" compoundref="interval_8cpp" startline="25" endline="30">copy</referencedby>
+        <referencedby refid="classCPSGrader_1_1timed__unary__transducer_1a85b39def53d6e5ee265a7f85726f65ea" compoundref="transducer_8cpp" startline="23" endline="35">CPSGrader::timed_unary_transducer::init_horizon</referencedby>
+        <referencedby refid="classCPSGrader_1_1timed__binary__transducer_1a7ff4ec749c7672022758fe973fb14615" compoundref="transducer_8cpp" startline="37" endline="48">CPSGrader::timed_binary_transducer::init_horizon</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCPSGrader_1_1interval_1ae66b1218b88598b3635ccbe7cfc4745a" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CPSGrader::interval::end_str</definition>
+        <argsstring></argsstring>
+        <name>end_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/interval.h" line="17" column="8" bodyfile="/home/zhenya/CauMon/breach/Online/include/interval.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1a0c091d994f9418f993e4b6ef33d6b72c" compoundref="cau__interval__transducer_8cpp" startline="231" endline="255">CPSGrader::ev_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1ae46766485e9012f45716a109b41ce1e3" compoundref="cau__interval__transducer_8cpp" startline="298" endline="346">CPSGrader::alw_transducer::causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1ab948f9b135f034da32c53b8865bd1e59" compoundref="cau__interval__transducer_8cpp" startline="174" endline="221">CPSGrader::ev_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1a7f1dcafe11d15835cdf4a3a89fbd5506" compoundref="cau__interval__transducer_8cpp" startline="264" endline="289">CPSGrader::alw_transducer::causation_opt_upper</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1ac7b36f1972e34ff0a92c32efb5704b7a" compoundref="interval__transducer_8cpp" startline="150" endline="181">CPSGrader::ev_transducer::compute_lower_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1ac586be825ba578f41df050d6f1828144" compoundref="interval__transducer_8cpp" startline="220" endline="255">CPSGrader::alw_transducer::compute_lower_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1until__transducer_1aaa1aa8795b8daff39ec494da155f6e69" compoundref="interval__transducer_8cpp" startline="291" endline="310">CPSGrader::until_transducer::compute_lower_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1ab3f46f3689c548b75ea1fa3193bec529" compoundref="transducer_8cpp" startline="89" endline="123">CPSGrader::ev_transducer::compute_robustness</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1aa2732242bf4f821405bba48c4cf2a580" compoundref="transducer_8cpp" startline="125" endline="146">CPSGrader::alw_transducer::compute_robustness</referencedby>
+        <referencedby refid="classCPSGrader_1_1until__transducer_1a7248a15016f57c001fedd703d84e9fc7" compoundref="transducer_8cpp" startline="212" endline="225">CPSGrader::until_transducer::compute_robustness</referencedby>
+        <referencedby refid="classCPSGrader_1_1ev__transducer_1acb772a758b60c6ab1ebd8e0443857344" compoundref="interval__transducer_8cpp" startline="183" endline="217">CPSGrader::ev_transducer::compute_upper_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1alw__transducer_1a967b10c82b3afd198b45673b012a26c6" compoundref="interval__transducer_8cpp" startline="257" endline="288">CPSGrader::alw_transducer::compute_upper_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1until__transducer_1a3143d286d657dc81481129de4ff499e0" compoundref="interval__transducer_8cpp" startline="312" endline="329">CPSGrader::until_transducer::compute_upper_rob</referencedby>
+        <referencedby refid="classCPSGrader_1_1interval_1a285e44cbd91dfeb9f86656a13f0d2fd2" compoundref="interval_8cpp" startline="25" endline="30">copy</referencedby>
+        <referencedby refid="classCPSGrader_1_1timed__unary__transducer_1a49d7fa9b83b23a5e51bdfb9a6882b481" compoundref="transducer_8cpp" startline="62" endline="66">CPSGrader::timed_unary_transducer::get_end_complete</referencedby>
+        <referencedby refid="classCPSGrader_1_1timed__unary__transducer_1ac0cf57c3513db742eb8c21827e358172" compoundref="transducer_8cpp" startline="68" endline="72">CPSGrader::timed_unary_transducer::get_end_complete_low</referencedby>
+        <referencedby refid="classCPSGrader_1_1timed__unary__transducer_1ae3b2bc128f2632d8fce2b47d586036f4" compoundref="transducer_8cpp" startline="74" endline="78">CPSGrader::timed_unary_transducer::get_end_complete_up</referencedby>
+        <referencedby refid="classCPSGrader_1_1timed__unary__transducer_1a85b39def53d6e5ee265a7f85726f65ea" compoundref="transducer_8cpp" startline="23" endline="35">CPSGrader::timed_unary_transducer::init_horizon</referencedby>
+        <referencedby refid="classCPSGrader_1_1timed__binary__transducer_1a7ff4ec749c7672022758fe973fb14615" compoundref="transducer_8cpp" startline="37" endline="48">CPSGrader::timed_binary_transducer::init_horizon</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCPSGrader_1_1interval_1a1ef138d7625a47126d1ed3a10d4910d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::interval::interval</definition>
+        <argsstring>()</argsstring>
+        <name>interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/interval.h" line="19" column="1" bodyfile="/home/zhenya/CauMon/breach/Online/src/interval.cpp" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1interval_1a852c5e383907dad87426f81aee9830d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::interval::interval</definition>
+        <argsstring>(const interval &amp;that)</argsstring>
+        <name>interval</name>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1interval" kindref="compound">interval</ref> &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/interval.h" line="20" column="1" bodyfile="/home/zhenya/CauMon/breach/Online/src/interval.cpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1interval_1a3d0fa063fb7c5888341c67d063e5c790" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCPSGrader_1_1interval" kindref="compound">interval</ref></type>
+        <definition>interval CPSGrader::interval::operator=</definition>
+        <argsstring>(const interval &amp;that)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1interval" kindref="compound">interval</ref> &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/interval.h" line="21" column="10" bodyfile="/home/zhenya/CauMon/breach/Online/src/interval.cpp" bodystart="32" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1interval_1a285e44cbd91dfeb9f86656a13f0d2fd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::interval::copy</definition>
+        <argsstring>(const interval &amp;that)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>const <ref refid="classCPSGrader_1_1interval" kindref="compound">interval</ref> &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/interval.h" line="22" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/interval.cpp" bodystart="25" bodyend="30"/>
+        <references refid="classCPSGrader_1_1interval_1ab3445d4b5a077acb1222f776a69694f0" compoundref="interval_8h" startline="14">begin</references>
+        <references refid="classCPSGrader_1_1interval_1a4e3a939ea637fa02543a70f8fbaf40ab" compoundref="interval_8h" startline="16">begin_str</references>
+        <references refid="classCPSGrader_1_1interval_1aa85977561692706ec8e42d4fc8927e88" compoundref="interval_8h" startline="15">end</references>
+        <references refid="classCPSGrader_1_1interval_1ae66b1218b88598b3635ccbe7cfc4745a" compoundref="interval_8h" startline="17">end_str</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1interval_1a3821aedf8c1c639bca5b3ad635a5d6de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::interval::interval</definition>
+        <argsstring>(string b, string e)</argsstring>
+        <name>interval</name>
+        <param>
+          <type>string</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/interval.h" line="25" column="1" bodyfile="/home/zhenya/CauMon/breach/Online/src/interval.cpp" bodystart="15" bodyend="20"/>
+        <references refid="tools_8h_1ae0150a7d761a7e362a7718530f6a40c8" compoundref="tools_8h" startline="19" endline="29">s_to_d</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1interval_1a083dbba769bbf4a2b9d2e71b974a3c1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::interval::interval</definition>
+        <argsstring>(double b, double e)</argsstring>
+        <name>interval</name>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/interval.h" line="26" column="1" bodyfile="/home/zhenya/CauMon/breach/Online/include/interval.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1interval_1ae5a275a973ad081ec7b526921371152d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string CPSGrader::interval::to_string</definition>
+        <argsstring>() const</argsstring>
+        <name>to_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/interval.h" line="28" column="8" bodyfile="/home/zhenya/CauMon/breach/Online/src/interval.cpp" bodystart="38" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1interval_1a0e3c2d6725822fed31f198b7af3543e3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::interval::print</definition>
+        <argsstring>() const</argsstring>
+        <name>print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/interval.h" line="30" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/include/interval.h" bodystart="30" bodyend="32"/>
+        <referencedby refid="namespaceCPSGrader_1a74510742b79d66f12cc9f2a7d4282324" compoundref="interval_8cpp" startline="54" endline="57">CPSGrader::operator&lt;&lt;</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1interval_1a8c21bd8da8748b7cb6027fc3e6d68553" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::interval::print</definition>
+        <argsstring>(std::ostream &amp;os) const</argsstring>
+        <name>print</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/interval.h" line="34" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/include/interval.h" bodystart="34" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhenya/CauMon/breach/Online/include/interval.h" line="12" column="1" bodyfile="/home/zhenya/CauMon/breach/Online/include/interval.h" bodystart="12" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classCPSGrader_1_1interval_1ab3445d4b5a077acb1222f776a69694f0" prot="public" virt="non-virtual"><scope>CPSGrader::interval</scope><name>begin</name></member>
+      <member refid="classCPSGrader_1_1interval_1a4e3a939ea637fa02543a70f8fbaf40ab" prot="public" virt="non-virtual"><scope>CPSGrader::interval</scope><name>begin_str</name></member>
+      <member refid="classCPSGrader_1_1interval_1a285e44cbd91dfeb9f86656a13f0d2fd2" prot="public" virt="non-virtual"><scope>CPSGrader::interval</scope><name>copy</name></member>
+      <member refid="classCPSGrader_1_1interval_1aa85977561692706ec8e42d4fc8927e88" prot="public" virt="non-virtual"><scope>CPSGrader::interval</scope><name>end</name></member>
+      <member refid="classCPSGrader_1_1interval_1ae66b1218b88598b3635ccbe7cfc4745a" prot="public" virt="non-virtual"><scope>CPSGrader::interval</scope><name>end_str</name></member>
+      <member refid="classCPSGrader_1_1interval_1a1ef138d7625a47126d1ed3a10d4910d3" prot="public" virt="non-virtual"><scope>CPSGrader::interval</scope><name>interval</name></member>
+      <member refid="classCPSGrader_1_1interval_1a852c5e383907dad87426f81aee9830d5" prot="public" virt="non-virtual"><scope>CPSGrader::interval</scope><name>interval</name></member>
+      <member refid="classCPSGrader_1_1interval_1a3821aedf8c1c639bca5b3ad635a5d6de" prot="public" virt="non-virtual"><scope>CPSGrader::interval</scope><name>interval</name></member>
+      <member refid="classCPSGrader_1_1interval_1a083dbba769bbf4a2b9d2e71b974a3c1a" prot="public" virt="non-virtual"><scope>CPSGrader::interval</scope><name>interval</name></member>
+      <member refid="classCPSGrader_1_1interval_1a3d0fa063fb7c5888341c67d063e5c790" prot="public" virt="non-virtual"><scope>CPSGrader::interval</scope><name>operator=</name></member>
+      <member refid="classCPSGrader_1_1interval_1a0e3c2d6725822fed31f198b7af3543e3" prot="public" virt="non-virtual"><scope>CPSGrader::interval</scope><name>print</name></member>
+      <member refid="classCPSGrader_1_1interval_1a8c21bd8da8748b7cb6027fc3e6d68553" prot="public" virt="non-virtual"><scope>CPSGrader::interval</scope><name>print</name></member>
+      <member refid="classCPSGrader_1_1interval_1ae5a275a973ad081ec7b526921371152d" prot="public" virt="non-virtual"><scope>CPSGrader::interval</scope><name>to_string</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

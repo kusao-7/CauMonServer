@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="y_8tab_8h" kind="file" language="C++">
+    <compoundname>y.tab.h</compoundname>
+    <includes refid="stl__scanner_8h" local="yes">stl_scanner.h</includes>
+    <incdepgraph>
+      <node id="11">
+        <label>location.hh</label>
+      </node>
+      <node id="7">
+        <label>stdexcept</label>
+      </node>
+      <node id="2">
+        <label>stl_scanner.h</label>
+        <link refid="stl__scanner_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>stack.hh</label>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+      <node id="5">
+        <label>stl_parser.h</label>
+        <link refid="stl__parser_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cstdlib</label>
+      </node>
+      <node id="1">
+        <label>/home/zhenya/CauMon/breach/Online/include/y.tab.h</label>
+        <link refid="y_8tab_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>FlexLexer.h</label>
+        <link refid="FlexLexer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Forwarding include file to parser.h (actually by including scanner.h) </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>$Id:<sp/>y.tab.h<sp/>332<sp/>2014-04-23<sp/>02:18:21Z<sp/>donze<sp/>$</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight><highlight class="comment">/*<sp/>When<sp/>using<sp/>automake<sp/>the<sp/>bison<sp/>parser<sp/>file<sp/>&quot;xyz.yy&quot;<sp/>is<sp/>processed<sp/>by<sp/>the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>ylwrap<sp/>script.<sp/>It<sp/>calls<sp/>bison<sp/>in<sp/>a<sp/>separate<sp/>directory,<sp/>which<sp/>outputs<sp/>source</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>to<sp/>the<sp/>default<sp/>names<sp/>&quot;y.tab.c&quot;<sp/>and<sp/>&quot;y.tab.h&quot;.<sp/>The<sp/>ylwrap<sp/>script<sp/>then<sp/>renames</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>these<sp/>files<sp/>into<sp/>&quot;xyz.cc&quot;<sp/>and<sp/>&quot;xyz.h&quot;<sp/>and<sp/>tries<sp/>to<sp/>update<sp/>include<sp/>references</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>using<sp/>sed.<sp/>However<sp/>this<sp/>does<sp/>not<sp/>work<sp/>for<sp/>the<sp/>C++<sp/>parser<sp/>skeleton,<sp/>so<sp/>the</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>source<sp/>file<sp/>&quot;xyz.cc&quot;<sp/>still<sp/>refers<sp/>to<sp/>the<sp/>default<sp/>&quot;y.tab.h&quot;.<sp/>The<sp/>easiest</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>work-around<sp/>is<sp/>to<sp/>use<sp/>this<sp/>forwarding<sp/>include<sp/>file.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stl__scanner_8h" kindref="compound">stl_scanner.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/zhenya/CauMon/breach/Online/include/y.tab.h"/>
+  </compounddef>
+</doxygen>

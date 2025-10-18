@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCPSGrader_1_1stl__atom" kind="class" language="C++" prot="public">
+    <compoundname>CPSGrader::stl_atom</compoundname>
+    <basecompoundref refid="classCPSGrader_1_1binary__transducer" prot="public" virt="non-virtual">CPSGrader::binary_transducer</basecompoundref>
+    <includes refid="transducer_8h" local="no">transducer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCPSGrader_1_1stl__atom_1a221687bccda9746908df6d421798221c" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceCPSGrader_1a70b0b67a76ace97d635c48a9c7ef4b4b" kindref="member">comparator</ref></type>
+        <definition>comparator CPSGrader::stl_atom::comp</definition>
+        <argsstring></argsstring>
+        <name>comp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/transducer.h" line="581" column="20" bodyfile="/home/zhenya/CauMon/src/include/transducer.h" bodystart="581" bodyend="-1"/>
+        <referencedby refid="classCPSGrader_1_1stl__atom_1a6a1e66dfe512deae46287bb9b98194fe" compoundref="cau__stl__atom_8cpp" startline="71" endline="108">causation_opt_lower</referencedby>
+        <referencedby refid="classCPSGrader_1_1stl__atom_1a01f31fb8718b306855d7dbf96fa2d780" compoundref="cau__stl__atom_8cpp" startline="24" endline="62">causation_opt_upper</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCPSGrader_1_1stl__atom_1ac914c289970c533d4785a9ddcd42f959" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::stl_atom::stl_atom</definition>
+        <argsstring>()</argsstring>
+        <name>stl_atom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/transducer.h" line="583" column="9" bodyfile="/home/zhenya/CauMon/src/include/transducer.h" bodystart="583" bodyend="585"/>
+        <references refid="namespaceCPSGrader_1a70b0b67a76ace97d635c48a9c7ef4b4ba037ad180c72f011da26a607521e9e982" compoundref="transducer_8h" startline="574">CPSGrader::GREATERTHAN</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1stl__atom_1a8a8da51683580820da1cc4f9028251f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::stl_atom::stl_atom</definition>
+        <argsstring>(transducer *_childL, comparator cp, transducer *_childR)</argsstring>
+        <name>stl_atom</name>
+        <param>
+          <type><ref refid="classCPSGrader_1_1transducer" kindref="compound">transducer</ref> *</type>
+          <declname>_childL</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceCPSGrader_1a70b0b67a76ace97d635c48a9c7ef4b4b" kindref="member">comparator</ref></type>
+          <declname>cp</declname>
+        </param>
+        <param>
+          <type><ref refid="classCPSGrader_1_1transducer" kindref="compound">transducer</ref> *</type>
+          <declname>_childR</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/transducer.h" line="587" column="9" bodyfile="/home/zhenya/CauMon/src/include/transducer.h" bodystart="587" bodyend="591"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1stl__atom_1a00f9db36a556ae2292def00ed09b5b46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::stl_atom::stl_atom</definition>
+        <argsstring>(transducer *_childL, string cp, transducer *_childR)</argsstring>
+        <name>stl_atom</name>
+        <param>
+          <type><ref refid="classCPSGrader_1_1transducer" kindref="compound">transducer</ref> *</type>
+          <declname>_childL</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>cp</declname>
+        </param>
+        <param>
+          <type><ref refid="classCPSGrader_1_1transducer" kindref="compound">transducer</ref> *</type>
+          <declname>_childR</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/transducer.h" line="593" column="9" bodyfile="/home/zhenya/CauMon/src/include/transducer.h" bodystart="593" bodyend="601"/>
+        <references refid="namespaceCPSGrader_1a70b0b67a76ace97d635c48a9c7ef4b4ba037ad180c72f011da26a607521e9e982" compoundref="transducer_8h" startline="574">CPSGrader::GREATERTHAN</references>
+        <references refid="namespaceCPSGrader_1a70b0b67a76ace97d635c48a9c7ef4b4ba0c9b3e6acac69b26ed13c834b6f3c3a7" compoundref="transducer_8h" startline="574">CPSGrader::LESSTHAN</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1stl__atom_1a072caf5a2b662f6ed28e6b3ec2509b75" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classCPSGrader_1_1stl__atom" kindref="compound">stl_atom</ref> *</type>
+        <definition>virtual stl_atom* CPSGrader::stl_atom::clone</definition>
+        <argsstring>() const</argsstring>
+        <name>clone</name>
+        <reimplements refid="classCPSGrader_1_1transducer_1a133c57a3bfb20aed578cc257e6e9a1eb">clone</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/transducer.h" line="604" column="26" bodyfile="/home/zhenya/CauMon/src/include/transducer.h" bodystart="604" bodyend="608"/>
+        <references refid="classCPSGrader_1_1transducer_1a133c57a3bfb20aed578cc257e6e9a1eb">CPSGrader::transducer::clone</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1stl__atom_1ade7f115f363cfc26c911e9bf7b205b52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::stl_atom::~stl_atom</definition>
+        <argsstring>()</argsstring>
+        <name>~stl_atom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/transducer.h" line="610" column="9" bodyfile="/home/zhenya/CauMon/src/include/transducer.h" bodystart="610" bodyend="611"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1stl__atom_1a5f172476b6c9d58692c5df4238a745b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double CPSGrader::stl_atom::compute_robustness</definition>
+        <argsstring>()</argsstring>
+        <name>compute_robustness</name>
+        <reimplements refid="classCPSGrader_1_1transducer_1a8fd5be58875ae2d8b4833ce81f2292d2">compute_robustness</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/transducer.h" line="613" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1stl__atom_1a01f31fb8718b306855d7dbf96fa2d780" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double CPSGrader::stl_atom::causation_opt_upper</definition>
+        <argsstring>()</argsstring>
+        <name>causation_opt_upper</name>
+        <reimplements refid="classCPSGrader_1_1transducer_1a580d043d7f72bc1bf882be8a760339a9">causation_opt_upper</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Computes the upper bound causation optimization for STL atomic predicate. This method evaluates the causation optimization for atomic predicates by comparing signal values at the end of the trace.</para>
+<para><simplesect kind="return"><para>The upper bound causation value for the atomic predicate </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/transducer.h" line="615" column="16" bodyfile="/home/zhenya/CauMon/src/cpp/cau_stl_atom.cpp" bodystart="24" bodyend="62"/>
+        <references refid="classCPSGrader_1_1Signal_1a9fe5b10a6b4e1b78c3834ce382fe7c66" compoundref="signal_8cpp" startline="42" endline="56">CPSGrader::Signal::appendSample</references>
+        <references refid="classCPSGrader_1_1transducer_1a97f330b1082c802ee8c0f91f05e38a04" compoundref="transducer_8h" startline="39">CPSGrader::transducer::cau_up</references>
+        <references refid="classCPSGrader_1_1binary__transducer_1a91a8dc3f455cd255603ebc5dff915420" compoundref="transducer_8h" startline="189">CPSGrader::binary_transducer::childL</references>
+        <references refid="classCPSGrader_1_1binary__transducer_1a24ec331175dfc3ac9ebcc52de4a0e9f0" compoundref="transducer_8h" startline="192">CPSGrader::binary_transducer::childR</references>
+        <references refid="classCPSGrader_1_1stl__atom_1a221687bccda9746908df6d421798221c" compoundref="transducer_8h" startline="581">comp</references>
+        <references refid="classCPSGrader_1_1transducer_1aadf8c1c8bc2ddc24bc996febf134848f" compoundref="transducer_8h" startline="79" endline="82">CPSGrader::transducer::double_greater</references>
+        <references refid="classCPSGrader_1_1transducer_1a9059b109c683f46e74840227e728e69b" compoundref="transducer_8h" startline="84" endline="87">CPSGrader::transducer::double_less</references>
+        <references refid="classCPSGrader_1_1transducer_1ae74d40c958360d5cb5190ad87746c864" compoundref="transducer_8h" startline="33">CPSGrader::transducer::end_time</references>
+        <references refid="classCPSGrader_1_1transducer_1abb46a9df698d45369da35bf36bfd332b" compoundref="transducer_8h" startline="71" endline="71">CPSGrader::transducer::get_index</references>
+        <references refid="classCPSGrader_1_1transducer_1ada0ba16064c6d55460c0f1013f3c7d34" compoundref="transducer_8h" startline="72" endline="72">CPSGrader::transducer::get_value</references>
+        <references refid="namespaceCPSGrader_1a70b0b67a76ace97d635c48a9c7ef4b4ba0c9b3e6acac69b26ed13c834b6f3c3a7" compoundref="transducer_8h" startline="574">CPSGrader::LESSTHAN</references>
+        <references refid="classCPSGrader_1_1Signal_1a33cca1c9c71b2629c2675492babf8ce1" compoundref="signal_8cpp" startline="185" endline="188">CPSGrader::Signal::reset</references>
+        <references refid="classCPSGrader_1_1transducer_1a2a61a77c701815ecbeb79940f057c719" compoundref="transducer_8h" startline="33">CPSGrader::transducer::start_time</references>
+        <references refid="signal_8h_1afc0eef637f1016e8786e45e106a4881e" compoundref="signal_8h" startline="13">TOP</references>
+        <references refid="classCPSGrader_1_1transducer_1ad73ab081ffe1977ad0f7abb989d2a4da" compoundref="transducer_8h" startline="27">CPSGrader::transducer::trace_data_ptr</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1stl__atom_1a6a1e66dfe512deae46287bb9b98194fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double CPSGrader::stl_atom::causation_opt_lower</definition>
+        <argsstring>()</argsstring>
+        <name>causation_opt_lower</name>
+        <reimplements refid="classCPSGrader_1_1transducer_1a9441f8958d69ae3896d531d36e216f20">causation_opt_lower</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Computes the lower bound causation optimization for STL atomic predicate. This method evaluates the causation optimization for atomic predicates by comparing signal values at the end of the trace.</para>
+<para><simplesect kind="return"><para>The lower bound causation value for the atomic predicate </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/transducer.h" line="616" column="16" bodyfile="/home/zhenya/CauMon/src/cpp/cau_stl_atom.cpp" bodystart="71" bodyend="108"/>
+        <references refid="classCPSGrader_1_1Signal_1a9fe5b10a6b4e1b78c3834ce382fe7c66" compoundref="signal_8cpp" startline="42" endline="56">CPSGrader::Signal::appendSample</references>
+        <references refid="signal_8h_1ae420caa0af9cbdf102ed255034e27c5b" compoundref="signal_8h" startline="12">BOTTOM</references>
+        <references refid="classCPSGrader_1_1transducer_1af32119bba8da81be20c7097eb0d44ee8" compoundref="transducer_8h" startline="39">CPSGrader::transducer::cau_low</references>
+        <references refid="classCPSGrader_1_1binary__transducer_1a91a8dc3f455cd255603ebc5dff915420" compoundref="transducer_8h" startline="189">CPSGrader::binary_transducer::childL</references>
+        <references refid="classCPSGrader_1_1binary__transducer_1a24ec331175dfc3ac9ebcc52de4a0e9f0" compoundref="transducer_8h" startline="192">CPSGrader::binary_transducer::childR</references>
+        <references refid="classCPSGrader_1_1stl__atom_1a221687bccda9746908df6d421798221c" compoundref="transducer_8h" startline="581">comp</references>
+        <references refid="classCPSGrader_1_1transducer_1aadf8c1c8bc2ddc24bc996febf134848f" compoundref="transducer_8h" startline="79" endline="82">CPSGrader::transducer::double_greater</references>
+        <references refid="classCPSGrader_1_1transducer_1a9059b109c683f46e74840227e728e69b" compoundref="transducer_8h" startline="84" endline="87">CPSGrader::transducer::double_less</references>
+        <references refid="classCPSGrader_1_1transducer_1ae74d40c958360d5cb5190ad87746c864" compoundref="transducer_8h" startline="33">CPSGrader::transducer::end_time</references>
+        <references refid="classCPSGrader_1_1transducer_1abb46a9df698d45369da35bf36bfd332b" compoundref="transducer_8h" startline="71" endline="71">CPSGrader::transducer::get_index</references>
+        <references refid="classCPSGrader_1_1transducer_1ada0ba16064c6d55460c0f1013f3c7d34" compoundref="transducer_8h" startline="72" endline="72">CPSGrader::transducer::get_value</references>
+        <references refid="namespaceCPSGrader_1a70b0b67a76ace97d635c48a9c7ef4b4ba0c9b3e6acac69b26ed13c834b6f3c3a7" compoundref="transducer_8h" startline="574">CPSGrader::LESSTHAN</references>
+        <references refid="classCPSGrader_1_1Signal_1a33cca1c9c71b2629c2675492babf8ce1" compoundref="signal_8cpp" startline="185" endline="188">CPSGrader::Signal::reset</references>
+        <references refid="classCPSGrader_1_1transducer_1a2a61a77c701815ecbeb79940f057c719" compoundref="transducer_8h" startline="33">CPSGrader::transducer::start_time</references>
+        <references refid="classCPSGrader_1_1transducer_1ad73ab081ffe1977ad0f7abb989d2a4da" compoundref="transducer_8h" startline="27">CPSGrader::transducer::trace_data_ptr</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1stl__atom_1a746116cc324d773431b8e6de54ed27ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void CPSGrader::stl_atom::set_duration</definition>
+        <argsstring>()</argsstring>
+        <name>set_duration</name>
+        <reimplements refid="classCPSGrader_1_1transducer_1afd33961aef44e5b79d2e0a1d0c0ea1e9">set_duration</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/transducer.h" line="618" column="14" bodyfile="/home/zhenya/CauMon/src/include/transducer.h" bodystart="618" bodyend="620"/>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1stl__atom_1ad489111f20f7fba3cc189af3be0a74e5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CPSGrader::stl_atom::print</definition>
+        <argsstring>(ostream &amp;os) const</argsstring>
+        <name>print</name>
+        <reimplements refid="classCPSGrader_1_1transducer_1a4ff17ad837da12a39c76ce94828da5f1">print</reimplements>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/transducer.h" line="623" column="22" bodyfile="/home/zhenya/CauMon/src/include/transducer.h" bodystart="623" bodyend="636"/>
+        <references refid="namespaceCPSGrader_1a70b0b67a76ace97d635c48a9c7ef4b4ba037ad180c72f011da26a607521e9e982" compoundref="transducer_8h" startline="574">CPSGrader::GREATERTHAN</references>
+        <references refid="namespaceCPSGrader_1a70b0b67a76ace97d635c48a9c7ef4b4ba0c9b3e6acac69b26ed13c834b6f3c3a7" compoundref="transducer_8h" startline="574">CPSGrader::LESSTHAN</references>
+      </memberdef>
+      <memberdef kind="function" id="classCPSGrader_1_1stl__atom_1ad128d183c78c4f751be831cb20380492" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void CPSGrader::stl_atom::print</definition>
+        <argsstring>() const</argsstring>
+        <name>print</name>
+        <reimplements refid="classCPSGrader_1_1transducer_1ac1665122ed56e168e6339bacd8cabaab">print</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/src/include/transducer.h" line="638" column="14" bodyfile="/home/zhenya/CauMon/src/include/transducer.h" bodystart="638" bodyend="640"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CPSGrader::binary_transducer</label>
+        <link refid="classCPSGrader_1_1binary__transducer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CPSGrader::stl_atom</label>
+        <link refid="classCPSGrader_1_1stl__atom"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CPSGrader::transducer</label>
+        <link refid="classCPSGrader_1_1transducer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CPSGrader::binary_transducer</label>
+        <link refid="classCPSGrader_1_1binary__transducer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>childL</edgelabel>
+          <edgelabel>childR</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CPSGrader::Signal</label>
+        <link refid="classCPSGrader_1_1Signal"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CPSGrader::stl_atom</label>
+        <link refid="classCPSGrader_1_1stl__atom"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CPSGrader::transducer</label>
+        <link refid="classCPSGrader_1_1transducer"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>cau</edgelabel>
+          <edgelabel>cau_low</edgelabel>
+          <edgelabel>cau_up</edgelabel>
+          <edgelabel>z</edgelabel>
+          <edgelabel>z_low</edgelabel>
+          <edgelabel>z_up</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::deque&lt; Sample &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/zhenya/CauMon/src/include/transducer.h" line="578" column="5" bodyfile="/home/zhenya/CauMon/src/include/transducer.h" bodystart="578" bodyend="642"/>
+    <listofallmembers>
+      <member refid="classCPSGrader_1_1binary__transducer_1ab760baef6214f19938b037ba3264cc38" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>binary_transducer</name></member>
+      <member refid="classCPSGrader_1_1binary__transducer_1a23eeb1ef9cb3b723d0a1eb791f0d9a3e" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>binary_transducer</name></member>
+      <member refid="classCPSGrader_1_1transducer_1a9f6ac3139fd75fe07f2a88d5a862336f" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>cau</name></member>
+      <member refid="classCPSGrader_1_1transducer_1af32119bba8da81be20c7097eb0d44ee8" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>cau_low</name></member>
+      <member refid="classCPSGrader_1_1transducer_1a97f330b1082c802ee8c0f91f05e38a04" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>cau_up</name></member>
+      <member refid="classCPSGrader_1_1stl__atom_1a6a1e66dfe512deae46287bb9b98194fe" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>causation_opt_lower</name></member>
+      <member refid="classCPSGrader_1_1stl__atom_1a01f31fb8718b306855d7dbf96fa2d780" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>causation_opt_upper</name></member>
+      <member refid="classCPSGrader_1_1transducer_1afda50b237d883aabb8f2fdb50304d3d3" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>check</name></member>
+      <member refid="classCPSGrader_1_1binary__transducer_1a91a8dc3f455cd255603ebc5dff915420" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>childL</name></member>
+      <member refid="classCPSGrader_1_1binary__transducer_1a24ec331175dfc3ac9ebcc52de4a0e9f0" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>childR</name></member>
+      <member refid="classCPSGrader_1_1stl__atom_1a072caf5a2b662f6ed28e6b3ec2509b75" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>clone</name></member>
+      <member refid="classCPSGrader_1_1stl__atom_1a221687bccda9746908df6d421798221c" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>comp</name></member>
+      <member refid="classCPSGrader_1_1transducer_1a9a26566ad23cc15eef63d00d32ab7b3d" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>compute_lower_rob</name></member>
+      <member refid="classCPSGrader_1_1stl__atom_1a5f172476b6c9d58692c5df4238a745b6" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>compute_robustness</name></member>
+      <member refid="classCPSGrader_1_1transducer_1a0ba9bc26599dd484cfc940991032ddd3" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>compute_upper_rob</name></member>
+      <member refid="classCPSGrader_1_1transducer_1af15f10dcbc6f35064a4d8ce25ef855a7" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>double_equals</name></member>
+      <member refid="classCPSGrader_1_1transducer_1afa124c5eeeb60ef54b5ecf3ee9856060" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>double_ge</name></member>
+      <member refid="classCPSGrader_1_1transducer_1aadf8c1c8bc2ddc24bc996febf134848f" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>double_greater</name></member>
+      <member refid="classCPSGrader_1_1transducer_1ae8e24fd7bd1e091da7a62ab44cb2e6a9" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>double_le</name></member>
+      <member refid="classCPSGrader_1_1transducer_1a9059b109c683f46e74840227e728e69b" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>double_less</name></member>
+      <member refid="classCPSGrader_1_1transducer_1a47a0c014534eb3b8e16008e9307bf5a4" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>duration</name></member>
+      <member refid="classCPSGrader_1_1transducer_1ae74d40c958360d5cb5190ad87746c864" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>end_time</name></member>
+      <member refid="classCPSGrader_1_1transducer_1abf4f77d90d735e4e1285671004d0678f" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>get_end_complete</name></member>
+      <member refid="classCPSGrader_1_1transducer_1a82ee61d4f1f4d031560b1d47bd5d204e" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>get_end_complete_low</name></member>
+      <member refid="classCPSGrader_1_1transducer_1ad1e1aa2ecd040c6872c97c4c58c3138d" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>get_end_complete_up</name></member>
+      <member refid="classCPSGrader_1_1transducer_1abb46a9df698d45369da35bf36bfd332b" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>get_index</name></member>
+      <member refid="classCPSGrader_1_1transducer_1a02d1100175307731b91b1f56b750773b" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>get_param</name></member>
+      <member refid="classCPSGrader_1_1transducer_1ae962b60ecb6c6540a847852abb1d24a0" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>get_signal</name></member>
+      <member refid="classCPSGrader_1_1transducer_1ada0ba16064c6d55460c0f1013f3c7d34" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>get_value</name></member>
+      <member refid="classCPSGrader_1_1binary__transducer_1a06ebd5c7e81a0662e8f05954aa68f95c" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>init_horizon</name></member>
+      <member refid="classCPSGrader_1_1transducer_1abea4edf32ff21d1368231821a847772d" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>param_map</name></member>
+      <member refid="classCPSGrader_1_1stl__atom_1ad489111f20f7fba3cc189af3be0a74e5" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>print</name></member>
+      <member refid="classCPSGrader_1_1stl__atom_1ad128d183c78c4f751be831cb20380492" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>print</name></member>
+      <member refid="classCPSGrader_1_1transducer_1ac4e59f29cbd68e4eef9c88b6962b6985" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>print_trace</name></member>
+      <member refid="classCPSGrader_1_1stl__atom_1a746116cc324d773431b8e6de54ed27ba" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>set_duration</name></member>
+      <member refid="classCPSGrader_1_1transducer_1a2ca92d6e33f6f7eb40285c9d56b719a8" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>set_horizon</name></member>
+      <member refid="classCPSGrader_1_1binary__transducer_1ad48ba1d57e636578c26cdb60ab9a89c4" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>set_trace_data_ptr</name></member>
+      <member refid="classCPSGrader_1_1transducer_1ad33b191ced4cb7f27f1d86ab7f0171b4" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>signal_map</name></member>
+      <member refid="classCPSGrader_1_1transducer_1a2a61a77c701815ecbeb79940f057c719" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>start_time</name></member>
+      <member refid="classCPSGrader_1_1stl__atom_1ac914c289970c533d4785a9ddcd42f959" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>stl_atom</name></member>
+      <member refid="classCPSGrader_1_1stl__atom_1a8a8da51683580820da1cc4f9028251f6" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>stl_atom</name></member>
+      <member refid="classCPSGrader_1_1stl__atom_1a00f9db36a556ae2292def00ed09b5b46" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>stl_atom</name></member>
+      <member refid="classCPSGrader_1_1transducer_1ad73ab081ffe1977ad0f7abb989d2a4da" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>trace_data_ptr</name></member>
+      <member refid="classCPSGrader_1_1transducer_1a041512f31a264c8aabcfdd21f39556dd" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>transducer</name></member>
+      <member refid="classCPSGrader_1_1transducer_1ab86d39d2cb1d51095e3c9a4cf550fdbd" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>update_lower_rob</name></member>
+      <member refid="classCPSGrader_1_1transducer_1a1a40d987cdcecac224090c6a863e03bf" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>update_robustness</name></member>
+      <member refid="classCPSGrader_1_1transducer_1aa9a99c53e24002cddc81db96a6d1db94" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>update_upper_rob</name></member>
+      <member refid="classCPSGrader_1_1transducer_1a5112602e45c5f167fb87211206813b45" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>z</name></member>
+      <member refid="classCPSGrader_1_1transducer_1aa9679dc8f88998242eefd789edef178d" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>z_low</name></member>
+      <member refid="classCPSGrader_1_1transducer_1a7983863530e0de4335d461cd00a54e7f" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>z_up</name></member>
+      <member refid="classCPSGrader_1_1binary__transducer_1a3927bd42aadcf7f4f216ca33f7d31e46" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>~binary_transducer</name></member>
+      <member refid="classCPSGrader_1_1stl__atom_1ade7f115f363cfc26c911e9bf7b205b52" prot="public" virt="non-virtual"><scope>CPSGrader::stl_atom</scope><name>~stl_atom</name></member>
+      <member refid="classCPSGrader_1_1transducer_1a366d5b3632892ffe177b1d7134637c40" prot="public" virt="virtual"><scope>CPSGrader::stl_atom</scope><name>~transducer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="stl__scanner_8h" kind="file" language="C++">
+    <compoundname>stl_scanner.h</compoundname>
+    <includes refid="FlexLexer_8h" local="yes">FlexLexer.h</includes>
+    <includes refid="stl__parser_8h" local="yes">stl_parser.h</includes>
+    <includedby refid="y_8tab_8h" local="yes">/home/zhenya/CauMon/breach/Online/include/y.tab.h</includedby>
+    <includedby refid="stl__driver_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp</includedby>
+    <includedby refid="stl__parser_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp</includedby>
+    <includedby refid="stl__scanner_8cpp" local="yes">/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp</includedby>
+    <incdepgraph>
+      <node id="10">
+        <label>location.hh</label>
+      </node>
+      <node id="6">
+        <label>stdexcept</label>
+      </node>
+      <node id="1">
+        <label>/home/zhenya/CauMon/breach/Online/include/stl_scanner.h</label>
+        <link refid="stl__scanner_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>stack.hh</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+      <node id="4">
+        <label>stl_parser.h</label>
+        <link refid="stl__parser_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstdlib</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>FlexLexer.h</label>
+        <link refid="FlexLexer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/zhenya/CauMon/breach/Online/include/stl_scanner.h</label>
+        <link refid="stl__scanner_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp</label>
+        <link refid="stl__scanner_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/home/zhenya/CauMon/breach/Online/include/y.tab.h</label>
+        <link refid="y_8tab_8h"/>
+      </node>
+      <node id="3">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_driver.cpp</label>
+        <link refid="stl__driver_8cpp"/>
+      </node>
+      <node id="4">
+        <label>/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp</label>
+        <link refid="stl__parser_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classCPSGrader_1_1Scanner" prot="public">CPSGrader::Scanner</innerclass>
+    <innernamespace refid="namespaceCPSGrader">CPSGrader</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="stl__scanner_8h_1ae5b01ac2fa5a6ad5fb97559638abe686" prot="public" static="no">
+        <name>YY_DECL</name>
+        <initializer>    <ref refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5d" kindref="member">CPSGrader::Parser::token_type</ref>				\
+    <ref refid="classCPSGrader_1_1Scanner_1a1d5a61784b480b05fc5b4ea426675d8d" kindref="member">CPSGrader::Scanner::lex</ref>(				\
+	<ref refid="unionCPSGrader_1_1Parser_1_1semantic__type" kindref="compound">CPSGrader::Parser::semantic_type</ref>* yylval,		\
+    <ref refid="classCPSGrader_1_1Parser_1a92d8bc3531d11e778e65874ac9ee9fdc" kindref="member">CPSGrader::Parser::location_type</ref>* yylloc,  \
+	class STLDriver&amp; driver \
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_scanner.h" line="11" column="9" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_scanner.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stl__scanner_8h_1af699458ba5331ddec7e15a878f42f8f5" prot="public" static="no">
+        <name>yyFlexLexer</name>
+        <initializer>STLFlexLexer</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_scanner.h" line="21" column="9" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_scanner.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>$Id:<sp/>stl_scanner.h<sp/>336<sp/>2014-04-25<sp/>18:43:53Z<sp/>donze<sp/>$</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>STL_SCANNER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STL_SCANNER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Flex<sp/>expects<sp/>the<sp/>signature<sp/>of<sp/>yylex<sp/>to<sp/>be<sp/>defined<sp/>in<sp/>the<sp/>macro<sp/>YY_DECL,<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>C++<sp/>parser<sp/>expects<sp/>it<sp/>to<sp/>be<sp/>declared.<sp/>We<sp/>can<sp/>factor<sp/>both<sp/>as<sp/>follows.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>YY_DECL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="stl__scanner_8h_1ae5b01ac2fa5a6ad5fb97559638abe686" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>YY_DECL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>CPSGrader::Parser::token_type<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>CPSGrader::Scanner::lex(<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>CPSGrader::Parser::semantic_type*<sp/>yylval,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>CPSGrader::Parser::location_type*<sp/>yylloc,<sp/><sp/>\</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>class<sp/>STLDriver&amp;<sp/>driver<sp/>\</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__FLEX_LEXER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="stl__scanner_8h_1af699458ba5331ddec7e15a878f42f8f5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>yyFlexLexer<sp/>STLFlexLexer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="FlexLexer_8h" kindref="compound">FlexLexer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>yyFlexLexer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stl__parser_8h" kindref="compound">stl_parser.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceCPSGrader" kindref="compound">CPSGrader</ref><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classCPSGrader_1_1Scanner" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCPSGrader_1_1Scanner" kindref="compound">Scanner</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>STLFlexLexer</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCPSGrader_1_1Scanner_1a6c355a1f083cbaf52d3b2028c23f9d4a" kindref="member">Scanner</ref>(std::istream*<sp/>arg_yyin<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostream*<sp/>arg_yyout<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Scanner_1aa5258865a846c63660f3ace6566c385f" kindref="member">~Scanner</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classCPSGrader_1_1Scanner_1a1d5a61784b480b05fc5b4ea426675d8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5d" kindref="member">Parser::token_type</ref><sp/><ref refid="classCPSGrader_1_1Scanner_1a1d5a61784b480b05fc5b4ea426675d8d" kindref="member">lex</ref>(</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionCPSGrader_1_1Parser_1_1semantic__type" kindref="compound">Parser::semantic_type</ref>*<sp/>yylval,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCPSGrader_1_1Parser_1a92d8bc3531d11e778e65874ac9ee9fdc" kindref="member">Parser::location_type</ref>*<sp/>yylloc,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1STLDriver" kindref="compound">STLDriver</ref>&amp;<sp/>driver</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCPSGrader_1_1Scanner_1ac11c56d7eeb19f25a82e0858781f2e22" kindref="member">set_debug</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>example</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>EXAMPLE_SCANNER_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/zhenya/CauMon/breach/Online/include/stl_scanner.h"/>
+  </compounddef>
+</doxygen>

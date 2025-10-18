@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structCPSGrader_1_1Parser_1_1token" kind="struct" language="C++" prot="public">
+    <compoundname>CPSGrader::Parser::token</compoundname>
+    <includes refid="stl__parser_8h" local="no">stl_parser.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>yytokentype</name>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da171925bf1d0d19b5daea033ef48e1815" prot="public">
+          <name>END</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dad4fb087333e8c897bb1740fce080dc70" prot="public">
+          <name>LINT</name>
+          <initializer>= 258</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dab3540896067e8547c7fe987e1d497e4d" prot="public">
+          <name>RINT</name>
+          <initializer>= 259</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da0b4930cbd30d2b01396fc4339195bd86" prot="public">
+          <name>LPAREN</name>
+          <initializer>= 260</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da02fec596b551584f58f44d4011280664" prot="public">
+          <name>RPAREN</name>
+          <initializer>= 261</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dabfd7ec5568b9512395a22d7b55fd431a" prot="public">
+          <name>LT</name>
+          <initializer>= 262</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dae4b18aec84bdb058711ac7b4d7d4444f" prot="public">
+          <name>NOT</name>
+          <initializer>= 263</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da70c752dda1a3fa79372d5fa65efb3847" prot="public">
+          <name>GT</name>
+          <initializer>= 264</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da082c41ce6211ac789a58a70fdfd05ab8" prot="public">
+          <name>AND</name>
+          <initializer>= 265</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dab332d6b02265dec8af07d727edc4e313" prot="public">
+          <name>OR</name>
+          <initializer>= 266</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dac2fa5682ab130c33888b86dd0ad692da" prot="public">
+          <name>IMPLIES</name>
+          <initializer>= 267</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dadeedcaa5bb84b99109f3d2c0ba569c67" prot="public">
+          <name>BOX</name>
+          <initializer>= 268</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dad2e3a386e40e17ba8f00e0e040740b22" prot="public">
+          <name>DIAMOND</name>
+          <initializer>= 269</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da7b4f04368f9b294faf80d90c513f99c6" prot="public">
+          <name>UNTIL</name>
+          <initializer>= 270</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dae592fc445b2b7b468b9d2f05f316af72" prot="public">
+          <name>TIME</name>
+          <initializer>= 271</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dac8468517ef76d4a5228fb5fa635c4ba7" prot="public">
+          <name>COMMA</name>
+          <initializer>= 272</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da64e48cec41fedd9be9b7de99de9b6714" prot="public">
+          <name>EOL</name>
+          <initializer>= 273</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da5740328bb02c61bc03c089b04ab896dc" prot="public">
+          <name>ASSIGN</name>
+          <initializer>= 274</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5daccebb2114d6998543eaa4977d613b7b9" prot="public">
+          <name>PLUS</name>
+          <initializer>= 275</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da799f12f2b53a9166c09e3e9d539131c9" prot="public">
+          <name>MINUS</name>
+          <initializer>= 276</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da7fbb575b2107dfea822653b1541a93c3" prot="public">
+          <name>MULT</name>
+          <initializer>= 277</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dade34454c9e32007b1938cbe017ebd406" prot="public">
+          <name>ABS</name>
+          <initializer>= 278</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da4a6a36b33b11df86a5e891659a641d7c" prot="public">
+          <name>PARAM_DECL</name>
+          <initializer>= 279</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5daf69592df8ac89163a0628fbe1c8ffc05" prot="public">
+          <name>SIGNAL_DECL</name>
+          <initializer>= 280</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5daa46910fbea7688804bb7c655a832055e" prot="public">
+          <name>TEST</name>
+          <initializer>= 281</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dacb0c462ad3dc86ac05d3d1abba825982" prot="public">
+          <name>BOOL_TRUE</name>
+          <initializer>= 282</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dacf743d69d19c34c0e2edbaa1b905077d" prot="public">
+          <name>BOOL_FALSE</name>
+          <initializer>= 283</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da9432973618ede2641b5025771c7098e7" prot="public">
+          <name>DOUBLE</name>
+          <initializer>= 284</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da415fb77a93967f509d5d40471b617d14" prot="public">
+          <name>CONSTANT</name>
+          <initializer>= 285</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da933fa527aa98475d565c5c68907a2ba3" prot="public">
+          <name>PARAM_ID</name>
+          <initializer>= 286</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dae8d23ad36818fac55929f6a37cabefcc" prot="public">
+          <name>PHI_ID</name>
+          <initializer>= 287</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da5774ac906a239a24796bba3253f041f6" prot="public">
+          <name>NEW_ID</name>
+          <initializer>= 288</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dac8f95a3544df9d16ed5682967f61a5b5" prot="public">
+          <name>SIGNAL_ID</name>
+          <initializer>= 289</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da049d2d3b5253db480400440dd9348c13" prot="public">
+          <name>STL_TEST_ID</name>
+          <initializer>= 290</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dae77792809b19fdd3cd8963a4d590225c" prot="public">
+          <name>STRING</name>
+          <initializer>= 291</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="165" column="7" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="166" bodyend="202"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Tokens. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="163" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="164" bodyend="203"/>
+    <listofallmembers>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dade34454c9e32007b1938cbe017ebd406" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>ABS</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da082c41ce6211ac789a58a70fdfd05ab8" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>AND</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da5740328bb02c61bc03c089b04ab896dc" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>ASSIGN</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dacf743d69d19c34c0e2edbaa1b905077d" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>BOOL_FALSE</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dacb0c462ad3dc86ac05d3d1abba825982" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>BOOL_TRUE</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dadeedcaa5bb84b99109f3d2c0ba569c67" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>BOX</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dac8468517ef76d4a5228fb5fa635c4ba7" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>COMMA</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da415fb77a93967f509d5d40471b617d14" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>CONSTANT</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dad2e3a386e40e17ba8f00e0e040740b22" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>DIAMOND</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da9432973618ede2641b5025771c7098e7" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>DOUBLE</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da171925bf1d0d19b5daea033ef48e1815" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>END</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da64e48cec41fedd9be9b7de99de9b6714" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>EOL</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da70c752dda1a3fa79372d5fa65efb3847" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>GT</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dac2fa5682ab130c33888b86dd0ad692da" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>IMPLIES</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dad4fb087333e8c897bb1740fce080dc70" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>LINT</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da0b4930cbd30d2b01396fc4339195bd86" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>LPAREN</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dabfd7ec5568b9512395a22d7b55fd431a" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>LT</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da799f12f2b53a9166c09e3e9d539131c9" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>MINUS</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da7fbb575b2107dfea822653b1541a93c3" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>MULT</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da5774ac906a239a24796bba3253f041f6" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>NEW_ID</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dae4b18aec84bdb058711ac7b4d7d4444f" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>NOT</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dab332d6b02265dec8af07d727edc4e313" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>OR</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da4a6a36b33b11df86a5e891659a641d7c" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>PARAM_DECL</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da933fa527aa98475d565c5c68907a2ba3" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>PARAM_ID</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dae8d23ad36818fac55929f6a37cabefcc" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>PHI_ID</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5daccebb2114d6998543eaa4977d613b7b9" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>PLUS</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dab3540896067e8547c7fe987e1d497e4d" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>RINT</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da02fec596b551584f58f44d4011280664" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>RPAREN</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5daf69592df8ac89163a0628fbe1c8ffc05" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>SIGNAL_DECL</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dac8f95a3544df9d16ed5682967f61a5b5" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>SIGNAL_ID</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da049d2d3b5253db480400440dd9348c13" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>STL_TEST_ID</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dae77792809b19fdd3cd8963a4d590225c" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>STRING</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5daa46910fbea7688804bb7c655a832055e" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>TEST</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5dae592fc445b2b7b468b9d2f05f316af72" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>TIME</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5da7b4f04368f9b294faf80d90c513f99c6" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>UNTIL</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1token_1a0c705ed97dd1b9a0069b3e6638511a5d" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::token</scope><name>yytokentype</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

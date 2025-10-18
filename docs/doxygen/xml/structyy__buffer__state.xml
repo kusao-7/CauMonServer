@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structyy__buffer__state" kind="struct" language="C++" prot="public">
+    <compoundname>yy_buffer_state</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structyy__buffer__state_1a3cea2f85a5c18fae4a8dd1ca44c3a977" prot="public" static="no" mutable="no">
+        <type>std::istream *</type>
+        <definition>std::istream* yy_buffer_state::yy_input_file</definition>
+        <argsstring></argsstring>
+        <name>yy_input_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" line="250" column="14" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" bodystart="250" bodyend="-1"/>
+        <referencedby refid="classyyFlexLexer_1a4e12c1075d2e20c6de18c1220b0d90e2" compoundref="stl__scanner_8cpp" startline="1758" endline="1784">yyFlexLexer::yy_init_buffer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structyy__buffer__state_1ad7b8df8d8a4688e57b0b8d3ca75adc85" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* yy_buffer_state::yy_ch_buf</definition>
+        <argsstring></argsstring>
+        <name>yy_ch_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" line="253" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" bodystart="253" bodyend="-1"/>
+        <referencedby refid="classyyFlexLexer_1ac72d57010353577c918e72eba3d8972a" compoundref="stl__scanner_8cpp" startline="1694" endline="1717">yyFlexLexer::yy_create_buffer</referencedby>
+        <referencedby refid="classyyFlexLexer_1a645a8ebb5b2b5b80707d053a0eb7a21a" compoundref="stl__scanner_8cpp" startline="1726" endline="1740">yyFlexLexer::yy_delete_buffer</referencedby>
+        <referencedby refid="classyyFlexLexer_1ae2c2e8f3beb40d55311864d867493d68" compoundref="stl__scanner_8cpp" startline="1793" endline="1815">yyFlexLexer::yy_flush_buffer</referencedby>
+        <referencedby refid="classyyFlexLexer_1a3659121edfbb2d06999b22ca9255fb1a" compoundref="stl__scanner_8cpp" startline="1289" endline="1420">yyFlexLexer::yy_get_next_buffer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structyy__buffer__state_1a58aa927f098b99d99e75da80f9b681ef" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* yy_buffer_state::yy_buf_pos</definition>
+        <argsstring></argsstring>
+        <name>yy_buf_pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" line="254" column="6" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" bodystart="254" bodyend="-1"/>
+        <referencedby refid="classyyFlexLexer_1ae2c2e8f3beb40d55311864d867493d68" compoundref="stl__scanner_8cpp" startline="1793" endline="1815">yyFlexLexer::yy_flush_buffer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structyy__buffer__state_1a48302f5f3477a9c78bbddf56d356ef54" prot="public" static="no" mutable="no">
+        <type><ref refid="stl__scanner_8cpp_1ad557845057f187eec4be07e2717d2afa" kindref="member">yy_size_t</ref></type>
+        <definition>yy_size_t yy_buffer_state::yy_buf_size</definition>
+        <argsstring></argsstring>
+        <name>yy_buf_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" line="259" column="11" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" bodystart="259" bodyend="-1"/>
+        <referencedby refid="classyyFlexLexer_1ac72d57010353577c918e72eba3d8972a" compoundref="stl__scanner_8cpp" startline="1694" endline="1717">yyFlexLexer::yy_create_buffer</referencedby>
+        <referencedby refid="classyyFlexLexer_1a3659121edfbb2d06999b22ca9255fb1a" compoundref="stl__scanner_8cpp" startline="1289" endline="1420">yyFlexLexer::yy_get_next_buffer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structyy__buffer__state_1afcc44872643f513e79b43c2b1f334a67" prot="public" static="no" mutable="no">
+        <type><ref refid="stl__scanner_8cpp_1ad557845057f187eec4be07e2717d2afa" kindref="member">yy_size_t</ref></type>
+        <definition>yy_size_t yy_buffer_state::yy_n_chars</definition>
+        <argsstring></argsstring>
+        <name>yy_n_chars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" line="264" column="11" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" bodystart="264" bodyend="-1"/>
+        <referencedby refid="classyyFlexLexer_1ae2c2e8f3beb40d55311864d867493d68" compoundref="stl__scanner_8cpp" startline="1793" endline="1815">yyFlexLexer::yy_flush_buffer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structyy__buffer__state_1a80ce2431c70dc4f89ced487f18449465" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int yy_buffer_state::yy_is_our_buffer</definition>
+        <argsstring></argsstring>
+        <name>yy_is_our_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" line="270" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" bodystart="270" bodyend="-1"/>
+        <referencedby refid="classyyFlexLexer_1ac72d57010353577c918e72eba3d8972a" compoundref="stl__scanner_8cpp" startline="1694" endline="1717">yyFlexLexer::yy_create_buffer</referencedby>
+        <referencedby refid="classyyFlexLexer_1a645a8ebb5b2b5b80707d053a0eb7a21a" compoundref="stl__scanner_8cpp" startline="1726" endline="1740">yyFlexLexer::yy_delete_buffer</referencedby>
+        <referencedby refid="classyyFlexLexer_1a3659121edfbb2d06999b22ca9255fb1a" compoundref="stl__scanner_8cpp" startline="1289" endline="1420">yyFlexLexer::yy_get_next_buffer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structyy__buffer__state_1abf5c70eea75581b58c0ee7bd31b14490" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int yy_buffer_state::yy_is_interactive</definition>
+        <argsstring></argsstring>
+        <name>yy_is_interactive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" line="277" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" bodystart="277" bodyend="-1"/>
+        <referencedby refid="classyyFlexLexer_1a4e12c1075d2e20c6de18c1220b0d90e2" compoundref="stl__scanner_8cpp" startline="1758" endline="1784">yyFlexLexer::yy_init_buffer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structyy__buffer__state_1a9d60c60af6e1a6f69de16871fd64f85f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int yy_buffer_state::yy_at_bol</definition>
+        <argsstring></argsstring>
+        <name>yy_at_bol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" line="283" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" bodystart="283" bodyend="-1"/>
+        <referencedby refid="classyyFlexLexer_1ae2c2e8f3beb40d55311864d867493d68" compoundref="stl__scanner_8cpp" startline="1793" endline="1815">yyFlexLexer::yy_flush_buffer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structyy__buffer__state_1a818e94bc9c766e683c60df1e9fd01199" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int yy_buffer_state::yy_bs_lineno</definition>
+        <argsstring></argsstring>
+        <name>yy_bs_lineno</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The line count. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" line="285" column="9" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" bodystart="285" bodyend="-1"/>
+        <referencedby refid="classyyFlexLexer_1a4e12c1075d2e20c6de18c1220b0d90e2" compoundref="stl__scanner_8cpp" startline="1758" endline="1784">yyFlexLexer::yy_init_buffer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structyy__buffer__state_1a10c4fcd8be759e6bf11e6d3e8cdb0307" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int yy_buffer_state::yy_bs_column</definition>
+        <argsstring></argsstring>
+        <name>yy_bs_column</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The column count. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" line="286" column="9" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" bodystart="286" bodyend="-1"/>
+        <referencedby refid="classyyFlexLexer_1a4e12c1075d2e20c6de18c1220b0d90e2" compoundref="stl__scanner_8cpp" startline="1758" endline="1784">yyFlexLexer::yy_init_buffer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structyy__buffer__state_1a63d2afbb1d79a3fc63df9e12626f827d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int yy_buffer_state::yy_fill_buffer</definition>
+        <argsstring></argsstring>
+        <name>yy_fill_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" line="291" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" bodystart="291" bodyend="-1"/>
+        <referencedby refid="classyyFlexLexer_1a4e12c1075d2e20c6de18c1220b0d90e2" compoundref="stl__scanner_8cpp" startline="1758" endline="1784">yyFlexLexer::yy_init_buffer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structyy__buffer__state_1a70fd925d37a2f0454fbd0def675d106c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int yy_buffer_state::yy_buffer_status</definition>
+        <argsstring></argsstring>
+        <name>yy_buffer_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" line="293" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" bodystart="293" bodyend="-1"/>
+        <referencedby refid="classyyFlexLexer_1ae2c2e8f3beb40d55311864d867493d68" compoundref="stl__scanner_8cpp" startline="1793" endline="1815">yyFlexLexer::yy_flush_buffer</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" line="244" column="1" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_scanner.cpp" bodystart="245" bodyend="309"/>
+    <listofallmembers>
+      <member refid="structyy__buffer__state_1a9d60c60af6e1a6f69de16871fd64f85f" prot="public" virt="non-virtual"><scope>yy_buffer_state</scope><name>yy_at_bol</name></member>
+      <member refid="structyy__buffer__state_1a10c4fcd8be759e6bf11e6d3e8cdb0307" prot="public" virt="non-virtual"><scope>yy_buffer_state</scope><name>yy_bs_column</name></member>
+      <member refid="structyy__buffer__state_1a818e94bc9c766e683c60df1e9fd01199" prot="public" virt="non-virtual"><scope>yy_buffer_state</scope><name>yy_bs_lineno</name></member>
+      <member refid="structyy__buffer__state_1a58aa927f098b99d99e75da80f9b681ef" prot="public" virt="non-virtual"><scope>yy_buffer_state</scope><name>yy_buf_pos</name></member>
+      <member refid="structyy__buffer__state_1a48302f5f3477a9c78bbddf56d356ef54" prot="public" virt="non-virtual"><scope>yy_buffer_state</scope><name>yy_buf_size</name></member>
+      <member refid="structyy__buffer__state_1a70fd925d37a2f0454fbd0def675d106c" prot="public" virt="non-virtual"><scope>yy_buffer_state</scope><name>yy_buffer_status</name></member>
+      <member refid="structyy__buffer__state_1ad7b8df8d8a4688e57b0b8d3ca75adc85" prot="public" virt="non-virtual"><scope>yy_buffer_state</scope><name>yy_ch_buf</name></member>
+      <member refid="structyy__buffer__state_1a63d2afbb1d79a3fc63df9e12626f827d" prot="public" virt="non-virtual"><scope>yy_buffer_state</scope><name>yy_fill_buffer</name></member>
+      <member refid="structyy__buffer__state_1a3cea2f85a5c18fae4a8dd1ca44c3a977" prot="public" virt="non-virtual"><scope>yy_buffer_state</scope><name>yy_input_file</name></member>
+      <member refid="structyy__buffer__state_1abf5c70eea75581b58c0ee7bd31b14490" prot="public" virt="non-virtual"><scope>yy_buffer_state</scope><name>yy_is_interactive</name></member>
+      <member refid="structyy__buffer__state_1a80ce2431c70dc4f89ced487f18449465" prot="public" virt="non-virtual"><scope>yy_buffer_state</scope><name>yy_is_our_buffer</name></member>
+      <member refid="structyy__buffer__state_1afcc44872643f513e79b43c2b1f334a67" prot="public" virt="non-virtual"><scope>yy_buffer_state</scope><name>yy_n_chars</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

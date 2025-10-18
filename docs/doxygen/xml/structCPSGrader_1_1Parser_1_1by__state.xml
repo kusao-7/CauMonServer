@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structCPSGrader_1_1Parser_1_1by__state" kind="struct" language="C++" prot="private">
+    <compoundname>CPSGrader::Parser::by_state</compoundname>
+    <derivedcompoundref refid="structCPSGrader_1_1Parser_1_1basic__symbol" prot="public" virt="non-virtual">CPSGrader::Parser::basic_symbol&lt; by_state &gt;</derivedcompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structCPSGrader_1_1Parser_1_1by__state_1a4cce803eead5ee2ad845fbef294de335" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@2</name>
+        <enumvalue id="structCPSGrader_1_1Parser_1_1by__state_1a4cce803eead5ee2ad845fbef294de335a8f748b2a15ad24f5688cd973ae3e8e48" prot="public">
+          <name>empty_state</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The state number used to denote an empty symbol. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="461" column="7" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="461" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structCPSGrader_1_1Parser_1_1by__state_1a804d6faeeee369ce663d7fa440f6d4dd" prot="public" static="no">
+        <type>state_type</type>
+        <definition>typedef state_type CPSGrader::Parser::by_state::kind_type</definition>
+        <argsstring></argsstring>
+        <name>kind_type</name>
+        <briefdescription>
+<para>The symbol type as needed by the constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="442" column="26" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCPSGrader_1_1Parser_1_1by__state_1af0ef2053d22f9166d0104a6ec20b1552" prot="public" static="no" mutable="no">
+        <type>state_type</type>
+        <definition>state_type CPSGrader::Parser::by_state::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The state. <emphasis>empty</emphasis> when empty. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="465" column="18" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="465" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structCPSGrader_1_1Parser_1_1by__state_1ab7b1d6c057b024d4df5eed204e77c8d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::Parser::by_state::by_state</definition>
+        <argsstring>()</argsstring>
+        <name>by_state</name>
+        <briefdescription>
+<para>Default constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="439" column="7" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp" bodystart="339" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPSGrader_1_1Parser_1_1by__state_1ab95a3adc64f092659a342d0edc7989bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::Parser::by_state::by_state</definition>
+        <argsstring>(kind_type s)</argsstring>
+        <name>by_state</name>
+        <param>
+          <type>kind_type</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="445" column="7" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp" bodystart="364" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPSGrader_1_1Parser_1_1by__state_1a69dfcd48bff5de1def03bc49da7e0c0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CPSGrader::Parser::by_state::by_state</definition>
+        <argsstring>(const by_state &amp;other)</argsstring>
+        <name>by_state</name>
+        <param>
+          <type>const by_state &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="448" column="7" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp" bodystart="344" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPSGrader_1_1Parser_1_1by__state_1a74287726a41aa9aa07a2fd1b245fe47b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Parser::by_state::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+<para>Record that this symbol is empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="451" column="12" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp" bodystart="350" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPSGrader_1_1Parser_1_1by__state_1a496d94da3b81ed79c2f01dbc02771618" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CPSGrader::Parser::by_state::move</definition>
+        <argsstring>(by_state &amp;that)</argsstring>
+        <name>move</name>
+        <param>
+          <type>by_state &amp;</type>
+          <declname>that</declname>
+        </param>
+        <briefdescription>
+<para>Steal the symbol type from <emphasis>that</emphasis>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="454" column="12" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp" bodystart="357" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="structCPSGrader_1_1Parser_1_1by__state_1a4602af90628dbea8271569beeb3c7d34" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classCPSGrader_1_1Parser_1a75273d8342530f75fabdc2c327a0c3eb" kindref="member">symbol_number_type</ref></type>
+        <definition>Parser::symbol_number_type CPSGrader::Parser::by_state::type_get</definition>
+        <argsstring>() const</argsstring>
+        <name>type_get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The (internal) type number (corresponding to <emphasis>state</emphasis>). <emphasis>empty_symbol</emphasis> when empty. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="458" column="26" bodyfile="/home/zhenya/CauMon/breach/Online/src/stl_parser.cpp" bodystart="370" bodyend="376"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Type access provider for state based symbols. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CPSGrader::Parser::basic_symbol&lt; by_state &gt;</label>
+        <link refid="structCPSGrader_1_1Parser_1_1basic__symbol"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CPSGrader::Parser::by_state</label>
+      </node>
+    </inheritancegraph>
+    <location file="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" line="436" column="5" bodyfile="/home/zhenya/CauMon/breach/Online/include/stl_parser.h" bodystart="437" bodyend="466"/>
+    <listofallmembers>
+      <member refid="structCPSGrader_1_1Parser_1_1by__state_1ab7b1d6c057b024d4df5eed204e77c8d6" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::by_state</scope><name>by_state</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__state_1ab95a3adc64f092659a342d0edc7989bf" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::by_state</scope><name>by_state</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__state_1a69dfcd48bff5de1def03bc49da7e0c0d" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::by_state</scope><name>by_state</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__state_1a74287726a41aa9aa07a2fd1b245fe47b" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::by_state</scope><name>clear</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__state_1a4cce803eead5ee2ad845fbef294de335a8f748b2a15ad24f5688cd973ae3e8e48" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::by_state</scope><name>empty_state</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__state_1a804d6faeeee369ce663d7fa440f6d4dd" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::by_state</scope><name>kind_type</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__state_1a496d94da3b81ed79c2f01dbc02771618" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::by_state</scope><name>move</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__state_1af0ef2053d22f9166d0104a6ec20b1552" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::by_state</scope><name>state</name></member>
+      <member refid="structCPSGrader_1_1Parser_1_1by__state_1a4602af90628dbea8271569beeb3c7d34" prot="public" virt="non-virtual"><scope>CPSGrader::Parser::by_state</scope><name>type_get</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
