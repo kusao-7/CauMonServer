@@ -25,8 +25,7 @@ public class MonitoringTCPServer {
     private MatlabEngine matlabEngine;
     private final List<double[]> javaTraceHistory = new ArrayList<>();
 
-    // --- ユーザー設定 (必須) ---
-    private final String cauMonPath = "C:\\CauMonServer";
+    private final String cauMonPath = System.getProperty("user.dir");
 
     /**
      * サーバー起動時に呼び出され、MATLABエンジンを起動・設定します。
