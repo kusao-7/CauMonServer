@@ -1,0 +1,17 @@
+# IDE files
+.idea/
+
+# Maven build output
+java-server/target/
+
+# Generated image files
+experiment/*.png
+
+# MATLAB temporary files (optional but recommended)
+*.asv
+*.bak
+*.log
+
+# Operating System files (optional)
+.DS_Store
+Thumbs.db
