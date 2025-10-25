@@ -19,37 +19,46 @@ import java.util.logging.Logger;
  */
 public class MonitoringTCPServer {
 
+    // loggerインスタンスの取得(存在しない場合は新規作成)
+    // 慣例的にクラス名をloggerインスタンス名にして使用する
     private static final Logger logger = Logger.getLogger(MonitoringTCPServer.class.getName());
     private static final int PORT = 9999; // 待ち受けるTCPポート番号
 
     private MatlabEngine matlabEngine;
     private final List<double[]> javaTraceHistory = new ArrayList<>();
 
+    // システムプロパティ(設定情報)からカレントディレクトリを取得
+    // user.dir はJavaアプリケーションの起動ディレクトリを指す
+    //　cauMonPath = "C:\CauMonServer";
     private final String cauMonPath = System.getProperty("user.dir");
 
-    /**
-     * サーバー起動時に呼び出され、MATLABエンジンを起動・設定します。
-     * (このメソッドは成功したコードから変更なし)
-     */
+
+    // サーバー起動時に呼び出され、MATLABエンジンを起動・設定する
     public void startup() throws Exception {
+        // loggerインスタンスにinfoレベルのログを記録
         logger.info("Starting MATLAB engine...");
+
+        // PCにインストールされているmatlabを起動し、Javaプログラムからの通信チャネルを確立
         matlabEngine = MatlabEngine.startMatlab();
+
+        // cauMonPathに移動してからconfigure.mを実行
+        // その後、'experiment'サブフォルダに移動 (visualize.mのため)
         try {
+            // eval:matlabのコマンドウィンドウで実行するコマンドを文字列で指定
             matlabEngine.eval("cd '" + cauMonPath + "'");
             matlabEngine.eval("configure");
-            matlabEngine.eval("cd 'experiment'"); // visualize.m のため
+            matlabEngine.eval("cd 'experiment'");
             logger.info("Changed directory to 'experiment' subfolder.");
         } catch (Exception e) {
+            // log: エラー発生時に詳細を記録、任意のタグ付けも可能
             logger.log(Level.SEVERE, "Failed to configure MATLAB path or run configure.m", e);
             throw e;
         }
         logger.info("MATLAB engine started and configured.");
     }
 
-    /**
-     * サーバー終了時に呼び出され、MATLABエンジンを安全に停止します。
-     * (このメソッドは成功したコードから変更なし)
-     */
+
+    // サーバー終了時に呼び出され、MATLABエンジンを安全に停止する
     public void shutdown() {
         if (matlabEngine != null) {
             try {
@@ -64,19 +73,21 @@ public class MonitoringTCPServer {
     }
 
     /**
-     * 新しいデータポイントを受信したときに呼び出されます。
-     * (このメソッドは成功したコードから変更なし)
+     * 新しいデータポイントを受信したときに呼び出される
      * @param newDataPoint 新しいデータ [time, signal1, signal2, ...]
      */
     public void onNewDataReceived(double[] newDataPoint) {
 
         this.javaTraceHistory.add(newDataPoint);
-        int numTimeSteps = this.javaTraceHistory.size(); // 時刻ステップ数 (n)
+        // 配列の長さを取得
+        int numTimeSteps = this.javaTraceHistory.size();
 
-        int numSignals = this.javaTraceHistory.get(0).length; // (例: 3)
+        // [time, speed, RPM] : numSignals = 3
+        int numSignals = this.javaTraceHistory.get(0).length;
         if (numSignals == 0) { return; }
 
         // 'trace' を文字列として構築
+        // 例：trace = [0.0 0.5 1.0; 40.0 45.0 50.0; 2000.0 2100.0 2200.0]
         StringBuilder scriptBuilder = new StringBuilder();
         scriptBuilder.append("trace = [");
         for (int s = 0; s < numSignals; s++) { // 行 (シグナル)
@@ -88,19 +99,24 @@ public class MonitoringTCPServer {
         }
         scriptBuilder.append("];\n"); // 行列の終わり
 
-        // 'test.m' の残りの部分を文字列に追加 (visualize も含む)
+        // その他の引数を追加
         scriptBuilder.append("signal_str = 'speed,RPM';\n");
         scriptBuilder.append("phi_str = 'alw_[0,27](not(speed[t]>50) or ev_[1,3](RPM[t] < 3000))';\n");
         scriptBuilder.append("tau = 0;\n");
+
+        // stl_eval_mex_pw と stl_causation_opt の呼び出し
         scriptBuilder.append("[up_robM, low_robM] = stl_eval_mex_pw(signal_str, phi_str, trace, tau);\n");
         scriptBuilder.append("[up_optCau, low_optCau] = stl_causation_opt(signal_str, phi_str, trace, tau);\n");
+
+        // visualize の呼び出し (グラフを更新してPNG保存)
         scriptBuilder.append("visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, 'result_realtime.png');\n");
 
         try {
             // 完成したスクリプト文字列を 'eval' で実行
             matlabEngine.eval(scriptBuilder.toString());
 
-            // n=1 (Double) と n>1 (double[]) の両方に対応
+            // MATLABから結果を取得
+            // n=1 (Double) と n>1 (double[]) の両方に対応するためにObjectで受け取る
             Object up_robM_obj = matlabEngine.getVariable("up_robM");
             Object low_robM_obj = matlabEngine.getVariable("low_robM");
 
@@ -108,9 +124,11 @@ public class MonitoringTCPServer {
             double[] low_robM;
 
             if (up_robM_obj instanceof Double) {
+                // n=1 (Double)ならば double[] に変換
                 up_robM = new double[] { (Double) up_robM_obj };
                 low_robM = new double[] { (Double) low_robM_obj };
             } else {
+                // n>1 (double[])ならばそのままキャスト
                 up_robM = (double[]) up_robM_obj;
                 low_robM = (double[]) low_robM_obj;
             }
@@ -126,6 +144,7 @@ public class MonitoringTCPServer {
             }
 
         } catch (Exception e) {
+            // matlab固有の例外と一般例外を区別してログ出力
             if (e instanceof com.mathworks.engine.MatlabException) {
                 logger.log(Level.SEVERE, "MATLAB execution/engine exception (e.g., crash):", e);
             } else {
@@ -136,10 +155,7 @@ public class MonitoringTCPServer {
         }
     }
 
-    /**
-     * TCPサーバーを実行する main メソッド。
-     * (シミュレーション用の 'for' ループを 'ServerSocket' に置き換え)
-     */
+    // TCPサーバーを実行する main メソッド
     public static void main(String[] args) {
         MonitoringTCPServer server = new MonitoringTCPServer();
 
@@ -161,6 +177,7 @@ public class MonitoringTCPServer {
 
                 // 3. クライアントの接続を待機 (無限ループ)
                 while (true) {
+                    // accept: 一時停止し、クライアントからの接続要求を待ち受ける
                     try (Socket clientSocket = serverSocket.accept()) {
                         logger.info("Client connected from: " + clientSocket.getInetAddress());
 
@@ -175,6 +192,8 @@ public class MonitoringTCPServer {
                                 try {
                                     // 期待する形式: "time,speed,rpm" (例: "0.5,40.0,2050.0")
                                     String[] parts = line.split(",");
+
+                                    // 入力されたデータ数が3つでない場合は警告を出してスキップ
                                     if (parts.length != 3) { // [time, speed, RPM]
                                         logger.warning("Received malformed data (expected 3 parts): " + line);
                                         continue;
@@ -193,6 +212,8 @@ public class MonitoringTCPServer {
                                 }
                             }
                         }
+                        // クライアントが切断した場合、readLine()の戻り値はnullになる
+                        // すると、whileループを抜けてここに到達する
                         logger.info("Client disconnected.");
                     } catch (IOException e) {
                         logger.log(Level.WARNING, "Error during client connection", e);
