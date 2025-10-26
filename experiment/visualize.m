@@ -1,11 +1,11 @@
-function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, outfile)
+function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, signal_names_str, outfile)
 %PLOT_STL_ANALYSIS Generic plotting routine for STL analysis results
 %
 % [動的更新バージョン]
 % 1つのFigureウィンドウを再利用し、プロットデータのみを更新する。
 
     % --- 引数のデフォルト値設定 ---
-    if nargin < 7
+    if nargin < 8
         outfile = 'Figure_output.png'; % 保存ファイル名（毎回上書き）
     end
 
@@ -35,6 +35,10 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
         % ====== (1..N) 各シグナルをプロット ======
         handles.h_sig = gobjects(num_signals, 1); % シグナルプロット用ハンドル配列
         handles.ax_sig = gobjects(num_signals, 1); % シグナル軸用ハンドル配列
+
+        % 信号名文字列をコンマで分割
+        signal_names_cell = strsplit(signal_names_str, ',');
+
         for s = 1:num_signals
             handles.ax_sig(s) = nexttile; % ★ 軸ハンドルを保存
 
@@ -42,9 +46,10 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
             handles.h_sig(s) = plot(t, trace(s+1,:), 'LineWidth', 2); % s+1 行目がシグナルデータ
 
             % (↓ 元のコードと同じスタイリング)
+            current_signal_name = signal_names_cell{s};
             title(sprintf('Signal %d', s), 'FontWeight','bold'); % s-1 から s に変更
             xlabel('Time');
-            ylabel('Value');
+            ylabel(current_signal_name);
             grid on;
             set(gca, 'LineWidth', 1.5, 'FontSize', 14);
         end
