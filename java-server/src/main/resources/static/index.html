@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Monitoring Control</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; max-width:600px; }
+    label { display:block; margin-top:10px; }
+    input { width:100%; padding:8px; box-sizing:border-box; }
+    button { margin-top:10px; padding:10px 16px; }
+    .row { display:flex; gap:8px; align-items:center }
+  </style>
+</head>
+<body>
+  <h2>Monitoring Server Control</h2>
+  <label>Port
+    <input id="port" value="9999">
+  </label>
+  <label>Signals (comma separated)
+    <input id="signals" value="speed,RPM">
+  </label>
+  <label>STL formula
+    <input id="phi" value="alw_[0,27](not(speed[t]>50) or ev_[1,3](RPM[t] < 3000))">
+  </label>
+  <div class="row">
+    <button id="startBtn">Start Server</button>
+    <button id="stopBtn">Stop Server</button>
+    <button id="statusBtn">Status</button>
+    <div id="statusArea" style="margin-left:12px;color:#333"></div>
+  </div>
+  <p style="margin-top:18px">大きなグラフは <a href="/dashboard" target="_blank">ダッシュボード</a> で表示します。</p>
+
+  <script>
+    async function postJson(path, obj) {
+      const resp = await fetch(path, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(obj)
+      });
+      return { ok: resp.ok, text: await resp.text() };
+    }
+
+    document.getElementById('startBtn').addEventListener('click', async () => {
+      const port = parseInt(document.getElementById('port').value || '9999', 10);
+      const signals = document.getElementById('signals').value;
+      const phi = document.getElementById('phi').value;
+      const res = await postJson('/start', { port, signals, phi });
+      document.getElementById('statusArea').textContent = res.ok ? 'Started' : 'Start failed: ' + res.text;
+    });
+
+    document.getElementById('stopBtn').addEventListener('click', async () => {
+      const res = await postJson('/stop', {});
+      document.getElementById('statusArea').textContent = res.ok ? 'Stopped' : 'Stop failed: ' + res.text;
+    });
+
+    document.getElementById('statusBtn').addEventListener('click', async () => {
+      try {
+        const r = await fetch('/status');
+        const text = await r.text();
+        document.getElementById('statusArea').textContent = 'Status: ' + text;
+      } catch (e) {
+        document.getElementById('statusArea').textContent = 'Status: error';
+      }
+    });
+  </script>
+</body>
+</html>
