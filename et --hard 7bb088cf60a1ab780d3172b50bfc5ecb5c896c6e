@@ -1,0 +1,175 @@
+[33mcommit 950865bd2ad36441869036aff1686e4a862e88b1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mfeature/create-webpage[m[33m)[m
+Author: AtsukiSekine <sekine3142@gmail.com>
+Date:   Sun Oct 26 17:23:51 2025 +0900
+
+    Implement dynamic y-axis labels in visualization
+
+[33mcommit 7bb088cf60a1ab780d3172b50bfc5ecb5c896c6e[m
+Author: AtsukiSekine <sekine3142@gmail.com>
+Date:   Sat Oct 25 21:30:00 2025 +0900
+
+    fix comment
+
+[33mcommit 6272a2057a7cccedbc6131883deab9875e4f692f[m
+Author: AtsukiSekine <sekine3142@gmail.com>
+Date:   Tue Oct 21 18:20:49 2025 +0900
+
+    add .gitignore
+
+[33mcommit 95b98ee26df05272c42f239fc010ea10624ee7a3[m
+Author: AtsukiSekine <sekine3142@gmail.com>
+Date:   Tue Oct 21 18:19:50 2025 +0900
+
+    add .gitignore
+
+[33mcommit d6e73c35658ac0239d5b79775c24251fad8a4324[m
+Author: AtsukiSekine <sekine3142@gmail.com>
+Date:   Tue Oct 21 18:17:47 2025 +0900
+
+    change the hardcoded paths to relative paths
+
+[33mcommit e8ee2290a96e71389680b2c521b6405c7ba0bd54[m
+Author: AtsukiSekine <sekine3142@gmail.com>
+Date:   Tue Oct 21 15:58:26 2025 +0900
+
+    change visualize-way
+
+[33mcommit 539a95ac33f848c7a1426657d2f438ee9525a98e[m
+Author: AtsukiSekine <sekine3142@gmail.com>
+Date:   Tue Oct 21 15:56:47 2025 +0900
+
+    add javaTCPServer
+
+[33mcommit 63768151dbd57062ae9f6c3d82c2909f7e915504[m
+Author: AtsukiSekine <sekine3142@gmail.com>
+Date:   Tue Oct 21 15:47:37 2025 +0900
+
+    add pom.xml
+
+[33mcommit 6ca0719e535caf1bca58f754c4b9d47aa2e909d0[m
+Author: Zhenya <choshina@hotmail.com>
+Date:   Sat Oct 18 15:39:27 2025 +0900
+
+    Update README.md
+
+[33mcommit e372f63d0519a93b3ccde9a04703c1910fcf84ea[m
+Author: Zhenya <choshina@hotmail.com>
+Date:   Sat Oct 18 15:35:24 2025 +0900
+
+    Update README.md
+
+[33mcommit 7aa9d1efaadb35c3e8b25440592f7dfdb1fdc822[m
+Author: zhenya <choshina@hotmail.com>
+Date:   Sat Oct 18 15:26:11 2025 +0900
+
+    result
+
+[33mcommit d30d33a9fceec9e9ffe75feca8163032955882db[m
+Merge: 5db252e 438cf18
+Author: zhenya <choshina@hotmail.com>
+Date:   Sat Oct 18 14:52:10 2025 +0900
+
+    Merge branch 'master' of https://github.com/choshina/CauMon
+
+[33mcommit 5db252e6ca21abec2142c1f664914eb39217cb3b[m
+Author: zhenya <choshina@hotmail.com>
+Date:   Sat Oct 18 14:52:01 2025 +0900
+
+    test
+
+[33mcommit 438cf18c0995f70d8c24dc0fd6fa309bf5c629a6[m
+Author: Zhenya <choshina@hotmail.com>
+Date:   Fri Oct 10 23:56:47 2025 +0900
+
+    Update README.md
+
+[33mcommit e54ccfc71bad65a227321279615ec84b2bfa96d1[m
+Author: Zhenya Zhang <zhenya@ip-172-31-24-32.ap-northeast-1.compute.internal>
+Date:   Mon Oct 6 10:20:43 2025 +0000
+
+    docs
+
+[33mcommit 65906c991c48eab1816856db5c51ebb1c1dbd7aa[m
+Author: Zhenya Zhang <zhenya@ip-172-31-24-32.ap-northeast-1.compute.internal>
+Date:   Mon Oct 6 10:17:53 2025 +0000
+
+    docs
+
+[33mcommit 7121d2eef9622d375d0ad0e77db80c1d3cf329e3[m
+Author: Zhenya Zhang <zhenya@ip-172-31-24-32.ap-northeast-1.compute.internal>
+Date:   Mon Oct 6 10:15:52 2025 +0000
+
+    docs
+
+[33mcommit 0f4fc882c02a73bbb0eca649a77ce56c44a7d735[m
+Author: Zhenya Zhang <zhenya@ip-172-31-24-32.ap-northeast-1.compute.internal>
+Date:   Mon Oct 6 10:11:19 2025 +0000
+
+    docs
+
+[33mcommit 4c2f203b3d6ceae001836bb7710b5d5f44d2d2fb[m
+Author: Fei Bian <fei@Mac.nishi1.ky.home.ne.jp>
+Date:   Mon Oct 6 14:20:03 2025 +0900
+
+    add comments
+
+[33mcommit 7796312904ea260f0c732e72ba2c28d0f2f349cd[m
+Author: zhenya <choshina@hotmail.com>
+Date:   Tue Sep 23 20:33:24 2025 +0900
+
+    change
+
+[33mcommit d81eedf50e1b093d989c261f158675180584b4b3[m
+Author: Zhenya <choshina@hotmail.com>
+Date:   Tue Sep 23 20:30:56 2025 +0900
+
+    Create LICENSE
+
+[33mcommit 58e8d133777a055d9bceaaa222be8c410d85b14b[m
+Author: Zhenya <choshina@hotmail.com>
+Date:   Tue Sep 23 20:22:58 2025 +0900
+
+    Update README.md
+
+[33mcommit 8de783eebd13c2fcc24567ced6ca4d63eaf8a178[m
+Merge: 82f0cec ce58f39
+Author: zhenya <choshina@hotmail.com>
+Date:   Tue Sep 23 20:22:23 2025 +0900
+
+    Merge branch 'master' of https://github.com/choshina/CauMon
+
+[33mcommit 82f0ceccddcb3e3ceaa6c950ec6320b4afa6b442[m
+Author: zhenya <choshina@hotmail.com>
+Date:   Tue Sep 23 20:22:12 2025 +0900
+
+    clean
+
+[33mcommit ce58f39246acad54568d62abddd57e580a27c55d[m
+Author: Zhenya <choshina@hotmail.com>
+Date:   Tue Sep 23 20:16:34 2025 +0900
+
+    Update README.md
+
+[33mcommit 8d5e0a9c38508dcc04eec406bf42c4c5a49296b1[m
+Author: Zhenya <choshina@hotmail.com>
+Date:   Tue Sep 23 20:16:01 2025 +0900
+
+    Create README.md
+
+[33mcommit 882b2cbc2c416d4ad3d15b599722e1434c67e4cb[m
+Author: zhenya <choshina@hotmail.com>
+Date:   Tue Sep 23 16:27:57 2025 +0900
+
+    make
+
+[33mcommit 7d0e088b2d04bda41824535b6e6b2fdd6daba116[m
+Author: zhenya <choshina@hotmail.com>
+Date:   Tue Sep 23 13:54:24 2025 +0900
+
+    init
+
+[33mcommit 09f77dc93b2a0d7eaed67faeef3e8198ea67308f[m
+Author: zhenya <choshina@hotmail.com>
+Date:   Tue Sep 23 13:31:03 2025 +0900
+
+    breach
