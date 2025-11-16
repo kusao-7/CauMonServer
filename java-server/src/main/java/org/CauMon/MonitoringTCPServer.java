@@ -32,6 +32,29 @@ public class MonitoringTCPServer {
     //　cauMonPath = "C:\CauMonServer";
     private final String cauMonPath = System.getProperty("user.dir");
 
+    // 非同期起動・停止用のフィールド
+    private volatile boolean running = false;
+    private ServerSocket serverSocket;
+    private Thread acceptThread;
+    private int tcpPort = PORT;
+
+    // 設定可能にした文字列 (デフォルトは従来のもの)
+    private String signalStr = "speed,RPM";
+    private String phiStr = "alw_[0,27](not(speed[t]>50) or ev_[1,3](RPM[t] < 3000))";
+
+    /**
+     * サーバー起動前に信号名とSTL式を設定する
+     * @param signals カンマ区切りの信号名 (例: "speed,RPM")
+     * @param phi STL式 (例: "alw_[0,27](not(speed[t]>50) or ev_[1,3](RPM[t] < 3000))")
+     */
+    public void configure(String signals, String phi) {
+        if (signals != null && !signals.isEmpty()) {
+            this.signalStr = signals;
+        }
+        if (phi != null && !phi.isEmpty()) {
+            this.phiStr = phi;
+        }
+    }
 
     // サーバー起動時に呼び出され、MATLABエンジンを起動・設定する
     public void startup() throws Exception {
@@ -100,8 +123,8 @@ public class MonitoringTCPServer {
         scriptBuilder.append("];\n"); // 行列の終わり
 
         // その他の引数を追加
-        scriptBuilder.append("signal_str = 'speed,RPM';\n");
-        scriptBuilder.append("phi_str = 'alw_[0,27](not(speed[t]>50) or ev_[1,3](RPM[t] < 3000))';\n");
+        scriptBuilder.append("signal_str = '").append(signalStr).append("';\n");
+        scriptBuilder.append("phi_str = '").append(phiStr).append("';\n");
         scriptBuilder.append("tau = 0;\n");
 
         // stl_eval_mex_pw と stl_causation_opt の呼び出し
@@ -154,6 +177,88 @@ public class MonitoringTCPServer {
             // (注: リアルタイムサーバーではクラッシュ時に RuntimeException をスローすると
             // サーバー全体が停止する可能性があるため、ロギングのみに留める)
         }
+    }
+
+    /**
+     * TCPサーバーを非同期で起動する（HTTPサーバーから呼び出すことを想定）
+     * @param port 待ち受けるTCPポート番号
+     * @throws Exception MATLAB起動やソケット作成に失敗した場合
+     */
+    public synchronized void startServerAsync(int port) throws Exception {
+        if (running) {
+            logger.info("Server already running.");
+            return;
+        }
+        this.tcpPort = port;
+        startup();
+        serverSocket = new ServerSocket(tcpPort);
+        running = true;
+
+        acceptThread = new Thread(() -> {
+            logger.info("Server is listening on port " + tcpPort);
+            while (running) {
+                try (Socket clientSocket = serverSocket.accept()) {
+                    logger.info("Client connected from: " + clientSocket.getInetAddress());
+                    try (BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()))) {
+                        String line;
+                        while ((line = in.readLine()) != null) {
+                            logger.info("Received data: " + line);
+                            try {
+                                String[] parts = line.split(",");
+                                if (parts.length < 2) { // 少なくとも time と 1 signal を期待
+                                    logger.warning("Received malformed data: " + line);
+                                    continue;
+                                }
+                                double[] newData = new double[parts.length];
+                                for (int i = 0; i < parts.length; i++) {
+                                    newData[i] = Double.parseDouble(parts[i]);
+                                }
+                                onNewDataReceived(newData);
+                            } catch (NumberFormatException e) {
+                                logger.warning("Failed to parse data to double: " + line);
+                            }
+                        }
+                    }
+                    logger.info("Client disconnected.");
+                } catch (IOException e) {
+                    if (running) {
+                        logger.log(Level.WARNING, "Error during client connection", e);
+                    } else {
+                        logger.info("Server socket closed; stopping accept loop.");
+                    }
+                }
+            }
+            logger.info("Accept thread exiting.");
+        }, "MonitoringTCP-AcceptThread");
+
+        acceptThread.start();
+    }
+
+    /**
+     * TCPサーバーを停止する（HTTPサーバーから呼び出すことを想定）
+     */
+    public synchronized void stopServer() {
+        if (!running) {
+            logger.info("Server not running.");
+            return;
+        }
+        running = false;
+        try {
+            if (serverSocket != null && !serverSocket.isClosed()) {
+                serverSocket.close(); // accept を終了させる
+            }
+        } catch (IOException e) {
+            logger.log(Level.WARNING, "Error closing server socket", e);
+        }
+        try {
+            if (acceptThread != null) {
+                acceptThread.join(2000);
+            }
+        } catch (InterruptedException ignored) {
+            Thread.currentThread().interrupt();
+        }
+        shutdown(); // MATLAB 停止
+        logger.info("Monitoring TCP server stopped.");
     }
 
     // TCPサーバーを実行する main メソッド
