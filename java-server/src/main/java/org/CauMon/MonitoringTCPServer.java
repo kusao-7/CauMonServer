@@ -159,8 +159,9 @@ public class MonitoringTCPServer {
 
             // 結果を表示
             if (up_robM != null && up_robM.length > 0) {
-                logger.info(String.format("Trace size: %-4d | Last Robustness: up=%.4f, low=%.4f (Graph updated)",
+                logger.info(String.format("Trace size: %-4d | Robustness array length: %-4d | Last Robustness: up=%.4f, low=%.4f (Graph updated)",
                         numTimeSteps,
+                        up_robM.length,
                         up_robM[up_robM.length - 1],
                         low_robM[low_robM.length - 1]));
             } else {
