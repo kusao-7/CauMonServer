@@ -97,7 +97,7 @@ public class MonitoringTCPServer {
 
     /**
      * 新しいデータポイントを受信したときに呼び出される
-     * @param newDataPoint 新しいデータ [time, speed, RPM]
+     * @param newDataPoint 新しいデータ [time, signal1, signal2, ...]
      */
     public void onNewDataReceived(double[] newDataPoint) {
 
@@ -130,10 +130,9 @@ public class MonitoringTCPServer {
         // stl_eval_mex_pw と stl_causation_opt の呼び出し
         scriptBuilder.append("[up_robM, low_robM] = stl_eval_mex_pw(signal_str, phi_str, trace, tau);\n");
         scriptBuilder.append("[up_optCau, low_optCau] = stl_causation_opt(signal_str, phi_str, trace, tau);\n");
-        // プロット用変数を作成
-        scriptBuilder.append("signal_names_for_plot = 'speed,RPM';\n"); // プロット用変数を作成
-        // visualize の呼び出し (グラフを更新してPNG保存)
-        scriptBuilder.append("visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, signal_names_for_plot, 'result_realtime.png');\n");
+
+        // visualize の呼び出し (グラフを更新してPNG保存) - signal_strを追加
+        scriptBuilder.append("visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, 'result_realtime.png', signal_str);\n");
 
         try {
             // 完成したスクリプト文字列を 'eval' で実行

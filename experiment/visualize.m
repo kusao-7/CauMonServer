@@ -1,20 +1,41 @@
-function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, signal_names_str, outfile)
+function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, outfile, signal_names)
 %PLOT_STL_ANALYSIS Generic plotting routine for STL analysis results
 %
 % [動的更新バージョン]
 % 1つのFigureウィンドウを再利用し、プロットデータのみを更新する。
+%
+% 引数:
+%   signal_names: カンマ区切りのシグナル名文字列 (例: 'temp,cooling')
 
     % --- 引数のデフォルト値設定 ---
-    if nargin < 8
+    if nargin < 7
         outfile = 'Figure_output.png'; % 保存ファイル名（毎回上書き）
+    end
+    if nargin < 8 || isempty(signal_names)
+        signal_names = ''; % デフォルトは空
     end
 
     % --- データ抽出 (時間とシグナル数) ---
     t = trace(1,:);
     num_signals = size(trace,1) - 1;
 
+    % --- シグナル名をパース ---
+    if ~isempty(signal_names)
+        signal_name_list = strsplit(signal_names, ',');
+        % 前後の空白を削除
+        signal_name_list = strtrim(signal_name_list);
+    else
+        % デフォルトのシグナル名
+        signal_name_list = cell(1, num_signals);
+        for s = 1:num_signals
+            signal_name_list{s} = sprintf('Signal %d', s);
+        end
+    end
+
     % --- デバッグ情報出力 ---
     fprintf('\n=== DEBUG INFO ===\n');
+    fprintf('Signal names: %s\n', signal_names);
+    fprintf('Number of signals: %d\n', num_signals);
     fprintf('Time array length: %d\n', length(t));
     fprintf('up_robM length: %d\n', length(up_robM));
     fprintf('low_robM length: %d\n', length(low_robM));
@@ -47,21 +68,22 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, sig
         % ====== (1..N) 各シグナルをプロット ======
         handles.h_sig = gobjects(num_signals, 1); % シグナルプロット用ハンドル配列
         handles.ax_sig = gobjects(num_signals, 1); % シグナル軸用ハンドル配列
-
-        % 信号名文字列をコンマで分割
-        signal_names_cell = strsplit(signal_names_str, ',');
-
         for s = 1:num_signals
             handles.ax_sig(s) = nexttile; % ★ 軸ハンドルを保存
 
             % ★ プロットハンドルを h_sig に保存 (インデックスは s)
             handles.h_sig(s) = plot(t, trace(s+1,:), 'LineWidth', 2); % s+1 行目がシグナルデータ
 
-            % (↓ 元のコードと同じスタイリング)
-            current_signal_name = signal_names_cell{s};
-            title(sprintf('Signal %d', s), 'FontWeight','bold'); % s-1 から s に変更
+            % ★ シグナル名を使用してタイトルと縦軸ラベルを設定
+            if s <= length(signal_name_list)
+                sig_name = signal_name_list{s};
+                title(sig_name, 'FontWeight','bold', 'Interpreter', 'none');
+                ylabel(sig_name, 'Interpreter', 'none');
+            else
+                title(sprintf('Signal %d', s), 'FontWeight','bold');
+                ylabel('Value');
+            end
             xlabel('Time');
-            ylabel(current_signal_name);
             grid on;
             set(gca, 'LineWidth', 1.5, 'FontSize', 14);
         end
