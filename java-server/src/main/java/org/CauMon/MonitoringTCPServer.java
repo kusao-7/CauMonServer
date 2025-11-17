@@ -131,8 +131,8 @@ public class MonitoringTCPServer {
         scriptBuilder.append("[up_robM, low_robM] = stl_eval_mex_pw(signal_str, phi_str, trace, tau);\n");
         scriptBuilder.append("[up_optCau, low_optCau] = stl_causation_opt(signal_str, phi_str, trace, tau);\n");
 
-        // visualize の呼び出し (グラフを更新してPNG保存)
-        scriptBuilder.append("visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, 'result_realtime.png');\n");
+        // visualize の呼び出し (グラフを更新してPNG保存) - signal_strを追加
+        scriptBuilder.append("visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, 'result_realtime.png', signal_str);\n");
 
         try {
             // 完成したスクリプト文字列を 'eval' で実行
