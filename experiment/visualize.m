@@ -13,6 +13,18 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
     t = trace(1,:);
     num_signals = size(trace,1) - 1;
 
+    % --- デバッグ情報出力 ---
+    fprintf('\n=== DEBUG INFO ===\n');
+    fprintf('Time array length: %d\n', length(t));
+    fprintf('up_robM length: %d\n', length(up_robM));
+    fprintf('low_robM length: %d\n', length(low_robM));
+    fprintf('up_optCau length: %d\n', length(up_optCau));
+    fprintf('low_optCau length: %d\n', length(low_optCau));
+    fprintf('Time values: [%s]\n', num2str(t, '%.1f '));
+    fprintf('up_robM values: [%s]\n', num2str(up_robM, '%.2f '));
+    fprintf('low_robM values: [%s]\n', num2str(low_robM, '%.2f '));
+    fprintf('==================\n\n');
+
     % --- 永続的なFigureハンドルを検索 ---
     % 'CauMon_Realtime_Monitor_Figure' という名前のタグで既存のFigureを探す
     figTag = 'CauMon_Realtime_Monitor_Figure';
@@ -54,8 +66,10 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
         hold on;
 
         % ★ プロットハンドルを保存
-        handles.h_rob_up = stairs(t(2:end), up_robM(2:end), 'LineWidth', 2);
-        handles.h_rob_low = stairs(t(2:end), low_robM(2:end), 'LineWidth', 2);
+        % データ長が一致するようにインデックスを調整
+        n_rob = min(length(t), length(up_robM));
+        handles.h_rob_up = stairs(t(1:n_rob), up_robM(1:n_rob), 'LineWidth', 2);
+        handles.h_rob_low = stairs(t(1:n_rob), low_robM(1:n_rob), 'LineWidth', 2);
 
         % (↓ 元のコードと同じスタイリング)
         legend({'Upper robustness','Lower robustness'}, 'Location','best');
@@ -71,8 +85,10 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
         hold on;
 
         % ★ プロットハンドルを保存
-        handles.h_cau_up = stairs(t(2:end), up_optCau(2:end), 'LineWidth', 2);
-        handles.h_cau_low = stairs(t(2:end), low_optCau(2:end), 'LineWidth', 2);
+        % データ長が一致するようにインデックスを調整
+        n_cau = min(length(t), length(up_optCau));
+        handles.h_cau_up = stairs(t(1:n_cau), up_optCau(1:n_cau), 'LineWidth', 2);
+        handles.h_cau_low = stairs(t(1:n_cau), low_optCau(1:n_cau), 'LineWidth', 2);
 
         % (↓ 元のコードと同じスタイリング)
         legend({'Violation causation','Satisfaction causation'}, 'Location','best');
@@ -113,8 +129,9 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
 
         % ====== (N+1) Robustness データを更新 ======
          if isgraphics(handles.h_rob_up) && isgraphics(handles.h_rob_low)
-            set(handles.h_rob_up, 'XData', t(2:end), 'YData', up_robM(2:end));
-            set(handles.h_rob_low, 'XData', t(2:end), 'YData', low_robM(2:end));
+            n_rob = min(length(t), length(up_robM));
+            set(handles.h_rob_up, 'XData', t(1:n_rob), 'YData', up_robM(1:n_rob));
+            set(handles.h_rob_low, 'XData', t(1:n_rob), 'YData', low_robM(1:n_rob));
             set(handles.ax_rob, 'XLimMode', 'auto', 'YLimMode', 'auto');
          else
              warning('Robustness plot handle is invalid.');
@@ -122,8 +139,9 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
 
         % ====== (N+2) Causation データを更新 ======
         if isgraphics(handles.h_cau_up) && isgraphics(handles.h_cau_low)
-            set(handles.h_cau_up, 'XData', t(2:end), 'YData', up_optCau(2:end));
-            set(handles.h_cau_low, 'XData', t(2:end), 'YData', low_optCau(2:end));
+            n_cau = min(length(t), length(up_optCau));
+            set(handles.h_cau_up, 'XData', t(1:n_cau), 'YData', up_optCau(1:n_cau));
+            set(handles.h_cau_low, 'XData', t(1:n_cau), 'YData', low_optCau(1:n_cau));
             set(handles.ax_cau, 'XLimMode', 'auto', 'YLimMode', 'auto');
         else
              warning('Causation plot handle is invalid.');
