@@ -11,7 +11,6 @@ import java.util.logging.Logger;
 
 /**
  * 簡易HTTPサーバー - Webページから監視サーバーの起動・停止を制御
- *
  * エンドポイント:
  * - GET /       -> 制御用のHTML UIを返す
  * - POST /start -> JSON形式で signals, phi, port を受け取り、TCP監視サーバーを起動
@@ -52,7 +51,7 @@ public class MonitoringHttpServer {
     /**
      * ルートハンドラー - HTML UIを返す
      */
-    private class RootHandler implements HttpHandler {
+    private static class RootHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange exchange) throws IOException {
             if (!"GET".equalsIgnoreCase(exchange.getRequestMethod())) {
@@ -232,6 +231,6 @@ public class MonitoringHttpServer {
         s.start(8080);
         logger.info("ブラウザで http://localhost:8080 にアクセスしてください");
         // JVM 終了時に HTTP を停止
-        Runtime.getRuntime().addShutdownHook(new Thread(() -> s.stop()));
+        Runtime.getRuntime().addShutdownHook(new Thread(s::stop));
     }
 }

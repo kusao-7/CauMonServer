@@ -13,7 +13,6 @@ import java.util.logging.Logger;
 
 /**
  * [成功版] 外部からのTCP/IP通信を待ち受けるリアルタイム監視サーバー。
- *
  * 成功した 'eval' + 'trace文字列埋め込み' + 'n=1型チェック' のロジックを使用。
  * mainメソッドのみを 'for' ループから 'ServerSocket' に変更。
  */
