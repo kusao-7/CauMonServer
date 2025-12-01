@@ -62,7 +62,7 @@ public class MonitoringHttpServer {
             // 白を基調としたシンプルでスタイリッシュなUI
             String html = "<!doctype html><html lang='ja'><head><meta charset='utf-8'>"
                     + "<meta name='viewport' content='width=device-width,initial-scale=1'>"
-                    + "<title>監視サーバー制御</title>"
+                    + "<title>CauMonServer</title>"
                     + "<style>"
                     + ":root{--bg:#ffffff;--bg-sub:#f6f8fa;--text:#0f172a;--muted:#64748b;--primary:#2563eb;--primary-hover:#1d4ed8;--danger:#ef4444;--border:#e5e7eb;--ring:#93c5fd;}"
                     + "html,body{height:100%;}"
@@ -93,9 +93,9 @@ public class MonitoringHttpServer {
                     + "</style></head><body>"
                     + "<div class='wrap'><div class='card'>"
                     + "<h1>監視サーバー制御パネル</h1>"
-                    + "<p class='desc'>必要項目を入力してください。</p>"
-                    + "<label for='signals'>シグナル名（カンマ区切り）</label>"
-                    + "<input id='signals' value='time,speed,RPM'/>"
+                    + "<p class='desc'>必要項目を入力してください。<br><small>※ time は自動で先頭に来ます（入力不要）。</small></p>"
+                    + "<label for='signals'>シグナル名（カンマ区切り、time を除く）</label>"
+                    + "<input id='signals' value='speed,RPM'/>"
                     + "<label for='phi'>STL式（φ）</label>"
                     + "<input id='phi' value=\"alw_[0,27](not(speed[t]>50) or ev_[1,3](RPM[t] < 3000))\"/>"
                     + "<div class='row'>"
@@ -235,4 +235,3 @@ public class MonitoringHttpServer {
         Runtime.getRuntime().addShutdownHook(new Thread(() -> s.stop()));
     }
 }
-
