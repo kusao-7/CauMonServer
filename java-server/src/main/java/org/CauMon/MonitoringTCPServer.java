@@ -49,7 +49,24 @@ public class MonitoringTCPServer {
      */
     public void configure(String signals, String phi) {
         if (signals != null && !signals.isEmpty()) {
-            this.signalStr = signals;
+            // トリムと正規化
+            String s = signals.trim();
+            // 先頭に time または t がある場合は取り除く
+            String[] parts = s.split(",");
+            if (parts.length > 0) {
+                // 空白を除去して小文字化して比較
+                String first = parts[0].trim().toLowerCase();
+                if (first.equals("time") || first.equals("t")) {
+                    // 再結合（先頭を除く）
+                    StringBuilder sb = new StringBuilder();
+                    for (int i = 1; i < parts.length; i++) {
+                        if (i > 1) sb.append(',');
+                        sb.append(parts[i].trim());
+                    }
+                    s = sb.toString();
+                }
+            }
+            this.signalStr = s;
         }
         if (phi != null && !phi.isEmpty()) {
             this.phiStr = phi;

@@ -24,6 +24,17 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
         signal_name_list = strsplit(signal_names, ',');
         % 前後の空白を削除
         signal_name_list = strtrim(signal_name_list);
+
+        % --- 先頭に time が含まれている場合は取り除く ---
+        % trace の 1 行目が time なので、signal_names に time が入っていると
+        % プロットと名前の対応がずれてしまう。ユーザーは time を省略してよい。
+        if ~isempty(signal_name_list)
+            % 条件: 名前配列の長さが期待するシグナル数+1（time を含む）
+            % または先頭が 'time'/'t' と明示的に書かれている場合
+            if length(signal_name_list) == num_signals + 1 || strcmpi(signal_name_list{1}, 'time') || strcmpi(signal_name_list{1}, 't')
+                signal_name_list = signal_name_list(2:end);
+            end
+        end
     else
         % デフォルトのシグナル名
         signal_name_list = cell(1, num_signals);
@@ -34,7 +45,8 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
 
     % --- デバッグ情報出力 ---
     fprintf('\n=== DEBUG INFO ===\n');
-    fprintf('Signal names: %s\n', signal_names);
+    fprintf('Original signal names string: %s\n', signal_names);
+    fprintf('Processed signal name list: %s\n', strjoin(signal_name_list, ','));
     fprintf('Number of signals: %d\n', num_signals);
     fprintf('Time array length: %d\n', length(t));
     fprintf('up_robM length: %d\n', length(up_robM));
@@ -74,18 +86,18 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
             % ★ プロットハンドルを h_sig に保存 (インデックスは s)
             handles.h_sig(s) = plot(t, trace(s+1,:), 'LineWidth', 2); % s+1 行目がシグナルデータ
 
-            % ★ シグナル名を使用してタイトルと縦軸ラベルを設定
+            % ★ シグナル名を使用して縦軸ラベルを設定（タイトルは表示しない）
             if s <= length(signal_name_list)
                 sig_name = signal_name_list{s};
-                title(sig_name, 'FontWeight','bold', 'Interpreter', 'none');
+                % title を削除（不要）
                 ylabel(sig_name, 'Interpreter', 'none');
             else
-                title(sprintf('Signal %d', s), 'FontWeight','bold');
+                % title を削除（不要）
                 ylabel('Value');
             end
-            xlabel('Time');
+            xlabel('time');
             grid on;
-            set(gca, 'LineWidth', 1.5, 'FontSize', 14);
+            set(gca, 'LineWidth', 1.5, 'FontSize', 14, 'Box', 'on', 'XColor', [1 1 1], 'YColor', [1 1 1]);
         end
 
         % ====== (N+1) ロバストネスをプロット ======
@@ -100,11 +112,11 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
 
         % (↓ 元のコードと同じスタイリング)
         legend({'Upper robustness','Lower robustness'}, 'Location','best');
-        xlabel('Time');
+        xlabel('time');
         ylabel('Robustness');
-        title('STL Robustness');
+        % title を削除（不要）
         grid on;
-        set(gca, 'LineWidth', 1.5, 'FontSize', 14);
+        set(gca, 'LineWidth', 1.5, 'FontSize', 14, 'Box', 'on', 'XColor', [1 1 1], 'YColor', [1 1 1]);
         hold off;
 
         % ====== (N+2) 因果関係をプロット ======
@@ -119,11 +131,11 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
 
         % (↓ 元のコードと同じスタイリング)
         legend({'Violation causation','Satisfaction causation'}, 'Location','best');
-        xlabel('Time');
+        xlabel('time');
         ylabel('Causation');
-        title('STL Causation');
+        % title を削除（不要）
         grid on;
-        set(gca, 'LineWidth', 1.5, 'FontSize', 14);
+        set(gca, 'LineWidth', 1.5, 'FontSize', 14, 'Box', 'on', 'XColor', [1 1 1], 'YColor', [1 1 1]);
         hold off;
 
         % ====== 全体のタイトル ======
@@ -148,7 +160,7 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
             if isgraphics(handles.h_sig(s))
                 set(handles.h_sig(s), 'XData', t, 'YData', trace(s+1,:));
                 % 軸の自動スケール (Y軸のみ更新、X軸は伸びるように)
-                set(handles.ax_sig(s), 'XLimMode', 'auto', 'YLimMode', 'auto');
+                set(handles.ax_sig(s), 'XLimMode', 'auto', 'YLimMode', 'auto', 'Box', 'on', 'XColor', [1 1 1], 'YColor', [1 1 1]);
             else
                 warning('Signal plot handle %d is invalid.', s);
             end
@@ -159,7 +171,7 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
             n_rob = min(length(t), length(up_robM));
             set(handles.h_rob_up, 'XData', t(1:n_rob), 'YData', up_robM(1:n_rob));
             set(handles.h_rob_low, 'XData', t(1:n_rob), 'YData', low_robM(1:n_rob));
-            set(handles.ax_rob, 'XLimMode', 'auto', 'YLimMode', 'auto');
+            set(handles.ax_rob, 'XLimMode', 'auto', 'YLimMode', 'auto', 'Box', 'on', 'XColor', [1 1 1], 'YColor', [1 1 1]);
          else
              warning('Robustness plot handle is invalid.');
          end
@@ -169,7 +181,7 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
             n_cau = min(length(t), length(up_optCau));
             set(handles.h_cau_up, 'XData', t(1:n_cau), 'YData', up_optCau(1:n_cau));
             set(handles.h_cau_low, 'XData', t(1:n_cau), 'YData', low_optCau(1:n_cau));
-            set(handles.ax_cau, 'XLimMode', 'auto', 'YLimMode', 'auto');
+            set(handles.ax_cau, 'XLimMode', 'auto', 'YLimMode', 'auto', 'Box', 'on', 'XColor', [1 1 1], 'YColor', [1 1 1]);
         else
              warning('Causation plot handle is invalid.');
         end
