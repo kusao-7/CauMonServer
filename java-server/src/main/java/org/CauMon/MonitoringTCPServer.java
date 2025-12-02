@@ -28,7 +28,7 @@ public class MonitoringTCPServer {
 
     // システムプロパティ(設定情報)からカレントディレクトリを取得
     // user.dir はJavaアプリケーションの起動ディレクトリを指す
-    //　cauMonPath = "C:\CauMonServer";
+    //　cauMonPath = "C:\\CauMonServer";
     private final String cauMonPath = System.getProperty("user.dir");
 
     // 非同期起動・停止用のフィールド
@@ -38,8 +38,55 @@ public class MonitoringTCPServer {
     private int tcpPort = PORT;
 
     // 設定可能にした文字列 (デフォルトは従来のもの)
-    private String signalStr = "speed,RPM";
-    private String phiStr = "alw_[0,27](not(speed[t]>50) or ev_[1,3](RPM[t] < 3000))";
+    private String signalStr = "speed,RPM,gear";
+    private String phiStr = "alw_[0,30](not(speed[t]>50) or (gear[t]>=3 and RPM[t]<4500))";
+
+    // 追加: 可視化（MATLAB呼び出し）を間引くための設定
+    // visualizeIntervalMillis: 最小時間間隔（ミリ秒）で可視化（デフォルト:1000ms）
+    private volatile long visualizeIntervalMillis = 1000L;
+    private volatile long lastVisualizeTimeMillis = 0L;
+
+    // 追加: STL 評価の間隔（ミリ秒）。可視化とは独立に制御する。
+    private volatile long stlEvalIntervalMillis = 1000L;
+    private volatile long lastStlEvalTimeMillis = 0L;
+
+    // MATLAB 上に最新の STL 結果があるかを示すフラグ
+    private volatile boolean haveStlResults = false;
+
+    /**
+     * 可視化スロットリングの設定。
+     * @param everyNSteps Nステップごとに1回可視化（1以上）
+     * @param intervalMillis 最低間隔（ミリ秒、0で無効）
+     */
+    @SuppressWarnings("unused")
+    public void setVisualizationThrottle(int everyNSteps, long intervalMillis) {
+        // 従来互換のために残すが、everyNSteps は無視されます。
+        if (intervalMillis >= 0) {
+            this.visualizeIntervalMillis = intervalMillis;
+        }
+    }
+
+    /**
+     * 可視化間隔（ミリ秒）を設定する。0 を指定すると時間判定は無効化されます。
+     * @param intervalMillis 最低間隔（ミリ秒、0で無効）
+     */
+    @SuppressWarnings("unused")
+    public void setVisualizationIntervalMillis(long intervalMillis) {
+        if (intervalMillis >= 0) {
+            this.visualizeIntervalMillis = intervalMillis;
+        }
+    }
+
+    /**
+     * STL 評価間隔（ミリ秒）を設定する。可視化とは独立に制御する。
+     * @param intervalMillis ミリ秒、0で無効（常に評価）
+     */
+    @SuppressWarnings("unused")
+    public void setStlEvalIntervalMillis(long intervalMillis) {
+        if (intervalMillis >= 0) {
+            this.stlEvalIntervalMillis = intervalMillis;
+        }
+    }
 
     /**
      * サーバー起動前に信号名とSTL式を設定する
@@ -117,81 +164,160 @@ public class MonitoringTCPServer {
      */
     public void onNewDataReceived(double[] newDataPoint) {
 
-        this.javaTraceHistory.add(newDataPoint);
-        // 配列の長さを取得
-        int numTimeSteps = this.javaTraceHistory.size();
+        // まず履歴にデータを追加（スレッドセーフ）
+        synchronized (javaTraceHistory) {
+            this.javaTraceHistory.add(newDataPoint);
+        }
 
-        // [time, speed, RPM] : numSignals = 3
-        int numSignals = this.javaTraceHistory.get(0).length;
+        int numTimeSteps;
+        int numSignals;
+        // 参照はロックして基本情報を取得
+        synchronized (javaTraceHistory) {
+            numTimeSteps = this.javaTraceHistory.size();
+            if (numTimeSteps == 0) return;
+            numSignals = this.javaTraceHistory.get(0).length;
+        }
         if (numSignals == 0) { return; }
 
-        // 'trace' を文字列として構築
-        // 例：trace = [0.0 0.5 1.0; 40.0 45.0 50.0; 2000.0 2100.0 2200.0]
-        StringBuilder scriptBuilder = new StringBuilder();
-        scriptBuilder.append("trace = [");
-        for (int s = 0; s < numSignals; s++) { // 行 (シグナル)
-            for (int t = 0; t < numTimeSteps; t++) { // 列 (時刻)
-                scriptBuilder.append(this.javaTraceHistory.get(t)[s]);
-                if (t < numTimeSteps - 1) scriptBuilder.append(" ");
-            }
-            if (s < numSignals - 1) scriptBuilder.append("; ");
+        long now = System.currentTimeMillis();
+
+        // 判定: STL評価が必要か、可視化が必要か（それぞれ独立）
+        boolean needStlEval = (stlEvalIntervalMillis <= 0) || ((now - lastStlEvalTimeMillis) >= stlEvalIntervalMillis);
+        boolean needVisualize = (visualizeIntervalMillis <= 0) || ((now - lastVisualizeTimeMillis) >= visualizeIntervalMillis);
+
+        if (!needStlEval && !needVisualize) {
+            // どちらも不要ならば早期リターン
+            logger.fine(String.format("Skipping both STL eval and visualize (traceSize=%d, elapsedStl=%dms, elapsedVis=%dms).",
+                    numTimeSteps, (now - lastStlEvalTimeMillis), (now - lastVisualizeTimeMillis)));
+            return;
         }
-        scriptBuilder.append("];\n"); // 行列の終わり
 
-        // その他の引数を追加
-        scriptBuilder.append("signal_str = '").append(signalStr).append("';\n");
-        scriptBuilder.append("phi_str = '").append(phiStr).append("';\n");
-        scriptBuilder.append("tau = 0;\n");
+        // 履歴コピーは STL 評価または可視化時に必要になるため、条件付きで作成
+        double[][] historyCopy = null;
+        if (needStlEval || (needVisualize && !haveStlResults)) {
+            historyCopy = new double[numTimeSteps][numSignals];
+            synchronized (javaTraceHistory) {
+                for (int t = 0; t < numTimeSteps; t++) {
+                    double[] row = this.javaTraceHistory.get(t);
+                    System.arraycopy(row, 0, historyCopy[t], 0, numSignals);
+                }
+            }
+        }
 
-        // stl_eval_mex_pw と stl_causation_opt の呼び出し
-        scriptBuilder.append("[up_robM, low_robM] = stl_eval_mex_pw(signal_str, phi_str, trace, tau);\n");
-        scriptBuilder.append("[up_optCau, low_optCau] = stl_causation_opt(signal_str, phi_str, trace, tau);\n");
-
-        // visualize の呼び出し (グラフを更新してPNG保存) - signal_strを追加
-        scriptBuilder.append("visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, 'result_realtime.png', signal_str);\n");
-
+        // STM: 実行順序は STL 評価 -> 可視化 を基本とする。
         try {
-            // 完成したスクリプト文字列を 'eval' で実行
-            matlabEngine.eval(scriptBuilder.toString());
+            if (needStlEval) {
+                // 'trace' を MATLAB にセットし、STL 評価のみ行う（visualize は行わない）
+                StringBuilder evalBuilder = new StringBuilder();
+                evalBuilder.append("trace = [");
+                for (int s = 0; s < numSignals; s++) {
+                    for (int t = 0; t < numTimeSteps; t++) {
+                        evalBuilder.append(historyCopy[t][s]);
+                        if (t < numTimeSteps - 1) evalBuilder.append(" ");
+                    }
+                    if (s < numSignals - 1) evalBuilder.append("; ");
+                }
+                evalBuilder.append("];\n");
+                evalBuilder.append("signal_str = '").append(signalStr).append("';\n");
+                evalBuilder.append("phi_str = '").append(phiStr).append("';\n");
+                evalBuilder.append("tau = 0;\n");
+                evalBuilder.append("[up_robM, low_robM] = stl_eval_mex_pw(signal_str, phi_str, trace, tau);\n");
+                evalBuilder.append("[up_optCau, low_optCau] = stl_causation_opt(signal_str, phi_str, trace, tau);\n");
 
-            // MATLABから結果を取得
-            // n=1 (Double) と n>1 (double[]) の両方に対応するためにObjectで受け取る
-            Object up_robM_obj = matlabEngine.getVariable("up_robM");
-            Object low_robM_obj = matlabEngine.getVariable("low_robM");
+                long stlStart = System.currentTimeMillis();
+                matlabEngine.eval(evalBuilder.toString());
+                long stlEnd = System.currentTimeMillis();
+                logger.info(String.format("MATLAB stl_eval took %d ms (traceSize=%d)", (stlEnd - stlStart), numTimeSteps));
 
-            double[] up_robM;
-            double[] low_robM;
+                // 結果を取得してログ
+                Object up_robM_obj = matlabEngine.getVariable("up_robM");
+                Object low_robM_obj = matlabEngine.getVariable("low_robM");
 
-            if (up_robM_obj instanceof Double) {
-                // n=1 (Double)ならば double[] に変換
-                up_robM = new double[] { (Double) up_robM_obj };
-                low_robM = new double[] { (Double) low_robM_obj };
-            } else {
-                // n>1 (double[])ならばそのままキャスト
-                up_robM = (double[]) up_robM_obj;
-                low_robM = (double[]) low_robM_obj;
+                double[] up_robM;
+                double[] low_robM;
+
+                if (up_robM_obj instanceof Double) {
+                    up_robM = new double[] { (Double) up_robM_obj };
+                    low_robM = new double[] { (Double) low_robM_obj };
+                } else {
+                    up_robM = (double[]) up_robM_obj;
+                    low_robM = (double[]) low_robM_obj;
+                }
+
+                lastStlEvalTimeMillis = now;
+                haveStlResults = true;
+
+                if (up_robM != null && up_robM.length > 0) {
+                    logger.info(String.format("STL evaluated (Trace size: %-4d) | Robustness len: %-4d | Last up=%.4f, low=%.4f",
+                            numTimeSteps, up_robM.length, up_robM[up_robM.length - 1], low_robM[low_robM.length - 1]));
+                }
             }
 
-            // 結果を表示
-            if (up_robM != null && up_robM.length > 0) {
-                logger.info(String.format("Trace size: %-4d | Robustness array length: %-4d | Last Robustness: up=%.4f, low=%.4f (Graph updated)",
-                        numTimeSteps,
-                        up_robM.length,
-                        up_robM[up_robM.length - 1],
-                        low_robM[low_robM.length - 1]));
-            } else {
-                logger.warning("Robustness result was null.");
+            // 可視化が必要なら、MATLAB 内の変数を使って visualize を呼び出す
+            if (needVisualize) {
+                // もし STL 評価をしていないが結果がない場合は、先に評価を行う
+                if (!haveStlResults) {
+                    // historyCopy は作成済み
+                    StringBuilder evalBuilder = new StringBuilder();
+                    evalBuilder.append("trace = [");
+                    for (int s = 0; s < numSignals; s++) {
+                        for (int t = 0; t < numTimeSteps; t++) {
+                            evalBuilder.append(historyCopy[t][s]);
+                            if (t < numTimeSteps - 1) evalBuilder.append(" ");
+                        }
+                        if (s < numSignals - 1) evalBuilder.append("; ");
+                    }
+                    evalBuilder.append("];\n");
+                    evalBuilder.append("signal_str = '").append(signalStr).append("';\n");
+                    evalBuilder.append("phi_str = '").append(phiStr).append("';\n");
+                    evalBuilder.append("tau = 0;\n");
+                    evalBuilder.append("[up_robM, low_robM] = stl_eval_mex_pw(signal_str, phi_str, trace, tau);\n");
+                    evalBuilder.append("[up_optCau, low_optCau] = stl_causation_opt(signal_str, phiStr, trace, tau);\n");
+
+                    long stlStart2 = System.currentTimeMillis();
+                    matlabEngine.eval(evalBuilder.toString());
+                    long stlEnd2 = System.currentTimeMillis();
+                    logger.info(String.format("MATLAB stl_eval (fallback) took %d ms (traceSize=%d)", (stlEnd2 - stlStart2), numTimeSteps));
+                    haveStlResults = true;
+                    lastStlEvalTimeMillis = now;
+                }
+
+                // visualize を呼ぶ（MATLAB内の trace と robustness 変数を使う）
+                long visStart = System.currentTimeMillis();
+                matlabEngine.eval("visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, 'result_realtime.png', signal_str);\n");
+                long visEnd = System.currentTimeMillis();
+                logger.info(String.format("MATLAB visualize took %d ms (traceSize=%d)", (visEnd - visStart), numTimeSteps));
+
+                lastVisualizeTimeMillis = now;
+
+                // optional: MATLAB から up_robM を取り出してログ
+                try {
+                    Object up_robM_obj2 = matlabEngine.getVariable("up_robM");
+                    Object low_robM_obj2 = matlabEngine.getVariable("low_robM");
+                    double[] up_robM2;
+                    double[] low_robM2;
+                    if (up_robM_obj2 instanceof Double) {
+                        up_robM2 = new double[] { (Double) up_robM_obj2 };
+                        low_robM2 = new double[] { (Double) low_robM_obj2 };
+                    } else {
+                        up_robM2 = (double[]) up_robM_obj2;
+                        low_robM2 = (double[]) low_robM_obj2;
+                    }
+                    if (up_robM2 != null && up_robM2.length > 0) {
+                        logger.info(String.format("Graph updated (Trace size: %-4d) | Last up=%.4f, low=%.4f",
+                                numTimeSteps, up_robM2[up_robM2.length - 1], low_robM2[low_robM2.length - 1]));
+                    }
+                } catch (Exception e) {
+                    // ignore logging errors
+                }
             }
 
         } catch (Exception e) {
-            // matlab固有の例外と一般例外を区別してログ出力
-            if (e instanceof com.mathworks.engine.MatlabException) {
+            if (e.getClass().getName().contains("MatlabException")) {
                 logger.log(Level.SEVERE, "MATLAB execution/engine exception (e.g., crash):", e);
             } else {
                 logger.log(Level.SEVERE, "General error calling MATLAB", e);
             }
-            // (注: リアルタイムサーバーではクラッシュ時に RuntimeException をスローすると
-            // サーバー全体が停止する可能性があるため、ロギングのみに留める)
         }
     }
 
@@ -216,22 +342,54 @@ public class MonitoringTCPServer {
                 try (Socket clientSocket = serverSocket.accept()) {
                     logger.info("Client connected from: " + clientSocket.getInetAddress());
                     try (BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()))) {
-                        String line;
-                        while ((line = in.readLine()) != null) {
-                            logger.info("Received data: " + line);
-                            try {
-                                String[] parts = line.split(",");
-                                if (parts.length < 2) { // 少なくとも time と 1 signal を期待
-                                    logger.warning("Received malformed data: " + line);
-                                    continue;
+                        String rawLine;
+                        while ((rawLine = in.readLine()) != null) {
+                            // trim と空行チェック
+                            String line = rawLine.trim();
+                            if (line.isEmpty()) {
+                                logger.fine("Skipping empty/whitespace line from client.");
+                                continue;
+                            }
+                            // 先頭にプレフィックスがある場合、数字から始まる部分を抽出
+                            int idx = -1;
+                            for (int i = 0; i < line.length(); i++) {
+                                char c = line.charAt(i);
+                                if ((c >= '0' && c <= '9') || c == '-' || c == '+' || c == '.') {
+                                    idx = i;
+                                    break;
                                 }
-                                double[] newData = new double[parts.length];
-                                for (int i = 0; i < parts.length; i++) {
-                                    newData[i] = Double.parseDouble(parts[i]);
+                            }
+                            if (idx > 0) {
+                                line = line.substring(idx).trim();
+                            }
+                            if (line.isEmpty()) {
+                                logger.fine("Skipping line after stripping prefix: '" + rawLine + "'");
+                                continue;
+                            }
+
+                            logger.info("Received data: " + line);
+
+                            // カンマで分割した後、空トークンを削除してからパース
+                            String[] rawParts = line.split(",");
+                            List<String> partsList = new ArrayList<>();
+                            for (String p : rawParts) {
+                                if (p == null) continue;
+                                String t = p.trim();
+                                if (!t.isEmpty()) partsList.add(t);
+                            }
+                            if (partsList.size() < 2) { // 少なくとも time と 1 signal を期待
+                                logger.warning("Received malformed data: " + rawLine);
+                                continue;
+                            }
+
+                            try {
+                                double[] newData = new double[partsList.size()];
+                                for (int i = 0; i < partsList.size(); i++) {
+                                    newData[i] = Double.parseDouble(partsList.get(i));
                                 }
                                 onNewDataReceived(newData);
                             } catch (NumberFormatException e) {
-                                logger.warning("Failed to parse data to double: " + line);
+                                logger.warning("Failed to parse data to double: " + rawLine);
                             }
                         }
                     }
@@ -305,32 +463,60 @@ public class MonitoringTCPServer {
 
                         // 4. クライアントからのデータストリームを読み取る
                         try (BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()))) {
-                            String line;
+                            String rawLine;
                             // クライアントが切断する(null)まで1行ずつ読み続ける
-                            while ((line = in.readLine()) != null) {
+                            while ((rawLine = in.readLine()) != null) {
+                                // trim と空行チェック
+                                String line = rawLine.trim();
+                                if (line.isEmpty()) {
+                                    logger.fine("Skipping empty/whitespace line from client.");
+                                    continue;
+                                }
+                                // 先頭にプレフィックスがある場合、数字から始まる部分を抽出
+                                int idx = -1;
+                                for (int i = 0; i < line.length(); i++) {
+                                    char c = line.charAt(i);
+                                    if ((c >= '0' && c <= '9') || c == '-' || c == '+' || c == '.') {
+                                        idx = i;
+                                        break;
+                                    }
+                                }
+                                if (idx > 0) {
+                                    line = line.substring(idx).trim();
+                                }
+                                if (line.isEmpty()) {
+                                    logger.fine("Skipping line after stripping prefix: '" + rawLine + "'");
+                                    continue;
+                                }
                                 logger.info("Received data: " + line);
 
                                 // 5. 受信した文字列をパース
                                 try {
                                     // 期待する形式: "time,speed,rpm" (例: "0.5,40.0,2050.0")
-                                    String[] parts = line.split(",");
+                                    String[] rawParts = line.split(",");
+                                    List<String> partsList = new ArrayList<>();
+                                    for (String p : rawParts) {
+                                        if (p == null) continue;
+                                        String t = p.trim();
+                                        if (!t.isEmpty()) partsList.add(t);
+                                    }
 
                                     // 入力されたデータ数が3つでない場合は警告を出してスキップ
-                                    if (parts.length != 3) { // [time, speed, RPM]
-                                        logger.warning("Received malformed data (expected 3 parts): " + line);
+                                    if (partsList.size() != 3) { // [time, speed, RPM]
+                                        logger.warning("Received malformed data (expected 3 parts): " + rawLine);
                                         continue;
                                     }
 
                                     double[] newData = new double[3];
-                                    newData[0] = Double.parseDouble(parts[0]); // time
-                                    newData[1] = Double.parseDouble(parts[1]); // speed
-                                    newData[2] = Double.parseDouble(parts[2]); // RPM
+                                    newData[0] = Double.parseDouble(partsList.get(0)); // time
+                                    newData[1] = Double.parseDouble(partsList.get(1)); // speed
+                                    newData[2] = Double.parseDouble(partsList.get(2)); // RPM
 
                                     // 6. サーバーに新しいデータを渡す
                                     server.onNewDataReceived(newData);
 
                                 } catch (NumberFormatException e) {
-                                    logger.warning("Failed to parse data to double: " + line);
+                                    logger.warning("Failed to parse data to double: " + rawLine);
                                 }
                             }
                         }
@@ -351,3 +537,4 @@ public class MonitoringTCPServer {
         }
     }
 }
+
