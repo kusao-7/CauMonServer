@@ -69,8 +69,9 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
 
         total_plots = num_signals + 2; % シグナル数 + ロバストネス + 因果関係
 
-        % ★ Figureに 'Tag' を追加して作成
-        figHandle = figure('Tag', figTag, 'Position',[100 100 900 300 + 150*total_plots]);
+        % ★ Figureに 'Tag' を追加して作成（やや小さめのサイズで初期化を軽量化）
+        % 高さは 220 + 120*total_plots 程度に抑える
+        figHandle = figure('Tag', figTag, 'Position',[100 100 900 220 + 120*total_plots]);
 
         tiledlayout(total_plots,1, 'Padding','compact', 'TileSpacing','compact');
 
@@ -190,10 +191,12 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
         drawnow limitrate; % limitrate オプションで更新頻度を調整
     end
 
-    % ====== Save Figure (毎回上書き保存) ======
+    % この関数内では基本的に描画更新のみを行う。
+    % outfile が非空の場合のみ、図をファイルに保存する（終了時など）。
     if ~isempty(outfile) && isgraphics(figHandle)
         try
-            exportgraphics(figHandle, outfile, 'Resolution', 300);
+            % リアルタイム監視用途として軽めの解像度で保存
+            exportgraphics(figHandle, outfile, 'Resolution', 150);
         catch ME
             warning('Failed to save figure to %s: %s', outfile, ME.message);
         end
