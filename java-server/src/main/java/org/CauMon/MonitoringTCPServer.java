@@ -149,7 +149,7 @@ public class MonitoringTCPServer {
 
             // シンプルなダミー trace: 時間 0,1,2 に対してゼロ信号（time + 3 signals を想定）
             // 実際の signalStr/phiStr に依存しないよう、安全な小さな値にする
-            matlabEngine.eval("trace = [0 1 2; 0 0 0; 0 0 0; 1 1 1];\n");
+            matlabEngine.eval("trace = [0 1 2; -50 -50 -50; 0 0 0; 1 1 1];\n");
             matlabEngine.eval("signal_str = '" + signalStr + "';\n");
             matlabEngine.eval("phi_str = '" + phiStr + "';\n");
             matlabEngine.eval("tau = 0;\n");
@@ -513,7 +513,7 @@ public class MonitoringTCPServer {
         evalBuilder.append("phi_str = '").append(phiStr).append("';\n");
         evalBuilder.append("tau = 0;\n");
         evalBuilder.append("[up_robM, low_robM] = stl_eval_mex_pw(signal_str, phi_str, trace, tau);\n");
-        evalBuilder.append("[up_optCau, low_optCau] = stl_causation_opt(signal_str, phi_str, trace, tau);\n");
+        evalBuilder.append("[up_optCau, low_optCau] = stl_causation_opt(signal_str, phiStr, trace, tau);\n");
 
         try {
             // 最終評価実行
