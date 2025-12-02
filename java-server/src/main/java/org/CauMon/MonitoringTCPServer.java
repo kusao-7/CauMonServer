@@ -8,6 +8,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -47,7 +48,7 @@ public class MonitoringTCPServer {
     private volatile long lastVisualizeTimeMillis = 0L;
 
     // 追加: STL 評価の間隔（ミリ秒）。可視化とは独立に制御する。
-    private volatile long stlEvalIntervalMillis = 100L;
+    private volatile long stlEvalIntervalMillis = 1000L;
     private volatile long lastStlEvalTimeMillis = 0L;
 
     // MATLAB 上に最新の STL 結果があるかを示すフラグ
@@ -217,7 +218,7 @@ public class MonitoringTCPServer {
 
         // 履歴コピーは STL 評価または可視化時に必要になるため、条件付きで作成
         double[][] historyCopy = null;
-        if (needStlEval || (needVisualize && !haveStlResults)) {
+        if (needStlEval || !haveStlResults) {
             historyCopy = new double[numTimeSteps][numSignals];
             synchronized (javaTraceHistory) {
                 for (int t = 0; t < numTimeSteps; t++) {
@@ -285,7 +286,7 @@ public class MonitoringTCPServer {
                     evalBuilder.append("trace = [");
                     for (int s = 0; s < numSignals; s++) {
                         for (int t = 0; t < numTimeSteps; t++) {
-                            evalBuilder.append(historyCopy[t][s]);
+                            evalBuilder.append(Objects.requireNonNull(historyCopy)[t][s]);
                             if (t < numTimeSteps - 1) evalBuilder.append(" ");
                         }
                         if (s < numSignals - 1) evalBuilder.append("; ");
