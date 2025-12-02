@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -419,7 +421,7 @@ public class MonitoringTCPServer {
                         }
                     }
                     logger.info("Client disconnected.");
-                    finalizeVisualizationAndSave("result_realtime.png");
+                    finalizeVisualizationAndSave(buildTimestampedFilename());
                 } catch (IOException e) {
                     if (running) {
                         logger.log(Level.WARNING, "Error during client connection", e);
@@ -429,7 +431,7 @@ public class MonitoringTCPServer {
                 }
             }
             logger.info("Accept thread exiting.");
-            finalizeVisualizationAndSave("result_realtime.png");
+            finalizeVisualizationAndSave(buildTimestampedFilename());
         }, "MonitoringTCP-AcceptThread");
 
         acceptThread.start();
@@ -459,7 +461,7 @@ public class MonitoringTCPServer {
             Thread.currentThread().interrupt();
         }
 
-        finalizeVisualizationAndSave("result_realtime.png");
+        finalizeVisualizationAndSave(buildTimestampedFilename());
 
         shutdown(); // MATLAB 停止
         logger.info("Monitoring TCP server stopped.");
@@ -475,7 +477,7 @@ public class MonitoringTCPServer {
             return;
         }
         if (outfile == null || outfile.isEmpty()) {
-            outfile = "result_realtime.png";
+            outfile = buildTimestampedFilename();
         }
         int numTimeSteps;
         int numSignals;
@@ -514,7 +516,8 @@ public class MonitoringTCPServer {
         evalBuilder.append("phi_str = '").append(phiStr).append("';\n");
         evalBuilder.append("tau = 0;\n");
         evalBuilder.append("[up_robM, low_robM] = stl_eval_mex_pw(signal_str, phi_str, trace, tau);\n");
-        evalBuilder.append("[up_optCau, low_optCau] = stl_causation_opt(signal_str, phiStr, trace, tau);\n");
+
+        evalBuilder.append("[up_optCau, low_optCau] = stl_causation_opt(signal_str, phi_str, trace, tau);\n");
 
         try {
             // 最終評価実行
@@ -531,6 +534,11 @@ public class MonitoringTCPServer {
         }
     }
 
+    private String buildTimestampedFilename() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy_MM_dd_HHmmss");
+        return String.format("result_%s.png", LocalDateTime.now().format(formatter));
+    }
+
     // TCPサーバーを実行する main メソッド
     public static void main(String[] args) {
         MonitoringTCPServer server = new MonitoringTCPServer();
@@ -538,7 +546,7 @@ public class MonitoringTCPServer {
         // JVM終了時(Ctrl+Cなど)にMATLABを安全にシャットダウンするためのフック
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             logger.info("Shutdown hook triggered. Saving latest graph and shutting down MATLAB...");
-            server.finalizeVisualizationAndSave("result_realtime.png");
+            server.finalizeVisualizationAndSave(server.buildTimestampedFilename());
             server.shutdown();
             logger.info("Shutdown complete.");
         }));
@@ -620,7 +628,7 @@ public class MonitoringTCPServer {
                         // クライアントが切断した場合、readLine()の戻り値はnullになる
                         // すると、whileループを抜けてここに到達する
                         logger.info("Client disconnected.");
-                        server.finalizeVisualizationAndSave("result_realtime.png");
+                        server.finalizeVisualizationAndSave(server.buildTimestampedFilename());
                     } catch (IOException e) {
                         logger.log(Level.WARNING, "Error during client connection", e);
                     }
@@ -632,11 +640,10 @@ public class MonitoringTCPServer {
         } catch (Exception e) {
             // MATLAB起動失敗など
             logger.log(Level.SEVERE, "An error occurred during server startup", e);
-            server.finalizeVisualizationAndSave("result_realtime.png");
+            server.finalizeVisualizationAndSave(server.buildTimestampedFilename());
         } finally {
-            server.finalizeVisualizationAndSave("result_realtime.png");
+            server.finalizeVisualizationAndSave(server.buildTimestampedFilename());
             server.shutdown();
         }
     }
 }
-
