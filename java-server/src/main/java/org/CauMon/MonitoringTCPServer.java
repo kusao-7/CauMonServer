@@ -44,7 +44,7 @@ public class MonitoringTCPServer {
 
     // 追加: 可視化（MATLAB呼び出し）を間引くための設定
     // visualizeIntervalMillis: 最小時間間隔（ミリ秒）で可視化（デフォルト:1000ms）
-    private volatile long visualizeIntervalMillis = 5000L;
+    private volatile long visualizeIntervalMillis = 3000L;
     private volatile long lastVisualizeTimeMillis = 0L;
 
     // 追加: STL 評価の間隔（ミリ秒）。可視化とは独立に制御する。
@@ -296,7 +296,7 @@ public class MonitoringTCPServer {
                     evalBuilder.append("phi_str = '").append(phiStr).append("';\n");
                     evalBuilder.append("tau = 0;\n");
                     evalBuilder.append("[up_robM, low_robM] = stl_eval_mex_pw(signal_str, phi_str, trace, tau);\n");
-                    evalBuilder.append("[up_optCau, low_optCau] = stl_causation_opt(signal_str, phiStr, trace, tau);\n");
+                    evalBuilder.append("[up_optCau, low_optCau] = stl_causation_opt(signal_str, phi_str, trace, tau);\n");
 
                     long stlStart2 = System.currentTimeMillis();
                     matlabEngine.eval(evalBuilder.toString());
@@ -419,6 +419,7 @@ public class MonitoringTCPServer {
                         }
                     }
                     logger.info("Client disconnected.");
+                    finalizeVisualizationAndSave("result_realtime.png");
                 } catch (IOException e) {
                     if (running) {
                         logger.log(Level.WARNING, "Error during client connection", e);
@@ -457,53 +458,76 @@ public class MonitoringTCPServer {
             Thread.currentThread().interrupt();
         }
 
-        // 終了時に一度だけ、最新の trace と STL 結果に基づいて図を更新・保存する
-        try {
-            int numTimeSteps;
-            int numSignals;
-            synchronized (javaTraceHistory) {
-                numTimeSteps = this.javaTraceHistory.size();
-                numSignals = (numTimeSteps > 0) ? this.javaTraceHistory.get(0).length : 0;
-            }
-            if (numTimeSteps > 0 && numSignals > 0 && matlabEngine != null) {
-                // 履歴を MATLAB trace 行列に変換
-                double[][] historyCopy = new double[numTimeSteps][numSignals];
-                synchronized (javaTraceHistory) {
-                    for (int t = 0; t < numTimeSteps; t++) {
-                        double[] row = this.javaTraceHistory.get(t);
-                        System.arraycopy(row, 0, historyCopy[t], 0, numSignals);
-                    }
-                }
-
-                StringBuilder evalBuilder = new StringBuilder();
-                evalBuilder.append("trace = [");
-                for (int s = 0; s < numSignals; s++) {
-                    for (int t = 0; t < numTimeSteps; t++) {
-                        evalBuilder.append(historyCopy[t][s]);
-                        if (t < numTimeSteps - 1) evalBuilder.append(" ");
-                    }
-                    if (s < numSignals - 1) evalBuilder.append("; ");
-                }
-                evalBuilder.append("];\n");
-                evalBuilder.append("signal_str = '").append(signalStr).append("';\n");
-                evalBuilder.append("phi_str = '").append(phiStr).append("';\n");
-                evalBuilder.append("tau = 0;\n");
-                evalBuilder.append("[up_robM, low_robM] = stl_eval_mex_pw(signal_str, phi_str, trace, tau);\n");
-                evalBuilder.append("[up_optCau, low_optCau] = stl_causation_opt(signal_str, phi_str, trace, tau);\n");
-
-                long saveStart = System.currentTimeMillis();
-                matlabEngine.eval(evalBuilder.toString());
-                // 可視化＋保存用の呼び出し（MATLAB 側で必要に応じて exportgraphics を実装する想定）
-                matlabEngine.eval("visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, 'result_realtime.png', signal_str);\n");
-                long saveEnd = System.currentTimeMillis();
-                logger.info(String.format("Final visualize (with save) took %d ms (traceSize=%d)", (saveEnd - saveStart), numTimeSteps));
-            }
-        } catch (Exception e) {
-            logger.log(Level.WARNING, "Error during final visualize/save on shutdown", e);
-        }
+        finalizeVisualizationAndSave("result_realtime.png");
 
         shutdown(); // MATLAB 停止
         logger.info("Monitoring TCP server stopped.");
+    }
+
+    /**
+     * 受信した全履歴を用いて MATLAB 側のグラフを最終更新し、PNG を保存する共通処理。
+     * @param outfile 保存先ファイル名（null/空の場合はデフォルト名）
+     */
+    private synchronized void finalizeVisualizationAndSave(String outfile) {
+        if (matlabEngine == null) {
+            logger.fine("MATLAB engine unavailable; skipping final visualization.");
+            return;
+        }
+        if (outfile == null || outfile.isEmpty()) {
+            outfile = "result_realtime.png";
+        }
+        int numTimeSteps;
+        int numSignals;
+        synchronized (javaTraceHistory) {
+            numTimeSteps = javaTraceHistory.size();
+            numSignals = (numTimeSteps > 0) ? javaTraceHistory.get(0).length : 0;
+        }
+        if (numTimeSteps == 0 || numSignals == 0) {
+            logger.info("No trace data available for final visualization.");
+            return;
+        }
+
+        double[][] historyCopy = new double[numTimeSteps][numSignals];
+        synchronized (javaTraceHistory) {
+            for (int t = 0; t < numTimeSteps; t++) {
+                double[] row = javaTraceHistory.get(t);
+                System.arraycopy(row, 0, historyCopy[t], 0, numSignals);
+            }
+        }
+
+        StringBuilder evalBuilder = new StringBuilder();
+        evalBuilder.append("trace = [");
+        for (int s = 0; s < numSignals; s++) {
+            for (int t = 0; t < numTimeSteps; t++) {
+                evalBuilder.append(historyCopy[t][s]);
+                if (t < numTimeSteps - 1) {
+                    evalBuilder.append(" ");
+                }
+            }
+            if (s < numSignals - 1) {
+                evalBuilder.append("; ");
+            }
+        }
+        evalBuilder.append("];\n");
+        evalBuilder.append("signal_str = '").append(signalStr).append("';\n");
+        evalBuilder.append("phi_str = '").append(phiStr).append("';\n");
+        evalBuilder.append("tau = 0;\n");
+        evalBuilder.append("[up_robM, low_robM] = stl_eval_mex_pw(signal_str, phi_str, trace, tau);\n");
+        evalBuilder.append("[up_optCau, low_optCau] = stl_causation_opt(signal_str, phi_str, trace, tau);\n");
+
+        try {
+            // 最終評価実行
+            long saveStart = System.currentTimeMillis();
+            matlabEngine.eval(evalBuilder.toString());
+
+            // 可視化＋保存用の呼び出し（MATLAB 側で必要に応じて exportgraphics を実装する想定）
+            String safeOutfile = outfile.replace("'", "''");
+            matlabEngine.eval("visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, '" + safeOutfile + "', signal_str);\n");
+            long saveEnd = System.currentTimeMillis();
+            logger.info(String.format("Final visualize (with save) took %d ms (traceSize=%d)", (saveEnd - saveStart), numTimeSteps));
+        } catch (Exception e) {
+            logger.log(Level.WARNING, "Error during final visualization/save", e);
+        }
     }
 
     // TCPサーバーを実行する main メソッド
@@ -594,6 +618,7 @@ public class MonitoringTCPServer {
                         // クライアントが切断した場合、readLine()の戻り値はnullになる
                         // すると、whileループを抜けてここに到達する
                         logger.info("Client disconnected.");
+                        server.finalizeVisualizationAndSave("result_realtime.png");
                     } catch (IOException e) {
                         logger.log(Level.WARNING, "Error during client connection", e);
                     }
