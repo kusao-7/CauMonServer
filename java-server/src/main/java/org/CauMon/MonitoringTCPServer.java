@@ -429,6 +429,7 @@ public class MonitoringTCPServer {
                 }
             }
             logger.info("Accept thread exiting.");
+            finalizeVisualizationAndSave("result_realtime.png");
         }, "MonitoringTCP-AcceptThread");
 
         acceptThread.start();
@@ -536,7 +537,8 @@ public class MonitoringTCPServer {
 
         // JVM終了時(Ctrl+Cなど)にMATLABを安全にシャットダウンするためのフック
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-            logger.info("Shutdown hook triggered. Shutting down MATLAB...");
+            logger.info("Shutdown hook triggered. Saving latest graph and shutting down MATLAB...");
+            server.finalizeVisualizationAndSave("result_realtime.png");
             server.shutdown();
             logger.info("Shutdown complete.");
         }));
@@ -596,7 +598,7 @@ public class MonitoringTCPServer {
                                         if (!t.isEmpty()) partsList.add(t);
                                     }
 
-                                    // 入力されたデータ数が3つでない場合は警告を出してスキップ
+                                    // 入力されたデ��タ数が3つでない場合は警告を出してスキップ
                                     if (partsList.size() != 3) { // [time, speed, RPM]
                                         logger.warning("Received malformed data (expected 3 parts): " + rawLine);
                                         continue;
@@ -630,6 +632,10 @@ public class MonitoringTCPServer {
         } catch (Exception e) {
             // MATLAB起動失敗など
             logger.log(Level.SEVERE, "An error occurred during server startup", e);
+            server.finalizeVisualizationAndSave("result_realtime.png");
+        } finally {
+            server.finalizeVisualizationAndSave("result_realtime.png");
+            server.shutdown();
         }
     }
 }
