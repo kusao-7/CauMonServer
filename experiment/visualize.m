@@ -8,7 +8,7 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
 %   signal_names: カンマ区切りのシグナル名文字列 (例: 'temp,cooling')
 
     % --- 引数のデフォルト値設定 ---
-    if nargin < 7
+    if nargin < 8
         outfile = 'Figure_output.png'; % 保存ファイル名（毎回上書き）
     end
     if nargin < 8 || isempty(signal_names)
@@ -81,6 +81,10 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
         % ====== (1..N) 各シグナルをプロット ======
         handles.h_sig = gobjects(num_signals, 1); % シグナルプロット用ハンドル配列
         handles.ax_sig = gobjects(num_signals, 1); % シグナル軸用ハンドル配列
+
+        % 信号名文字列をコンマで分割
+        signal_names_cell = strsplit(signal_names_str, ',');
+
         for s = 1:num_signals
             handles.ax_sig(s) = nexttile; % ★ 軸ハンドルを保存
 

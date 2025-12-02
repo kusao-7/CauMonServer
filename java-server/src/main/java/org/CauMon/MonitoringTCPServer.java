@@ -186,7 +186,7 @@ public class MonitoringTCPServer {
 
     /**
      * 新しいデータポイントを受信したときに呼び出される
-     * @param newDataPoint 新しいデータ [time, signal1, signal2, ...]
+     * @param newDataPoint 新しいデータ [time, speed, RPM]
      */
     public void onNewDataReceived(double[] newDataPoint) {
 
