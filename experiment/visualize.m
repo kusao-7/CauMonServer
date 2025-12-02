@@ -118,6 +118,7 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
         % title を削除（不要）
         grid on;
         set(gca, 'LineWidth', 1.5, 'FontSize', 14, 'Box', 'on', 'XColor', [1 1 1], 'YColor', [1 1 1]);
+        ylim([-100 100]);
         hold off;
 
         % ====== (N+2) 因果関係をプロット ======
@@ -172,7 +173,7 @@ function visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, out
             n_rob = min(length(t), length(up_robM));
             set(handles.h_rob_up, 'XData', t(1:n_rob), 'YData', up_robM(1:n_rob));
             set(handles.h_rob_low, 'XData', t(1:n_rob), 'YData', low_robM(1:n_rob));
-            set(handles.ax_rob, 'XLimMode', 'auto', 'YLimMode', 'auto', 'Box', 'on', 'XColor', [1 1 1], 'YColor', [1 1 1]);
+            set(handles.ax_rob, 'XLimMode', 'auto', 'YLim', [-100 100], 'Box', 'on', 'XColor', [1 1 1], 'YColor', [1 1 1]);
          else
              warning('Robustness plot handle is invalid.');
          end
