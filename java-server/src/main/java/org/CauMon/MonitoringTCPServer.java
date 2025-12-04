@@ -146,27 +146,64 @@ public class MonitoringTCPServer {
         logger.info("MATLAB engine started and configured.");
 
         // ===== ウォームアップ: ダミー trace で一度だけ STL 評価と visualize を実行 =====
-        try {
-            logger.info("Warming up MATLAB visualization with dummy trace...");
+         try {
+             logger.info("Warming up MATLAB visualization with dummy trace...");
 
-            // シンプルなダミー trace: 時間 0,1,2 に対してゼロ信号（time + 3 signals を想定）
-            // 実際の signalStr/phiStr に依存しないよう、安全な小さな値にする
-            matlabEngine.eval("trace = [0 1 2; -50 -50 -50; 0 0 0; 1 1 1];\n");
+            // ダミー trace を動的に生成: time row (0 1 2) のあとに signalStr に基づく信号行を追加する
+            // signalStr は configure() で既に正規化されている想定（time を取り除いている）
+            int dummyCols = 3; // 短い時間列 (0..dummyCols-1)
+            String[] sigParts = signalStr == null || signalStr.trim().isEmpty() ? new String[0] : signalStr.split(",");
+            // 空白や空トークンを除去して正しい数を数える
+            java.util.List<String> sigList = new java.util.ArrayList<>();
+            for (String sp : sigParts) {
+                if (sp == null) continue;
+                String t = sp.trim();
+                if (!t.isEmpty()) sigList.add(t);
+            }
+            int numDummySignals = sigList.size();
+            if (numDummySignals <= 0) {
+                // フォールバック: 最低1シグナルを準備
+                numDummySignals = 1;
+            }
+
+             // MATLAB 形式の行列リテラルを構築 (time row + numDummySignals rows)
+             StringBuilder traceBuilder = new StringBuilder();
+             traceBuilder.append("trace = [");
+             // time row
+             for (int c = 0; c < dummyCols; c++) {
+                 traceBuilder.append(c);
+                 if (c < dummyCols - 1) traceBuilder.append(' ');
+             }
+             traceBuilder.append("; ");
+             // 各シグナル行は簡易な定数列（ゼロや小さな値）を設定
+             for (int s = 0; s < numDummySignals; s++) {
+                 for (int c = 0; c < dummyCols; c++) {
+                     // 1つ目のシグナルは -50 のような代表値、その他は 0 や 1 を入れる
+                     if (s == 0) traceBuilder.append("0");
+                     else if (s == 1) traceBuilder.append('0');
+                     else traceBuilder.append('1');
+                     if (c < dummyCols - 1) traceBuilder.append(' ');
+                 }
+                 if (s < numDummySignals - 1) traceBuilder.append("; ");
+             }
+             traceBuilder.append("];\n");
+
+            matlabEngine.eval(traceBuilder.toString());
             matlabEngine.eval("signal_str = '" + signalStr + "';\n");
             matlabEngine.eval("phi_str = '" + phiStr + "';\n");
             matlabEngine.eval("tau = 0;\n");
 
-            long warmStart = System.currentTimeMillis();
-            matlabEngine.eval("[up_robM, low_robM] = stl_eval_mex_pw(signal_str, phi_str, trace, tau);\n");
-            matlabEngine.eval("[up_optCau, low_optCau] = stl_causation_opt(signal_str, phi_str, trace, tau);\n");
-            matlabEngine.eval("visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, '', signal_str);\n");
-            long warmEnd = System.currentTimeMillis();
-            logger.info(String.format("Warm-up visualize completed in %d ms", (warmEnd - warmStart)));
+             long warmStart = System.currentTimeMillis();
+             matlabEngine.eval("[up_robM, low_robM] = stl_eval_mex_pw(signal_str, phi_str, trace, tau);\n");
+             matlabEngine.eval("[up_optCau, low_optCau] = stl_causation_opt(signal_str, phi_str, trace, tau);\n");
+             matlabEngine.eval("visualize(trace, phi_str, up_robM, low_robM, up_optCau, low_optCau, '', signal_str);\n");
+             long warmEnd = System.currentTimeMillis();
+             logger.info(String.format("Warm-up visualize completed in %d ms", (warmEnd - warmStart)));
 
-        } catch (Exception we) {
+         } catch (Exception we) {
             // ウォームアップ失敗は致命的ではないので警告のみ
             logger.log(Level.WARNING, "Warm-up visualize failed (continuing without warm-up)", we);
-        }
+         }
     }
 
 
