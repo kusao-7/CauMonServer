@@ -41,8 +41,8 @@ public class MonitoringTCPServer {
     private int tcpPort = PORT;
 
     // 設定可能にした文字列 (デフォルトは従来のもの)
-    private String signalStr = "speed,RPM,gear";
-    private String phiStr = "alw_[0,30](not(speed[t]>50) or (gear[t]>=3 and RPM[t]<4500))";
+    private String signalStr = "d_rel,v_ego";
+    private String phiStr = "alw_[0,50](d_rel[t] - 1.4 * v_ego[t] >= 4)";
 
     // 追加: 可視化（MATLAB呼び出し）を間引くための設定
     // visualizeIntervalMillis: 最小時間間隔（ミリ秒）で可視化（デフォルト:1000ms）
